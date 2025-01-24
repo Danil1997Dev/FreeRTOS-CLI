@@ -1,0 +1,638 @@
+2025-01-22 00:12:34,023 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:12:34,144 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:12:37,126 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 698178648 Bytes (1073741824)
+2025-01-22 00:12:38,921 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 799274616 Bytes (1073741824)
+2025-01-22 00:12:39,294 [INFO] ProjectBuilder:2363 - IP not ready for code generation: FATFS
+2025-01-22 00:12:40,669 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RNG
+2025-01-22 00:12:40,669 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
+2025-01-22 00:12:40,670 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SDIO
+2025-01-22 00:12:40,670 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2025-01-22 00:12:40,670 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-01-22 00:12:40,670 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-01-22 00:12:40,670 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-01-22 00:12:40,670 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: LWIP
+2025-01-22 00:12:40,672 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-01-22 00:12:40,672 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ETH
+2025-01-22 00:12:40,672 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FATFS
+2025-01-22 00:12:40,673 [INFO] CodeGenerator:896 - code generatio: config db path: D:\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\
+2025-01-22 00:12:40,706 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:12:40,979 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-01-22 00:12:40,979 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-01-22 00:12:40,995 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp_save
+2025-01-22 00:12:41,540 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp
+2025-01-22 00:12:41,611 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\gpio.tmp_save
+2025-01-22 00:12:41,934 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\gpio.tmp
+2025-01-22 00:12:42,076 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:12:42,395 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:12:42,405 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:12:42,597 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:12:42,602 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:12:42,864 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:12:42,870 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:12:43,088 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:12:43,102 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:12:43,274 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:12:43,281 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:12:43,403 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:12:43,449 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:12:43,590 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:12:43,625 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:12:43,798 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:12:43,811 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:12:43,991 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:12:43,997 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:12:44,117 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:12:44,167 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:12:44,293 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:12:44,329 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:12:44,473 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:12:44,790 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:12:44,800 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-01-22 00:12:44,982 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-01-22 00:12:44,987 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-01-22 00:12:45,122 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-01-22 00:12:45,140 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-01-22 00:12:45,274 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-01-22 00:12:45,280 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-01-22 00:12:45,395 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-01-22 00:12:45,399 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-01-22 00:12:45,554 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-01-22 00:12:45,559 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-01-22 00:12:45,702 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-01-22 00:12:45,708 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-01-22 00:12:45,869 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-01-22 00:12:45,874 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-01-22 00:12:46,028 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-01-22 00:12:46,049 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-01-22 00:12:46,187 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-01-22 00:12:46,206 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:12:46,214 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-22 00:12:46,386 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-22 00:12:46,394 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-22 00:12:46,510 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-01-22 00:12:46,515 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-22 00:12:46,623 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-22 00:12:46,628 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-22 00:12:46,777 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-01-22 00:12:46,808 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:12:46,852 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:12:46,863 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-01-22 00:12:46,990 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-01-22 00:12:46,994 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-01-22 00:12:47,068 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-01-22 00:12:47,073 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-01-22 00:12:47,154 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-01-22 00:12:47,160 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-01-22 00:12:47,230 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-01-22 00:12:47,247 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-01-22 00:12:47,331 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-01-22 00:12:47,336 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-01-22 00:12:47,409 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-01-22 00:12:47,432 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-01-22 00:12:47,514 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-01-22 00:12:47,520 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-01-22 00:12:47,607 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-01-22 00:12:47,612 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-01-22 00:12:47,700 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-01-22 00:12:47,720 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h_save
+2025-01-22 00:12:47,862 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h
+2025-01-22 00:12:47,889 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c_save
+2025-01-22 00:12:47,980 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c
+2025-01-22 00:12:47,990 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:12:48,000 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-22 00:12:48,123 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-22 00:12:48,128 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-22 00:12:48,212 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-01-22 00:12:48,218 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-22 00:12:48,291 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-22 00:12:48,296 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-22 00:12:48,391 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-01-22 00:12:48,415 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h_save
+2025-01-22 00:12:48,591 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h
+2025-01-22 00:12:48,611 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c_save
+2025-01-22 00:12:48,733 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c
+2025-01-22 00:12:48,739 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h_save
+2025-01-22 00:12:48,827 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h
+2025-01-22 00:12:48,833 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h_save
+2025-01-22 00:12:48,926 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h
+2025-01-22 00:12:48,943 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c_save
+2025-01-22 00:12:49,075 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c
+2025-01-22 00:12:49,096 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c_save
+2025-01-22 00:12:49,226 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c
+2025-01-22 00:12:49,248 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h_save
+2025-01-22 00:12:49,379 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h
+2025-01-22 00:12:49,394 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:12:49,436 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c_save
+2025-01-22 00:12:49,543 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c
+2025-01-22 00:12:49,549 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h_save
+2025-01-22 00:12:49,633 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h
+2025-01-22 00:12:49,656 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h_save
+2025-01-22 00:12:49,927 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h
+2025-01-22 00:12:49,944 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c_save
+2025-01-22 00:12:50,075 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c
+2025-01-22 00:12:50,083 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h_save
+2025-01-22 00:12:50,162 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h
+2025-01-22 00:12:50,208 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c_save
+2025-01-22 00:12:50,479 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c
+2025-01-22 00:12:50,486 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h_save
+2025-01-22 00:12:50,611 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h
+2025-01-22 00:12:50,660 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c_save
+2025-01-22 00:12:50,867 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c
+2025-01-22 00:12:50,872 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp_save
+2025-01-22 00:12:50,961 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp
+2025-01-22 00:12:50,988 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2025-01-22 00:12:51,100 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c
+2025-01-22 00:12:51,133 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h_save
+2025-01-22 00:12:51,294 [INFO] CodeEngine:335 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h
+2025-01-22 00:12:51,412 [WARN] IPConfigManager:3618 - IP not found : TIM
+2025-01-22 00:12:51,413 [WARN] CodeGenerator:4152 - IP not found : null
+2025-01-22 00:12:51,450 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h_save
+2025-01-22 00:12:51,633 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h
+2025-01-22 00:12:51,661 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c_save
+2025-01-22 00:12:51,915 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c
+2025-01-22 00:12:53,337 [INFO] ProjectBuilder:3289 - Time for Copy HAL[1] : 883mS.
+2025-01-22 00:12:53,361 [INFO] ProjectBuilder:4876 - Project Generator version: 4.5.0-RC5
+2025-01-22 00:12:53,491 [INFO] ConfigFileManager:1579 - The Die is : DIE413
+2025-01-22 00:12:55,456 [INFO] ProjectBuilder:5154 - Time for Generating toolchain IDE Files: 2096mS.
+2025-01-22 00:12:55,458 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-01-22 00:12:55,471 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-01-22 00:21:41,762 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-22 00:21:41,915 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:21:41,977 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:21:42,267 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-22 00:21:43,589 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 790104064 Bytes (1073741824)
+2025-01-22 00:21:45,455 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 891815936 Bytes (1073741824)
+2025-01-22 00:21:45,675 [INFO] ProjectBuilder:2363 - IP not ready for code generation: FATFS
+2025-01-22 00:21:47,485 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RNG
+2025-01-22 00:21:47,485 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
+2025-01-22 00:21:47,485 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SDIO
+2025-01-22 00:21:47,485 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2025-01-22 00:21:47,485 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-01-22 00:21:47,485 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-01-22 00:21:47,485 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-01-22 00:21:47,486 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: LWIP
+2025-01-22 00:21:47,486 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2025-01-22 00:21:47,486 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-01-22 00:21:47,486 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ETH
+2025-01-22 00:21:47,486 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FATFS
+2025-01-22 00:21:47,487 [INFO] CodeGenerator:896 - code generatio: config db path: D:\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\
+2025-01-22 00:21:47,514 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:21:47,679 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-01-22 00:21:47,679 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-01-22 00:21:47,690 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp_save
+2025-01-22 00:21:48,022 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp
+2025-01-22 00:21:48,082 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\gpio.tmp_save
+2025-01-22 00:21:48,313 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\gpio.tmp
+2025-01-22 00:21:48,457 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:21:48,638 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:21:48,642 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:21:48,768 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:21:48,772 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:21:48,943 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:21:48,948 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:21:49,135 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:21:49,148 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:21:49,302 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:21:49,308 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:21:49,435 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:21:49,478 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:21:49,609 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:21:49,636 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:21:49,772 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:21:49,784 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:21:49,933 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:21:49,940 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:21:50,040 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:21:50,081 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:21:50,200 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:21:50,227 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:21:50,357 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:21:50,695 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:21:50,704 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-01-22 00:21:50,854 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-01-22 00:21:50,858 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-01-22 00:21:50,980 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-01-22 00:21:50,984 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-01-22 00:21:51,094 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-01-22 00:21:51,099 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-01-22 00:21:51,196 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-01-22 00:21:51,200 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-01-22 00:21:51,326 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-01-22 00:21:51,330 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-01-22 00:21:51,468 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-01-22 00:21:51,472 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-01-22 00:21:51,586 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-01-22 00:21:51,590 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-01-22 00:21:51,689 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-01-22 00:21:51,694 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-01-22 00:21:51,772 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-01-22 00:21:51,791 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:21:51,798 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-22 00:21:51,928 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-22 00:21:51,931 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-22 00:21:52,008 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-01-22 00:21:52,011 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-22 00:21:52,093 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-22 00:21:52,097 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-22 00:21:52,172 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-01-22 00:21:52,194 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:21:52,230 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:21:52,239 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-01-22 00:21:52,378 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-01-22 00:21:52,383 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-01-22 00:21:52,458 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-01-22 00:21:52,464 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-01-22 00:21:52,535 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-01-22 00:21:52,540 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-01-22 00:21:52,615 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-01-22 00:21:52,631 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-01-22 00:21:52,712 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-01-22 00:21:52,718 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-01-22 00:21:52,790 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-01-22 00:21:52,810 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-01-22 00:21:52,881 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-01-22 00:21:52,890 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-01-22 00:21:52,963 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-01-22 00:21:52,967 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-01-22 00:21:53,037 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-01-22 00:21:53,055 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h_save
+2025-01-22 00:21:53,192 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h
+2025-01-22 00:21:53,221 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c_save
+2025-01-22 00:21:53,353 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c
+2025-01-22 00:21:53,361 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:21:53,369 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-22 00:21:53,475 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-22 00:21:53,480 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-22 00:21:53,553 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-01-22 00:21:53,558 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-22 00:21:53,627 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-22 00:21:53,632 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-22 00:21:53,715 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-01-22 00:21:53,737 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h_save
+2025-01-22 00:21:53,916 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h
+2025-01-22 00:21:53,941 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c_save
+2025-01-22 00:21:54,085 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c
+2025-01-22 00:21:54,091 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h_save
+2025-01-22 00:21:54,173 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h
+2025-01-22 00:21:54,178 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h_save
+2025-01-22 00:21:54,259 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h
+2025-01-22 00:21:54,277 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c_save
+2025-01-22 00:21:54,406 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c
+2025-01-22 00:21:54,425 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c_save
+2025-01-22 00:21:54,525 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c
+2025-01-22 00:21:54,530 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h_save
+2025-01-22 00:21:54,636 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h
+2025-01-22 00:21:54,649 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:21:54,686 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c_save
+2025-01-22 00:21:54,785 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c
+2025-01-22 00:21:54,790 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h_save
+2025-01-22 00:21:54,892 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h
+2025-01-22 00:21:54,912 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h_save
+2025-01-22 00:21:55,247 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h
+2025-01-22 00:21:55,270 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c_save
+2025-01-22 00:21:55,456 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c
+2025-01-22 00:21:55,462 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h_save
+2025-01-22 00:21:55,560 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h
+2025-01-22 00:21:55,605 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c_save
+2025-01-22 00:21:55,755 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c
+2025-01-22 00:21:55,760 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h_save
+2025-01-22 00:21:55,875 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h
+2025-01-22 00:21:55,920 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c_save
+2025-01-22 00:21:56,126 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c
+2025-01-22 00:21:56,147 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp_save
+2025-01-22 00:21:56,248 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp
+2025-01-22 00:21:56,274 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2025-01-22 00:21:56,405 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c
+2025-01-22 00:21:56,432 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h_save
+2025-01-22 00:21:56,601 [INFO] CodeEngine:335 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h
+2025-01-22 00:21:56,677 [WARN] IPConfigManager:3618 - IP not found : TIM
+2025-01-22 00:21:56,678 [WARN] CodeGenerator:4152 - IP not found : null
+2025-01-22 00:21:56,716 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h_save
+2025-01-22 00:21:56,872 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h
+2025-01-22 00:21:56,902 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c_save
+2025-01-22 00:21:57,152 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c
+2025-01-22 00:21:58,249 [INFO] ProjectBuilder:3289 - Time for Copy HAL[1] : 736mS.
+2025-01-22 00:21:58,265 [INFO] ProjectBuilder:4876 - Project Generator version: 4.5.0-RC5
+2025-01-22 00:21:58,386 [INFO] ConfigFileManager:1579 - The Die is : DIE413
+2025-01-22 00:22:00,258 [INFO] ProjectBuilder:5154 - Time for Generating toolchain IDE Files: 1992mS.
+2025-01-22 00:22:00,258 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-01-22 00:22:00,277 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-01-22 00:31:44,062 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:31:44,105 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:31:48,390 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 669594904 Bytes (1073741824)
+2025-01-22 00:31:53,362 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 720975128 Bytes (1073741824)
+2025-01-22 00:31:53,582 [INFO] ProjectBuilder:2363 - IP not ready for code generation: FATFS
+2025-01-22 00:31:54,927 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RNG
+2025-01-22 00:31:54,928 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
+2025-01-22 00:31:54,928 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SDIO
+2025-01-22 00:31:54,928 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2025-01-22 00:31:54,928 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-01-22 00:31:54,928 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-01-22 00:31:54,928 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-01-22 00:31:54,928 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: LWIP
+2025-01-22 00:31:54,929 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-01-22 00:31:54,929 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ETH
+2025-01-22 00:31:54,929 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FATFS
+2025-01-22 00:31:54,930 [INFO] CodeGenerator:896 - code generatio: config db path: D:\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\
+2025-01-22 00:31:54,953 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:31:55,138 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-01-22 00:31:55,138 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-01-22 00:31:55,146 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp_save
+2025-01-22 00:31:55,356 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp
+2025-01-22 00:31:55,392 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\gpio.tmp_save
+2025-01-22 00:31:55,598 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\gpio.tmp
+2025-01-22 00:31:55,676 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:31:55,864 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:31:55,869 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:31:55,980 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:31:55,986 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:31:56,198 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:31:56,203 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:31:56,351 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:31:56,362 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:31:56,499 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:31:56,503 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:31:56,581 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:31:56,615 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:31:56,714 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:31:56,736 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:31:56,832 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:31:56,842 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:31:56,952 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:31:56,956 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:31:57,025 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:31:57,055 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:31:57,145 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:31:57,167 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:31:57,261 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:31:57,469 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:31:57,476 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-01-22 00:31:57,595 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-01-22 00:31:57,599 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-01-22 00:31:57,674 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-01-22 00:31:57,678 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-01-22 00:31:57,758 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-01-22 00:31:57,762 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-01-22 00:31:57,833 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-01-22 00:31:57,835 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-01-22 00:31:57,932 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-01-22 00:31:57,935 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-01-22 00:31:58,018 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-01-22 00:31:58,021 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-01-22 00:31:58,118 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-01-22 00:31:58,121 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-01-22 00:31:58,210 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-01-22 00:31:58,215 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-01-22 00:31:58,284 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-01-22 00:31:58,295 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:31:58,302 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-22 00:31:58,406 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-22 00:31:58,411 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-22 00:31:58,485 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-01-22 00:31:58,489 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-22 00:31:58,568 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-22 00:31:58,572 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-22 00:31:58,639 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-01-22 00:31:58,655 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:31:58,674 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:31:58,683 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-01-22 00:31:58,793 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-01-22 00:31:58,798 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-01-22 00:31:58,873 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-01-22 00:31:58,877 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-01-22 00:31:58,953 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-01-22 00:31:58,958 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-01-22 00:31:59,021 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-01-22 00:31:59,040 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-01-22 00:31:59,122 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-01-22 00:31:59,128 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-01-22 00:31:59,198 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-01-22 00:31:59,217 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-01-22 00:31:59,291 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-01-22 00:31:59,296 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-01-22 00:31:59,367 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-01-22 00:31:59,372 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-01-22 00:31:59,440 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-01-22 00:31:59,460 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h_save
+2025-01-22 00:31:59,602 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h
+2025-01-22 00:31:59,621 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c_save
+2025-01-22 00:31:59,698 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c
+2025-01-22 00:31:59,705 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:31:59,713 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-22 00:31:59,828 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-22 00:31:59,832 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-22 00:31:59,901 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-01-22 00:31:59,905 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-22 00:31:59,974 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-22 00:31:59,981 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-22 00:32:00,060 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-01-22 00:32:00,081 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h_save
+2025-01-22 00:32:00,249 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h
+2025-01-22 00:32:00,269 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c_save
+2025-01-22 00:32:00,393 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c
+2025-01-22 00:32:00,398 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h_save
+2025-01-22 00:32:00,504 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h
+2025-01-22 00:32:00,510 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h_save
+2025-01-22 00:32:00,612 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h
+2025-01-22 00:32:00,631 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c_save
+2025-01-22 00:32:00,805 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c
+2025-01-22 00:32:00,826 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c_save
+2025-01-22 00:32:00,979 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c
+2025-01-22 00:32:00,985 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h_save
+2025-01-22 00:32:01,137 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h
+2025-01-22 00:32:01,154 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:32:01,197 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c_save
+2025-01-22 00:32:01,307 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c
+2025-01-22 00:32:01,313 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h_save
+2025-01-22 00:32:01,423 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h
+2025-01-22 00:32:01,445 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h_save
+2025-01-22 00:32:01,800 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h
+2025-01-22 00:32:01,820 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c_save
+2025-01-22 00:32:02,007 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c
+2025-01-22 00:32:02,014 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h_save
+2025-01-22 00:32:02,102 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h
+2025-01-22 00:32:02,144 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c_save
+2025-01-22 00:32:02,366 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c
+2025-01-22 00:32:02,371 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h_save
+2025-01-22 00:32:02,466 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h
+2025-01-22 00:32:02,506 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c_save
+2025-01-22 00:32:02,691 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c
+2025-01-22 00:32:02,696 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp_save
+2025-01-22 00:32:02,781 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp
+2025-01-22 00:32:02,802 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2025-01-22 00:32:02,881 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c
+2025-01-22 00:32:02,910 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h_save
+2025-01-22 00:32:03,087 [INFO] CodeEngine:335 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h
+2025-01-22 00:32:03,153 [WARN] IPConfigManager:3618 - IP not found : TIM
+2025-01-22 00:32:03,153 [WARN] CodeGenerator:4152 - IP not found : null
+2025-01-22 00:32:03,187 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h_save
+2025-01-22 00:32:03,332 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h
+2025-01-22 00:32:03,356 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c_save
+2025-01-22 00:32:03,585 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c
+2025-01-22 00:32:04,639 [INFO] ProjectBuilder:3289 - Time for Copy HAL[1] : 712mS.
+2025-01-22 00:32:04,655 [INFO] ProjectBuilder:4876 - Project Generator version: 4.5.0-RC5
+2025-01-22 00:32:04,773 [INFO] ConfigFileManager:1579 - The Die is : DIE413
+2025-01-22 00:32:06,423 [INFO] ProjectBuilder:5154 - Time for Generating toolchain IDE Files: 1768mS.
+2025-01-22 00:32:06,424 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-01-22 00:32:06,437 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-01-22 00:34:06,820 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-22 00:34:06,929 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:34:06,982 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:34:07,187 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-01-22 00:34:09,671 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 809502720 Bytes (1073741824)
+2025-01-22 00:34:11,554 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 910166016 Bytes (1073741824)
+2025-01-22 00:34:11,781 [INFO] ProjectBuilder:2363 - IP not ready for code generation: FATFS
+2025-01-22 00:34:12,950 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RNG
+2025-01-22 00:34:12,950 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
+2025-01-22 00:34:12,950 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SDIO
+2025-01-22 00:34:12,950 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2025-01-22 00:34:12,950 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-01-22 00:34:12,950 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-01-22 00:34:12,950 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-01-22 00:34:12,950 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: LWIP
+2025-01-22 00:34:12,950 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2025-01-22 00:34:12,951 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-01-22 00:34:12,951 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ETH
+2025-01-22 00:34:12,951 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FATFS
+2025-01-22 00:34:12,951 [INFO] CodeGenerator:896 - code generatio: config db path: D:\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\
+2025-01-22 00:34:12,970 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-01-22 00:34:13,153 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-01-22 00:34:13,154 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-01-22 00:34:13,161 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp_save
+2025-01-22 00:34:13,292 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp
+2025-01-22 00:34:13,319 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\gpio.tmp_save
+2025-01-22 00:34:13,456 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\gpio.tmp
+2025-01-22 00:34:13,504 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:34:13,615 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:34:13,619 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:34:13,696 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:34:13,700 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:34:13,805 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:34:13,810 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:34:13,922 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:34:13,933 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:34:14,044 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:34:14,049 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:34:14,121 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:34:14,147 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:34:14,235 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:34:14,256 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:34:14,354 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:34:14,363 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-01-22 00:34:14,470 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-01-22 00:34:14,474 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-01-22 00:34:14,548 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-01-22 00:34:14,578 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-01-22 00:34:14,677 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-01-22 00:34:14,700 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-01-22 00:34:14,811 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-01-22 00:34:15,023 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:34:15,030 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-01-22 00:34:15,160 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-01-22 00:34:15,174 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-01-22 00:34:15,268 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-01-22 00:34:15,273 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-01-22 00:34:15,353 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-01-22 00:34:15,357 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-01-22 00:34:15,452 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-01-22 00:34:15,455 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-01-22 00:34:15,557 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-01-22 00:34:15,560 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-01-22 00:34:15,641 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-01-22 00:34:15,645 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-01-22 00:34:15,740 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-01-22 00:34:15,743 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-01-22 00:34:15,840 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-01-22 00:34:15,843 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-01-22 00:34:15,911 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-01-22 00:34:15,924 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:34:15,931 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-22 00:34:16,039 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-22 00:34:16,042 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-22 00:34:16,111 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-01-22 00:34:16,115 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-22 00:34:16,194 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-22 00:34:16,197 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-22 00:34:16,267 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-01-22 00:34:16,284 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:34:16,305 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:34:16,312 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-01-22 00:34:16,437 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-01-22 00:34:16,441 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-01-22 00:34:16,516 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-01-22 00:34:16,523 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-01-22 00:34:16,595 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-01-22 00:34:16,600 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-01-22 00:34:16,706 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-01-22 00:34:16,723 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-01-22 00:34:16,797 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-01-22 00:34:16,804 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-01-22 00:34:16,885 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-01-22 00:34:16,903 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-01-22 00:34:16,992 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-01-22 00:34:16,996 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-01-22 00:34:17,098 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-01-22 00:34:17,103 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-01-22 00:34:17,204 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-01-22 00:34:17,229 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h_save
+2025-01-22 00:34:17,405 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h
+2025-01-22 00:34:17,432 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c_save
+2025-01-22 00:34:17,540 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c
+2025-01-22 00:34:17,554 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:34:17,564 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-01-22 00:34:17,706 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-01-22 00:34:17,711 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-01-22 00:34:17,806 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-01-22 00:34:17,811 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-01-22 00:34:17,899 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-01-22 00:34:17,905 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-01-22 00:34:17,990 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-01-22 00:34:18,013 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h_save
+2025-01-22 00:34:18,190 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h
+2025-01-22 00:34:18,207 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c_save
+2025-01-22 00:34:18,340 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c
+2025-01-22 00:34:18,346 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h_save
+2025-01-22 00:34:18,434 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h
+2025-01-22 00:34:18,439 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h_save
+2025-01-22 00:34:18,523 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h
+2025-01-22 00:34:18,539 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c_save
+2025-01-22 00:34:18,676 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c
+2025-01-22 00:34:18,691 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c_save
+2025-01-22 00:34:18,789 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c
+2025-01-22 00:34:18,794 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h_save
+2025-01-22 00:34:18,894 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h
+2025-01-22 00:34:18,908 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-01-22 00:34:18,944 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c_save
+2025-01-22 00:34:19,043 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c
+2025-01-22 00:34:19,049 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h_save
+2025-01-22 00:34:19,134 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h
+2025-01-22 00:34:19,148 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h_save
+2025-01-22 00:34:19,406 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h
+2025-01-22 00:34:19,423 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c_save
+2025-01-22 00:34:19,566 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c
+2025-01-22 00:34:19,572 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h_save
+2025-01-22 00:34:19,648 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h
+2025-01-22 00:34:19,684 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c_save
+2025-01-22 00:34:19,808 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c
+2025-01-22 00:34:19,814 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h_save
+2025-01-22 00:34:19,909 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h
+2025-01-22 00:34:19,950 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c_save
+2025-01-22 00:34:20,138 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c
+2025-01-22 00:34:20,159 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp_save
+2025-01-22 00:34:20,252 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp
+2025-01-22 00:34:20,274 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2025-01-22 00:34:20,353 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c
+2025-01-22 00:34:20,385 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h_save
+2025-01-22 00:34:20,524 [INFO] CodeEngine:335 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h
+2025-01-22 00:34:20,585 [WARN] IPConfigManager:3618 - IP not found : TIM
+2025-01-22 00:34:20,586 [WARN] CodeGenerator:4152 - IP not found : null
+2025-01-22 00:34:20,613 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h_save
+2025-01-22 00:34:20,736 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h
+2025-01-22 00:34:20,756 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c_save
+2025-01-22 00:34:20,973 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c
+2025-01-22 00:34:22,077 [INFO] ProjectBuilder:3289 - Time for Copy HAL[1] : 696mS.
+2025-01-22 00:34:22,093 [INFO] ProjectBuilder:4876 - Project Generator version: 4.5.0-RC5
+2025-01-22 00:34:22,224 [INFO] ConfigFileManager:1579 - The Die is : DIE413
+2025-01-22 00:34:23,742 [INFO] ProjectBuilder:5154 - Time for Generating toolchain IDE Files: 1649mS.
+2025-01-22 00:34:23,743 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-01-22 00:34:23,757 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
