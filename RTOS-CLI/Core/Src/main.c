@@ -53,26 +53,33 @@ TIM_HandleTypeDef htim5;
 
 UART_HandleTypeDef huart3;
 
-/* Definitions for defaultTask */
-osThreadId_t defaultTaskHandle;
-const osThreadAttr_t defaultTask_attributes = {
-  .name = "defaultTask",
+/* Definitions for vLwipInitTask */
+osThreadId_t vLwipInitTaskHandle;
+const osThreadAttr_t vLwipInitTask_attributes = {
+  .name = "vLwipInitTask",
   .stack_size = 1024 * 4,
   .priority = (osPriority_t) osPriorityHigh,
 };
-/* Definitions for PrintTask */
-osThreadId_t PrintTaskHandle;
-const osThreadAttr_t PrintTask_attributes = {
-  .name = "PrintTask",
+/* Definitions for vPrintTask */
+osThreadId_t vPrintTaskHandle;
+const osThreadAttr_t vPrintTask_attributes = {
+  .name = "vPrintTask",
   .stack_size = 512 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for vClientTask */
+osThreadId_t vClientTaskHandle;
+const osThreadAttr_t vClientTask_attributes = {
+  .name = "vClientTask",
+  .stack_size = 1024 * 4,
   .priority = (osPriority_t) osPriorityHigh,
 };
-/* Definitions for dhcpTask */
-osThreadId_t dhcpTaskHandle;
-const osThreadAttr_t dhcpTask_attributes = {
-  .name = "dhcpTask",
-  .stack_size = 512 * 4,
-  .priority = (osPriority_t) osPriorityHigh,
+/* Definitions for vCommandLineTas */
+osThreadId_t vCommandLineTasHandle;
+const osThreadAttr_t vCommandLineTas_attributes = {
+  .name = "vCommandLineTas",
+  .stack_size = 1024 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
 };
 /* Definitions for dhcpSem */
 osSemaphoreId_t dhcpSemHandle;
@@ -95,9 +102,10 @@ static void MX_TIM5_Init(void);
 static void MX_SDIO_SD_Init(void);
 static void MX_RNG_Init(void);
 static void MX_USART3_UART_Init(void);
-void StartDefaultTask(void *argument);
+void StartLwipInitTaskTask(void *argument);
 void StartPrintTask(void *argument);
-void StartDHCPTask(void *argument);
+void StartClientTask(void *argument);
+void StartCmdLnTask(void *argument);
 
 /* USER CODE BEGIN PFP */
 extern struct netif gnetif;
@@ -141,7 +149,7 @@ int main(void)
   MX_SDIO_SD_Init();
   MX_FATFS_Init();
   MX_RNG_Init();
-//  MX_USART3_UART_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
 // HAL_UART_Transmit(&huart3, (uint8_t *)"Start\n\r", sizeof("Start\n\r"), 0xffff);
   //HAL_UART_Transmit(&huart3, (uint8_t *)buf, sizeof(buf), 0xffff);
@@ -174,17 +182,13 @@ int main(void)
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* creation of defaultTask */
-  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
+  /* creation of vLwipInitTask */
+  vLwipInitTaskHandle = osThreadNew(StartLwipInitTaskTask, NULL, &vLwipInitTask_attributes);
 
-  /* creation of PrintTask */
-  PrintTaskHandle = osThreadNew(StartPrintTask, NULL, &PrintTask_attributes);
 
-  /* creation of dhcpTask */
-  dhcpTaskHandle = osThreadNew(StartDHCPTask, NULL, &dhcpTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
+
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -410,39 +414,51 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE END 4 */
 
-/* USER CODE BEGIN Header_StartDefaultTask */
+/* USER CODE BEGIN Header_StartLwipInitTaskTask */
 /**
-  * @brief  Function implementing the defaultTask thread.
+  * @brief  Function implementing the vLwipInitTask thread.
   * @param  argument: Not used
   * @retval None
   */
-/* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void *argument)
+/* USER CODE END Header_StartLwipInitTaskTask */
+void StartLwipInitTaskTask(void *argument)
 {
   /* init code for LWIP */
-
+  MX_LWIP_Init();
   /* USER CODE BEGIN 5 */
-  struct sockaddr_in remout_host;
-  int s;
-  if (xSemaphoreTake(dhcpSemHandle, portMAX_DELAY))
-  {
-	  s = lwip_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
-	  remout_host.sin_family = AF_INET;
-	  remout_host.sin_port = htons(23);
-	  ip4addr_aton("192.168.0.10",(ip4_addr_t*)&remout_host.sin_addr);
-	  lwip_connect(s, (struct sockaddr *)&remout_host, sizeof(struct sockaddr_in));
-	  lwip_write(s, "Hello\n\r", sizeof("Hello\n\r"));
-
-  }
+//  vTaskSuspend(vClientTaskHandle);
+//  vTaskSuspend(vPrintTaskHandle);
+//  vTaskSuspend(vCommandLineTasHandle);
+  HAL_Delay(5000);
+//  portENTER_CRITICAL();
+//  while (gnetif.ip_addr.addr == 0){ };
+//  portEXIT_CRITICAL();
+//  xSemaphoreGive(dhcpSemHandle);
 
 
   /* Infinite loop */
   for(;;)
   {
-	lwip_recv(s, buf, 30, 0);
-	HAL_UART_Transmit(&huart3, buf, sizeof(buf), 0xffff);
-	memset(buf, (uint32_t)'\0', sizeof(buf));
-    osDelay(1);
+
+	  //HAL_Delay(5000);
+	  if (gnetif.ip_addr.addr != 0)
+	  {
+		  /* creation of vPrintTask */
+		  vPrintTaskHandle = osThreadNew(StartPrintTask, NULL, &vPrintTask_attributes);
+
+		  /* creation of vClientTask */
+		  vClientTaskHandle = osThreadNew(StartClientTask, NULL, &vClientTask_attributes);
+
+		  /* creation of vCommandLineTas */
+		  vCommandLineTasHandle = osThreadNew(StartCmdLnTask, NULL, &vCommandLineTas_attributes);
+//		  vTaskResume(vClientTaskHandle);
+//		  vTaskResume(vPrintTaskHandle);
+//		  vTaskResume(vCommandLineTasHandle);
+		  xSemaphoreGive(dhcpSemHandle);
+		  vTaskSuspend(NULL);
+
+	  }
+	  osDelay(1000);
 
   }
   /* USER CODE END 5 */
@@ -458,11 +474,10 @@ void StartDefaultTask(void *argument)
 void StartPrintTask(void *argument)
 {
   /* USER CODE BEGIN StartPrintTask */
-	HAL_Delay(10000);
+//	HAL_Delay(15000);
 //	if (xSemaphoreTake(uartConfigSemHandle, portMAX_DELAY))
 //	{
-	  MX_USART3_UART_Init();
-	  HAL_UART_Transmit(&huart3, (uint8_t *)"UART config\n\r", sizeof("UART config\n\r"), 0xffff);
+	  HAL_UART_Transmit(&huart3, (uint8_t *)"LWIP and UART config\n\r", sizeof("LWIP and UART config\n\r"), 0xffff);
 //
 //	}
 
@@ -478,34 +493,65 @@ void StartPrintTask(void *argument)
   /* USER CODE END StartPrintTask */
 }
 
-/* USER CODE BEGIN Header_StartDHCPTask */
+/* USER CODE BEGIN Header_StartClientTask */
 /**
-* @brief Function implementing the dhcpTask thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_StartDHCPTask */
-void StartDHCPTask(void *argument)
+  * @brief  Function implementing the vClientTask thread.
+  * @param  argument: Not used
+  * @retval None
+  */
+/* USER CODE END Header_StartClientTask */
+void StartClientTask(void *argument)
 {
-  /* USER CODE BEGIN StartDHCPTask */
-	//osDelay(3000);
-	MX_LWIP_Init();
-	osDelay(3000);
-	//HAL_UART_Transmit(&huart3, (uint8_t *)"LWIP config\n\r", sizeof("LWIP config\n\r"), 0xffff);
-	//xSemaphoreGive(uartConfigSemHandle);
-
-  /* Infinite loop */
-  for(;;)
-  {
-	  if (gnetif.ip_addr.addr != 0)
+  /* USER CODE BEGIN StartClientTask */
+//	HAL_Delay(15000);
+//	  while (gnetif.ip_addr.addr == 0){ };
+	  struct sockaddr_in remout_host;
+	  int s;
+	  if (xSemaphoreTake(dhcpSemHandle, portMAX_DELAY))
 	  {
-		  xSemaphoreGive(dhcpSemHandle);
+		  s = lwip_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+		  remout_host.sin_family = AF_INET;
+		  remout_host.sin_port = htons(23);
+		  ip4addr_aton("192.168.0.10",(ip4_addr_t*)&remout_host.sin_addr);
+		  lwip_connect(s, (struct sockaddr *)&remout_host, sizeof(struct sockaddr_in));
+		  lwip_write(s, "Hello\n\r", sizeof("Hello\n\r"));
 
 	  }
 
-    osDelay(1);
+
+	  /* Infinite loop */
+	  for(;;)
+	  {
+		lwip_recv(s, buf, 30, 0);
+		HAL_UART_Transmit(&huart3, buf, sizeof(buf), 0xffff);
+		memset(buf, (uint32_t)'\0', sizeof(buf));
+	    osDelay(300);
+
+	  }
+  /* USER CODE END StartClientTask */
+}
+
+/* USER CODE BEGIN Header_StartCmdLnTask */
+/**
+* @brief Function implementing the vCommandLineTas thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartCmdLnTask */
+void StartCmdLnTask(void *argument)
+{
+  /* USER CODE BEGIN StartCmdLnTask */
+	uint32_t receivedValue;
+	xTaskNotifyWait(pdFALSE,    // Don't clear bits on entry
+	                                  0,  // Clear all bits on exit
+	                                  &receivedValue, // Receives the notification value
+	                                  portMAX_DELAY);
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1000);
   }
-  /* USER CODE END StartDHCPTask */
+  /* USER CODE END StartCmdLnTask */
 }
 
 /**
