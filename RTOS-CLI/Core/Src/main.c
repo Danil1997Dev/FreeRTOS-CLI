@@ -19,8 +19,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "eth.h"
 #include "fatfs.h"
-#include "lwip.h"
 #include "rng.h"
 #include "sdio.h"
 #include "tim.h"
@@ -29,7 +29,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "socket.h"
 #include "semphr.h"
 //#include "printf_uart.h"
 /* USER CODE END Includes */
@@ -101,6 +100,7 @@ int main(void)
   MX_FATFS_Init();
   MX_RNG_Init();
   MX_USART3_UART_Init();
+  MX_ETH_Init();
   /* USER CODE BEGIN 2 */
 // HAL_UART_Transmit(&huart3, (uint8_t *)"Start\n\r", sizeof("Start\n\r"), 0xffff);
   HAL_UART_Receive_IT(&huart3, &dataByte, 1);
