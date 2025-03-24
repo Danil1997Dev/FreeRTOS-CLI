@@ -36,15 +36,6 @@
 /* Utils includes. */
 #include "FreeRTOS_CLI.h"
 
-/* If the application writer needs to place the buffer used by the CLI at a
- * fixed address then set configAPPLICATION_PROVIDES_cOutputBuffer to 1 in
- * FreeRTOSConfig.h, then declare an array with the following name and size in
- * one of the application files:
- *  char cOutputBuffer[ configCOMMAND_INT_MAX_OUTPUT_SIZE ];
- */
-#ifndef configAPPLICATION_PROVIDES_cOutputBuffer
-    #define configAPPLICATION_PROVIDES_cOutputBuffer    0
-#endif
 
 /*
  * Register the command passed in using the pxCommandToRegister parameter
@@ -99,12 +90,7 @@ static CLI_Definition_List_Item_t xRegisteredCommands =
 * configAPPLICATION_PROVIDES_cOutputBuffer is provided to allow the application
 * writer to provide their own cOutputBuffer declaration in cases where the
 * buffer needs to be placed at a fixed address (rather than by the linker). */
-#define configCOMMAND_INT_MAX_OUTPUT_SIZE 2048
-#if ( configAPPLICATION_PROVIDES_cOutputBuffer == 0 )
-    static char cOutputBuffer[ configCOMMAND_INT_MAX_OUTPUT_SIZE ];
-#else
-    extern char cOutputBuffer[ configCOMMAND_INT_MAX_OUTPUT_SIZE ];
-#endif
+
 
 
 /*-----------------------------------------------------------*/

@@ -1,2 +1,6 @@
-../Core/Src/freertos.c:61:13:configureTimerForRunTimeStats	4	static
-../Core/Src/freertos.c:66:22:getRunTimeCounterValue	4	static
+../Core/Src/freertos.c:108:13:configureTimerForRunTimeStats	4	static
+../Core/Src/freertos.c:113:22:getRunTimeCounterValue	4	static
+../Core/Src/freertos.c:124:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:180:6:StartInitTask	16	static
+../Core/Src/freertos.c:211:6:StartClientTask	40	static
+../Core/Src/freertos.c:245:6:vStartCmdTask	24	static

@@ -1,0 +1,9 @@
+../Core/Src/app_cli.c:20:5:_write	2
+../Core/Src/app_cli.c:34:12:cmd_clearScreen	1
+../Core/Src/app_cli.c:47:12:cmd_toggle_led	1
+../Core/Src/app_cli.c:64:12:cmd_add	1
+../Core/Src/app_cli.c:128:6:vRegisterCLICommands	2
+../Core/Src/app_cli.c:136:6:cliWrite	1
+../Core/Src/app_cli.c:143:6:handleNewline	2
+../Core/Src/app_cli.c:159:6:handleBackspace	2
+../Core/Src/app_cli.c:181:6:handleCharacterInput	5

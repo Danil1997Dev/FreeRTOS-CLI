@@ -1,8 +1,8 @@
-../Core/Src/FreeRTOS_CLI.c:114:16:FreeRTOS_CLIRegisterCommand	32	static,ignoring_inline_asm
-../Core/Src/FreeRTOS_CLI.c:140:16:FreeRTOS_CLIRegisterCommandStatic	24	static,ignoring_inline_asm
-../Core/Src/FreeRTOS_CLI.c:155:12:FreeRTOS_CLIProcessCommand	40	static
-../Core/Src/FreeRTOS_CLI.c:232:8:FreeRTOS_CLIGetOutputBuffer	4	static
-../Core/Src/FreeRTOS_CLI.c:238:14:FreeRTOS_CLIGetParameter	32	static
-../Core/Src/FreeRTOS_CLI.c:297:13:prvRegisterCommand	24	static,ignoring_inline_asm
-../Core/Src/FreeRTOS_CLI.c:327:19:prvHelpCommand	32	static
-../Core/Src/FreeRTOS_CLI.c:362:15:prvGetNumberOfParameters	24	static
+../Core/Src/FreeRTOS_CLI.c:100:16:FreeRTOS_CLIRegisterCommand	32	static,ignoring_inline_asm
+../Core/Src/FreeRTOS_CLI.c:126:16:FreeRTOS_CLIRegisterCommandStatic	24	static,ignoring_inline_asm
+../Core/Src/FreeRTOS_CLI.c:141:12:FreeRTOS_CLIProcessCommand	40	static
+../Core/Src/FreeRTOS_CLI.c:218:8:FreeRTOS_CLIGetOutputBuffer	4	static
+../Core/Src/FreeRTOS_CLI.c:224:14:FreeRTOS_CLIGetParameter	32	static
+../Core/Src/FreeRTOS_CLI.c:283:13:prvRegisterCommand	24	static,ignoring_inline_asm
+../Core/Src/FreeRTOS_CLI.c:313:19:prvHelpCommand	32	static
+../Core/Src/FreeRTOS_CLI.c:348:15:prvGetNumberOfParameters	24	static
