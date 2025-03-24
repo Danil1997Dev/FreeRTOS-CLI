@@ -25,10 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "lwip.h"
 #include "app_cli.h"
 #include "FreeRTOS_CLI.h"
-#include "socket.h"
 #include "semphr.h"
 /* USER CODE END Includes */
 
@@ -60,14 +58,7 @@ osThreadId_t vInitTaskHandle;
 const osThreadAttr_t vInitTask_attributes = {
   .name = "vInitTask",
   .stack_size = 1024 * 4,
-  .priority = (osPriority_t) osPriorityHigh,
-};
-/* Definitions for vClientTask */
-osThreadId_t vClientTaskHandle;
-const osThreadAttr_t vClientTask_attributes = {
-  .name = "vClientTask",
-  .stack_size = 1024 * 4,
-  .priority = (osPriority_t) osPriorityHigh,
+  .priority = (osPriority_t) osPriorityNormal,
 };
 /* Definitions for vCmdTask */
 osThreadId_t vCmdTaskHandle;
@@ -93,10 +84,8 @@ const osSemaphoreAttr_t uartConfigSem_attributes = {
 /* USER CODE END FunctionPrototypes */
 
 void StartInitTask(void *argument);
-void StartClientTask(void *argument);
 void vStartCmdTask(void *argument);
 
-extern void MX_LWIP_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /* Hook prototypes */
@@ -153,11 +142,8 @@ void MX_FREERTOS_Init(void) {
   /* creation of vInitTask */
   vInitTaskHandle = osThreadNew(StartInitTask, NULL, &vInitTask_attributes);
 
-  /* creation of vClientTask */
-//  vClientTaskHandle = osThreadNew(StartClientTask, NULL, &vClientTask_attributes);
-
   /* creation of vCmdTask */
-//  vCmdTaskHandle = osThreadNew(vStartCmdTask, NULL, &vCmdTask_attributes);
+  vCmdTaskHandle = osThreadNew(vStartCmdTask, NULL, &vCmdTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
 //  vTaskSuspend((TaskHandle_t)vClientTaskHandle);
@@ -179,60 +165,15 @@ void MX_FREERTOS_Init(void) {
 /* USER CODE END Header_StartInitTask */
 void StartInitTask(void *argument)
 {
-  /* init code for LWIP */
-  MX_LWIP_Init();
   /* USER CODE BEGIN StartInitTask */
-  HAL_Delay(5000);
+//  HAL_Delay(5000);
 //  while (gnetif.ip_addr.addr == 0){};
   /* Infinite loop */
   for(;;)
   {
-	  if (gnetif.ip_addr.addr != 0)
-	  {
-		  vClientTaskHandle = osThreadNew(StartClientTask, NULL, &vClientTask_attributes);
-		  vCmdTaskHandle = osThreadNew(vStartCmdTask, NULL, &vCmdTask_attributes);
-//		  vTaskResume((TaskHandle_t)vClientTaskHandle);
-//		  vTaskResume((TaskHandle_t)vCmdTaskHandle);
-		  vTaskDelete(NULL);
-
-	  }
       osDelay(1);
   }
   /* USER CODE END StartInitTask */
-}
-
-/* USER CODE BEGIN Header_StartClientTask */
-/**
-* @brief Function implementing the vClientTask thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_StartClientTask */
-void StartClientTask(void *argument)
-{
-  /* USER CODE BEGIN StartClientTask */
-	  struct sockaddr_in remout_host;
-	  int s;
-
-	  s = lwip_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
-	  remout_host.sin_family = AF_INET;
-	  remout_host.sin_port = htons(23);
-	  ip4addr_aton("192.168.0.10",(ip4_addr_t*)&remout_host.sin_addr);
-	  lwip_connect(s, (struct sockaddr *)&remout_host, sizeof(struct sockaddr_in));
-	  lwip_write(s, "Hello\n\r", sizeof("Hello\n\r"));
-
-
-
-	  /* Infinite loop */
-	  for(;;)
-	  {
-		lwip_recv(s, buf, 30, 0);
-		HAL_UART_Transmit(&huart3, buf, sizeof(buf), 0xffff);
-		memset(buf, (uint32_t)'\0', sizeof(buf));
-	    osDelay(300);
-
-	  }
-  /* USER CODE END StartClientTask */
 }
 
 /* USER CODE BEGIN Header_vStartCmdTask */
