@@ -21,7 +21,9 @@
 #include "usart.h"
 
 /* USER CODE BEGIN 0 */
+uint8_t *pDataByte;
 uint8_t dataByte;
+extern int8_t cRxedChar;
 /* USER CODE END 0 */
 
 UART_HandleTypeDef huart3;
@@ -80,6 +82,9 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
     GPIO_InitStruct.Alternate = GPIO_AF7_USART3;
     HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
+    /* USART3 interrupt Init */
+    HAL_NVIC_SetPriority(USART3_IRQn, 5, 0);
+    HAL_NVIC_EnableIRQ(USART3_IRQn);
   /* USER CODE BEGIN USART3_MspInit 1 */
 
   /* USER CODE END USART3_MspInit 1 */
@@ -103,6 +108,8 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
     */
     HAL_GPIO_DeInit(GPIOD, GPIO_PIN_8|GPIO_PIN_9);
 
+    /* USART3 interrupt Deinit */
+    HAL_NVIC_DisableIRQ(USART3_IRQn);
   /* USER CODE BEGIN USART3_MspDeInit 1 */
 
   /* USER CODE END USART3_MspDeInit 1 */
@@ -114,8 +121,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 
 	BaseType_t pxHigherPriorityTaskWoken = pdFALSE;
-	HAL_UART_Receive_IT(&huart3, &dataByte, 1);
-	xTaskNotifyFromISR(vStartCmdTask, (uint32_t)dataByte, eSetBits, &pxHigherPriorityTaskWoken );
+	HAL_UART_Receive_IT(&huart3, &cRxedChar, 1);
+	xSemaphoreGiveFromISR(uartConfigSemHandle, &pxHigherPriorityTaskWoken);
 
 }
 /* USER CODE END 1 */

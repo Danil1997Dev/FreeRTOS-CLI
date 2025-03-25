@@ -30,12 +30,15 @@ extern "C" {
 
 /* USER CODE BEGIN Includes */
 #include "cmsis_os.h"
+#include "semphr.h"
 /* USER CODE END Includes */
 
 extern UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN Private defines */
 extern uint8_t dataByte;
+extern uint8_t *pDataByte;
+extern osSemaphoreId_t uartConfigSemHandle;
 /* USER CODE END Private defines */
 
 void MX_USART3_UART_Init(void);
