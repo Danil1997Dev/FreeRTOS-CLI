@@ -51,7 +51,7 @@ typedef StaticTask_t osStaticThreadDef_t;
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
 extern struct netif gnetif;
-extern int8_t cRxedChar;
+extern uint8_t cRxedChar;
 extern char cOutputBuffer[configCOMMAND_INT_MAX_OUTPUT_SIZE], pcInputString[MAX_INPUT_LENGTH];
 
 uint8_t buf[30];
@@ -265,10 +265,10 @@ void vStartCmdTask(void *argument)
 {
   /* USER CODE BEGIN vStartCmdTask */
     uint8_t cInputIndex = 0; // simply used to keep track of the index of the input string
-    uint32_t receivedValue; // used to store the received value from the notification
-    pDataByte = (uint8_t*)&cRxedChar;
+//    uint32_t receivedValue; // used to store the received value from the notification
+//    pDataByte = (uint8_t*)&cRxedChar;
     vRegisterCLICommands();
-    HAL_UART_Transmit(&huart3, (uint8_t*)"Start cmd\r\n", sizeof("Start cmd\r\n"), 0xffff);
+    HAL_UART_Transmit(&huart3, (uint8_t*)"Start cli\r\n", sizeof("Start cli\r\n"), 0xffff);
 
     for (;;)
     {

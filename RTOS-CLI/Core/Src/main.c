@@ -103,7 +103,7 @@ int main(void)
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
 // HAL_UART_Transmit(&huart3, (uint8_t *)"Start\n\r", sizeof("Start\n\r"), 0xffff);
-  HAL_UART_Receive_IT(&huart3, &dataByte, 1);
+  HAL_UART_Receive_IT(&huart3, pcRxedChar, 1);
   /* USER CODE END 2 */
 
   /* Init scheduler */

@@ -21,9 +21,8 @@
 #include "usart.h"
 
 /* USER CODE BEGIN 0 */
-uint8_t *pDataByte;
-uint8_t dataByte;
-extern int8_t cRxedChar;
+uint8_t *pcRxedChar = &cRxedChar;
+extern uint8_t cRxedChar;
 /* USER CODE END 0 */
 
 UART_HandleTypeDef huart3;
@@ -121,7 +120,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 
 	BaseType_t pxHigherPriorityTaskWoken = pdFALSE;
-	HAL_UART_Receive_IT(&huart3, &cRxedChar, 1);
+	HAL_UART_Receive_IT(&huart3, pcRxedChar, 1);
 	xSemaphoreGiveFromISR(uartConfigSemHandle, &pxHigherPriorityTaskWoken);
 
 }

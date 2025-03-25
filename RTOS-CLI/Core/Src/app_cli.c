@@ -11,7 +11,7 @@
 #include "app_cli.h"
 
 char cOutputBuffer[configCOMMAND_INT_MAX_OUTPUT_SIZE],pcInputString[MAX_INPUT_LENGTH];
-int8_t cRxedChar;
+uint8_t cRxedChar;
 const char * cli_prompt = "\r\ncli> ";
 /* CLI escape sequences*/
 uint8_t backspace[] = "\b \b";

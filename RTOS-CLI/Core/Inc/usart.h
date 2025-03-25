@@ -36,8 +36,8 @@ extern "C" {
 extern UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN Private defines */
-extern uint8_t dataByte;
-extern uint8_t *pDataByte;
+extern uint8_t *pcRxedChar;
+extern uint8_t cRxedChar;
 extern osSemaphoreId_t uartConfigSemHandle;
 /* USER CODE END Private defines */
 
