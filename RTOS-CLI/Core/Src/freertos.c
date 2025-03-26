@@ -55,6 +55,7 @@ extern uint8_t cRxedChar;
 extern char cOutputBuffer[configCOMMAND_INT_MAX_OUTPUT_SIZE], pcInputString[MAX_INPUT_LENGTH];
 
 uint8_t buf[30];
+
 /* USER CODE END Variables */
 /* Definitions for vInitTask */
 osThreadId_t vInitTaskHandle;
@@ -210,7 +211,6 @@ void StartInitTask(void *argument)
 //		  vCmdTaskHandle = osThreadNew(vStartCmdTask, NULL, &vCmdTask_attributes);
 //		  vClientTaskHandle = osThreadNew(StartClientTask, NULL, &vClientTask_attributes);
 
-		  vTaskResume((TaskHandle_t)vClientTaskHandle);
 		  vTaskResume((TaskHandle_t)vCmdTaskHandle);
 		  vTaskSuspend(NULL);
 
@@ -235,8 +235,8 @@ void StartClientTask(void *argument)
 
 	  s = lwip_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 	  remout_host.sin_family = AF_INET;
-	  remout_host.sin_port = htons(23);
-	  ip4addr_aton("192.168.0.10",(ip4_addr_t*)&remout_host.sin_addr);
+	  remout_host.sin_port = htons(remout_port);
+	  ip4addr_aton((char*)remout_ip,(ip4_addr_t*)&remout_host.sin_addr);
 	  lwip_connect(s, (struct sockaddr *)&remout_host, sizeof(struct sockaddr_in));
 	  lwip_write(s, "Hello\n\r", sizeof("Hello\n\r"));
 

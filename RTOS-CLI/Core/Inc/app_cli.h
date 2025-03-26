@@ -24,7 +24,9 @@
 #define USING_OTHER_TERMINAL 1 // e.g. Putty, TerraTerm
 
 extern const CLI_Command_Definition_t xCommandList[];
-
+extern uint8_t *remout_ip;
+extern uint16_t remout_port;
+extern osThreadId_t vClientTaskHandle;
 void processRxedChar(uint8_t rxChar);
 void handleNewline(const char *const pcInputString, char *cOutputBuffer, uint8_t *cInputIndex);
 void handleCharacterInput(uint8_t *cInputIndex, char *pcInputString);

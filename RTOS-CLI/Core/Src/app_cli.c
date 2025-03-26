@@ -13,6 +13,8 @@
 char cOutputBuffer[configCOMMAND_INT_MAX_OUTPUT_SIZE],pcInputString[MAX_INPUT_LENGTH];
 uint8_t cRxedChar;
 const char * cli_prompt = "\r\ncli> ";
+uint8_t *remout_ip = (char *)"192.168.000.010";
+uint16_t remout_port = 23;
 /* CLI escape sequences*/
 uint8_t backspace[] = "\b \b";
 uint8_t backspace_tt[] = " \b";
@@ -61,7 +63,7 @@ BaseType_t cmd_toggle_led(char *pcWriteBuffer, size_t xWriteBufferLen,
     return pdFALSE;
 }
 //*****************************************************************************
-BaseType_t cmd_add(char *pcWriteBuffer, size_t xWriteBufferLen,
+BaseType_t cmd_connect(char *pcWriteBuffer, size_t xWriteBufferLen,
                                  const char *pcCommandString)
 {
     const char *pcParameter1, *pcParameter2;
@@ -76,7 +78,7 @@ BaseType_t cmd_add(char *pcWriteBuffer, size_t xWriteBufferLen,
                           /* Return the first parameter. */
                           1,
                           /* Store the parameter string length. */
-                          &xParameter1StringLength
+						  &xParameter1StringLength
                         );
     pcParameter2 = FreeRTOS_CLIGetParameter
                         (
@@ -85,18 +87,14 @@ BaseType_t cmd_add(char *pcWriteBuffer, size_t xWriteBufferLen,
                           /* Return the first parameter. */
                           2,
                           /* Store the parameter string length. */
-                          &xParameter2StringLength
+						  &xParameter2StringLength
                         );
-    // convert the string to a number
-    int32_t xValue1 = strtol(pcParameter1, NULL, 10);
-    int32_t xValue2 = strtol(pcParameter2, NULL, 10);
-    // add the two numbers
-    int32_t xResultValue = xValue1 + xValue2;
-    // convert the result to a string
-    char cResultString[10];
-    itoa(xResultValue, cResultString, 10);
-    // copy the result to the write buffer
-    strcpy(pcWriteBuffer, cResultString);
+    remout_ip = (uint8_t*)pcParameter1;
+    *(remout_ip + 15) = '\0';
+    remout_port = (uint8_t)*pcParameter2;
+
+    vTaskResume((TaskHandle_t)vClientTaskHandle);
+
 
     return pdFALSE;
 }
@@ -115,9 +113,9 @@ const CLI_Command_Definition_t xCommandList[] = {
         .cExpectedNumberOfParameters = 0 /* No parameters are expected. */
     },
     {
-        .pcCommand = "add", /* The command string to type. */
-        .pcHelpString = "add n:\r\n add two numbers\r\n\r\n",
-        .pxCommandInterpreter = cmd_add, /* The function to run. */
+        .pcCommand = "connect", /* The command string to type. */
+        .pcHelpString = "connect:\r\n have two parameters\r\n -remout ip address\r\n -remout port\r\n\r\n",
+        .pxCommandInterpreter = cmd_connect, /* The function to run. */
         .cExpectedNumberOfParameters = 2 /* 2 parameters are expected. */
     },
     {
