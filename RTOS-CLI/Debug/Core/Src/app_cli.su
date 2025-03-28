@@ -1,9 +1,9 @@
 ../Core/Src/app_cli.c:25:5:_write	32	static
 ../Core/Src/app_cli.c:39:12:cmd_clearScreen	24	static
 ../Core/Src/app_cli.c:52:12:cmd_toggle_led	48	static
-../Core/Src/app_cli.c:69:12:cmd_connect	48	static
-../Core/Src/app_cli.c:144:6:vRegisterCLICommands	16	static
-../Core/Src/app_cli.c:152:6:cliWrite	16	static
-../Core/Src/app_cli.c:159:6:handleNewline	32	static
-../Core/Src/app_cli.c:175:6:handleBackspace	24	static
-../Core/Src/app_cli.c:197:6:handleCharacterInput	16	static
+../Core/Src/app_cli.c:69:12:cmd_connect	72	static
+../Core/Src/app_cli.c:133:6:vRegisterCLICommands	16	static
+../Core/Src/app_cli.c:141:6:cliWrite	16	static
+../Core/Src/app_cli.c:148:6:handleNewline	32	static
+../Core/Src/app_cli.c:164:6:handleBackspace	24	static
+../Core/Src/app_cli.c:186:6:handleCharacterInput	16	static

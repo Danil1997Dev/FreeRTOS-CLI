@@ -270,19 +270,19 @@ void StartClientTask(void *argument)
   /* USER CODE BEGIN StartClientTask */
   struct sockaddr_in remout_host;
   int s = 0;
-
+  cliWrite((char *)"Start client\r\n");
   /* Infinite loop */
   for(;;)
   {
 	xSemaphoreTake(connectSemHandle, portMAX_DELAY);
-	HAL_UART_Transmit(&huart3, (uint8_t*)"Start client\r\n", sizeof("Start client\r\n"), 0xffff);
-	  s = lwip_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+ 	  s = lwip_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 	  remout_host.sin_family = AF_INET;
 	  remout_host.sin_port = htons(remout_port);//remout_port
 	  ip4addr_aton((char*)remout_ip,(ip4_addr_t*)&remout_host.sin_addr);
 	  lwip_connect(s, (struct sockaddr *)&remout_host, sizeof(struct sockaddr_in));
 	  lwip_write(s, "Hello\n\r", sizeof("Hello\n\r"));
-    osDelay(50);
+	  cliWrite((char *)"Connected!\r\n");
+     osDelay(50);
   }
   /* USER CODE END StartClientTask */
 }

@@ -1,10 +1,10 @@
-17:38:45 **** Incremental Build of configuration Debug for project RTOS-CLI ****
+18:10:22 **** Incremental Build of configuration Debug for project RTOS-CLI ****
 make -j8 all 
 arm-none-eabi-size  RTOS-CLI.elf 
    text	   data	    bss	    dec	    hex	filename
- 155972	    536	  75592	 232100	  38aa4	RTOS-CLI.elf
+ 156020	    536	  75592	 232148	  38ad4	RTOS-CLI.elf
 Finished building: default.size.stdout
  
 
-17:38:46 Build Finished. 0 errors, 0 warnings. (took 1s.82ms)
+18:10:23 Build Finished. 0 errors, 0 warnings. (took 918ms)
 

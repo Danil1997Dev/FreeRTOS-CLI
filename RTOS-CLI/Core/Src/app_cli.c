@@ -69,7 +69,6 @@ BaseType_t cmd_toggle_led(char *pcWriteBuffer, size_t xWriteBufferLen,
 BaseType_t cmd_connect(char *pcWriteBuffer, size_t xWriteBufferLen,
                                  const char *pcCommandString)
 {
-	BaseType_t pxHigherPriorityTaskWoken = pdFALSE;
     const char *pcParameter1, *pcParameter2;
     BaseType_t xParameter1StringLength, xParameter2StringLength;
     char *addr_len;
@@ -100,19 +99,9 @@ BaseType_t cmd_connect(char *pcWriteBuffer, size_t xWriteBufferLen,
     addr_len = strstr(pcParameter1, " ");
     remout_ip = (char *)pcParameter1;
     *addr_len = '\0';
-
-    //		xSemaphoreTake(connectSemHandle, portMAX_DELAY);
-    //			  s = lwip_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
-    //			  remout_host.sin_family = AF_INET;
-    //			  remout_host.sin_port = htons(remout_port);//remout_port
-    //			  ip4addr_aton((char*)remout_ip,(ip4_addr_t*)&remout_host.sin_addr);
-    //			  lwip_connect(s, (struct sockaddr *)&remout_host, sizeof(struct sockaddr_in));
-    //			  lwip_write(s, "Hello\n\r", sizeof("Hello\n\r"));
-
-    //		lwip_recv(s, buf, 30, 0);
-    //		HAL_UART_Transmit(&huart3, buf, sizeof(buf), 0xffff);
-    //		memset(buf, (uint32_t)'\0', sizeof(buf));
-    xSemaphoreGive(connectSemHandle);//, &pxHigherPriorityTaskWoken);
+    uint8_t string[] = "Connection...\r\n";
+    strcpy(pcWriteBuffer, (char *)string);
+    xSemaphoreGive(connectSemHandle);
 
     return pdFALSE;
 }
