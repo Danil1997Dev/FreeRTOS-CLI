@@ -18,15 +18,17 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "usart.h"
+#include "cmsis_os.h"
+#include "semphr.h"
 
 #define MAX_INPUT_LENGTH 50
 #define USING_VS_CODE_TERMINAL 0
 #define USING_OTHER_TERMINAL 1 // e.g. Putty, TerraTerm
 
 extern const CLI_Command_Definition_t xCommandList[];
-extern uint8_t *remout_ip;
+extern char *remout_ip;
 extern uint16_t remout_port;
-extern osThreadId_t vClientTaskHandle;
+extern osSemaphoreId_t connectSemHandle;
 void processRxedChar(uint8_t rxChar);
 void handleNewline(const char *const pcInputString, char *cOutputBuffer, uint8_t *cInputIndex);
 void handleCharacterInput(uint8_t *cInputIndex, char *pcInputString);

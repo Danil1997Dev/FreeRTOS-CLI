@@ -59,7 +59,7 @@ uint8_t buf[30];
 /* USER CODE END Variables */
 /* Definitions for vInitTask */
 osThreadId_t vInitTaskHandle;
-uint32_t vInitTaskBuffer[ 2048 ];
+uint32_t vInitTaskBuffer[ 512 ];
 osStaticThreadDef_t vInitTaskControlBlock;
 const osThreadAttr_t vInitTask_attributes = {
   .name = "vInitTask",
@@ -68,18 +68,6 @@ const osThreadAttr_t vInitTask_attributes = {
   .stack_mem = &vInitTaskBuffer[0],
   .stack_size = sizeof(vInitTaskBuffer),
   .priority = (osPriority_t) osPriorityHigh,
-};
-/* Definitions for vClientTask */
-osThreadId_t vClientTaskHandle;
-uint32_t vClientTaskBuffer[ 512 ];
-osStaticThreadDef_t vClientTaskControlBlock;
-const osThreadAttr_t vClientTask_attributes = {
-  .name = "vClientTask",
-  .cb_mem = &vClientTaskControlBlock,
-  .cb_size = sizeof(vClientTaskControlBlock),
-  .stack_mem = &vClientTaskBuffer[0],
-  .stack_size = sizeof(vClientTaskBuffer),
-  .priority = (osPriority_t) osPriorityNormal,
 };
 /* Definitions for vCmdTask */
 osThreadId_t vCmdTaskHandle;
@@ -93,10 +81,22 @@ const osThreadAttr_t vCmdTask_attributes = {
   .stack_size = sizeof(vCmdTaskBuffer),
   .priority = (osPriority_t) osPriorityNormal,
 };
-/* Definitions for dhcpSem */
-osSemaphoreId_t dhcpSemHandle;
-const osSemaphoreAttr_t dhcpSem_attributes = {
-  .name = "dhcpSem"
+/* Definitions for vClientTask */
+osThreadId_t vClientTaskHandle;
+uint32_t vClientTaskBuffer[ 1024 ];
+osStaticThreadDef_t vClientTaskControlBlock;
+const osThreadAttr_t vClientTask_attributes = {
+  .name = "vClientTask",
+  .cb_mem = &vClientTaskControlBlock,
+  .cb_size = sizeof(vClientTaskControlBlock),
+  .stack_mem = &vClientTaskBuffer[0],
+  .stack_size = sizeof(vClientTaskBuffer),
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for connectSem */
+osSemaphoreId_t connectSemHandle;
+const osSemaphoreAttr_t connectSem_attributes = {
+  .name = "connectSem"
 };
 /* Definitions for uartConfigSem */
 osSemaphoreId_t uartConfigSemHandle;
@@ -110,8 +110,8 @@ const osSemaphoreAttr_t uartConfigSem_attributes = {
 /* USER CODE END FunctionPrototypes */
 
 void StartInitTask(void *argument);
-void StartClientTask(void *argument);
 void vStartCmdTask(void *argument);
+void StartClientTask(void *argument);
 
 extern void MX_LWIP_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
@@ -148,8 +148,8 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_MUTEX */
 
   /* Create the semaphores(s) */
-  /* creation of dhcpSem */
-  dhcpSemHandle = osSemaphoreNew(1, 0, &dhcpSem_attributes);
+  /* creation of connectSem */
+  connectSemHandle = osSemaphoreNew(1, 0, &connectSem_attributes);
 
   /* creation of uartConfigSem */
   uartConfigSemHandle = osSemaphoreNew(1, 0, &uartConfigSem_attributes);
@@ -170,11 +170,11 @@ void MX_FREERTOS_Init(void) {
   /* creation of vInitTask */
   vInitTaskHandle = osThreadNew(StartInitTask, NULL, &vInitTask_attributes);
 
-  /* creation of vClientTask */
-  vClientTaskHandle = osThreadNew(StartClientTask, NULL, &vClientTask_attributes);
-
   /* creation of vCmdTask */
   vCmdTaskHandle = osThreadNew(vStartCmdTask, NULL, &vCmdTask_attributes);
+
+  /* creation of vClientTask */
+  vClientTaskHandle = osThreadNew(StartClientTask, NULL, &vClientTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
 //  vTaskSuspend((TaskHandle_t)vClientTaskHandle);
@@ -199,8 +199,9 @@ void StartInitTask(void *argument)
   /* init code for LWIP */
   MX_LWIP_Init();
   /* USER CODE BEGIN StartInitTask */
-  vTaskSuspend((TaskHandle_t)vClientTaskHandle);
-  vTaskSuspend((TaskHandle_t)vCmdTaskHandle);
+//  osDelay(250);
+//  vTaskSuspend((TaskHandle_t)vClientTaskHandle);
+//  vTaskSuspend((TaskHandle_t)vCmdTaskHandle);
   HAL_Delay(10000);
 //  while (gnetif.ip_addr.addr == 0){};
   /* Infinite loop */
@@ -210,48 +211,15 @@ void StartInitTask(void *argument)
 	  {
 //		  vCmdTaskHandle = osThreadNew(vStartCmdTask, NULL, &vCmdTask_attributes);
 //		  vClientTaskHandle = osThreadNew(StartClientTask, NULL, &vClientTask_attributes);
+//		  vTaskResume((TaskHandle_t)StartClientTask);
+//		  vTaskResume((TaskHandle_t)vCmdTaskHandle);
 
-		  vTaskResume((TaskHandle_t)vCmdTaskHandle);
 		  vTaskSuspend(NULL);
 
 	  }
-      osDelay(10000);
+      osDelay(1);
   }
   /* USER CODE END StartInitTask */
-}
-
-/* USER CODE BEGIN Header_StartClientTask */
-/**
-* @brief Function implementing the vClientTask thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_StartClientTask */
-void StartClientTask(void *argument)
-{
-  /* USER CODE BEGIN StartClientTask */
-	  struct sockaddr_in remout_host;
-	  int s;
-
-	  s = lwip_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
-	  remout_host.sin_family = AF_INET;
-	  remout_host.sin_port = htons(remout_port);
-	  ip4addr_aton((char*)remout_ip,(ip4_addr_t*)&remout_host.sin_addr);
-	  lwip_connect(s, (struct sockaddr *)&remout_host, sizeof(struct sockaddr_in));
-	  lwip_write(s, "Hello\n\r", sizeof("Hello\n\r"));
-
-
-
-	  /* Infinite loop */
-	  for(;;)
-	  {
-//		lwip_recv(s, buf, 30, 0);
-//		HAL_UART_Transmit(&huart3, buf, sizeof(buf), 0xffff);
-//		memset(buf, (uint32_t)'\0', sizeof(buf));
-	    osDelay(1000);
-
-	  }
-  /* USER CODE END StartClientTask */
 }
 
 /* USER CODE BEGIN Header_vStartCmdTask */
@@ -265,15 +233,12 @@ void vStartCmdTask(void *argument)
 {
   /* USER CODE BEGIN vStartCmdTask */
     uint8_t cInputIndex = 0; // simply used to keep track of the index of the input string
-//    uint32_t receivedValue; // used to store the received value from the notification
-//    pDataByte = (uint8_t*)&cRxedChar;
     vRegisterCLICommands();
     HAL_UART_Transmit(&huart3, (uint8_t*)"Start cli\r\n", sizeof("Start cli\r\n"), 0xffff);
 
     for (;;)
     {
-  	  if (xSemaphoreTake(uartConfigSemHandle, portMAX_DELAY))
-  	  {
+  	    xSemaphoreTake(uartConfigSemHandle, portMAX_DELAY);
         //echo recevied char
 //        cRxedChar = receivedValue & 0xFF;
 
@@ -288,10 +253,38 @@ void vStartCmdTask(void *argument)
             // user pressed a character add it to the input string
             handleCharacterInput(&cInputIndex, pcInputString);
         }
-  	  }
         osDelay(100);
     }
   /* USER CODE END vStartCmdTask */
+}
+
+/* USER CODE BEGIN Header_StartClientTask */
+/**
+* @brief Function implementing the vClientTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartClientTask */
+void StartClientTask(void *argument)
+{
+  /* USER CODE BEGIN StartClientTask */
+  struct sockaddr_in remout_host;
+  int s = 0;
+
+  /* Infinite loop */
+  for(;;)
+  {
+	xSemaphoreTake(connectSemHandle, portMAX_DELAY);
+	HAL_UART_Transmit(&huart3, (uint8_t*)"Start client\r\n", sizeof("Start client\r\n"), 0xffff);
+	  s = lwip_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+	  remout_host.sin_family = AF_INET;
+	  remout_host.sin_port = htons(remout_port);//remout_port
+	  ip4addr_aton((char*)remout_ip,(ip4_addr_t*)&remout_host.sin_addr);
+	  lwip_connect(s, (struct sockaddr *)&remout_host, sizeof(struct sockaddr_in));
+	  lwip_write(s, "Hello\n\r", sizeof("Hello\n\r"));
+    osDelay(50);
+  }
+  /* USER CODE END StartClientTask */
 }
 
 /* Private application code --------------------------------------------------*/
