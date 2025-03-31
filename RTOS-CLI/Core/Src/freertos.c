@@ -30,6 +30,7 @@
 #include "FreeRTOS_CLI.h"
 #include "socket.h"
 #include "semphr.h"
+#include "ssl_client.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -235,6 +236,7 @@ void vStartCmdTask(void *argument)
     uint8_t cInputIndex = 0; // simply used to keep track of the index of the input string
     vRegisterCLICommands();
     HAL_UART_Transmit(&huart3, (uint8_t*)"Start cli\r\n", sizeof("Start cli\r\n"), 0xffff);
+    cliWrite(cli_prompt);
 
     for (;;)
     {
@@ -279,9 +281,10 @@ void StartClientTask(void *argument)
 	  remout_host.sin_family = AF_INET;
 	  remout_host.sin_port = htons(remout_port);//remout_port
 	  ip4addr_aton((char*)remout_ip,(ip4_addr_t*)&remout_host.sin_addr);
-	  lwip_connect(s, (struct sockaddr *)&remout_host, sizeof(struct sockaddr_in));
-	  lwip_write(s, "Hello\n\r", sizeof("Hello\n\r"));
-	  cliWrite((char *)"Connected!\r\n");
+	  ssl_client(&s, &remout_host);
+//	  lwip_connect(s, (struct sockaddr *)&remout_host, sizeof(struct sockaddr_in));
+//	  lwip_write(s, "Hello\n\r", sizeof("Hello\n\r"));
+	  cliWrite((char *)"\r\nConnected!\r\n");
      osDelay(50);
   }
   /* USER CODE END StartClientTask */

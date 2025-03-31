@@ -97,8 +97,8 @@ BaseType_t cmd_connect(char *pcWriteBuffer, size_t xWriteBufferLen,
 
     remout_port = atoi(pcParameter2);
     addr_len = strstr(pcParameter1, " ");
-    remout_ip = (char *)pcParameter1;
     *addr_len = '\0';
+    remout_ip = (char *)pcParameter1;
     uint8_t string[] = "Connection...\r\n";
     strcpy(pcWriteBuffer, (char *)string);
     xSemaphoreGive(connectSemHandle);
