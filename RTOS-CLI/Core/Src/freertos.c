@@ -203,7 +203,7 @@ void StartInitTask(void *argument)
 //  osDelay(250);
 //  vTaskSuspend((TaskHandle_t)vClientTaskHandle);
 //  vTaskSuspend((TaskHandle_t)vCmdTaskHandle);
-  HAL_Delay(10000);
+  HAL_Delay(20000);
 //  while (gnetif.ip_addr.addr == 0){};
   /* Infinite loop */
   for(;;)
@@ -279,8 +279,8 @@ void StartClientTask(void *argument)
 	xSemaphoreTake(connectSemHandle, portMAX_DELAY);
  	  s = lwip_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 	  remout_host.sin_family = AF_INET;
-	  remout_host.sin_port = htons(remout_port);//remout_port
-	  ip4addr_aton((char*)remout_ip,(ip4_addr_t*)&remout_host.sin_addr);
+	  remout_host.sin_port = htons(remout_port);//remout_port//23
+	  ip4addr_aton((char*)remout_ip,(ip4_addr_t*)&remout_host.sin_addr);//"192.168.0.10"
 	  ssl_client(&s, &remout_host);
 //	  lwip_connect(s, (struct sockaddr *)&remout_host, sizeof(struct sockaddr_in));
 //	  lwip_write(s, "Hello\n\r", sizeof("Hello\n\r"));

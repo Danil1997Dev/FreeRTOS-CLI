@@ -8,6 +8,7 @@
 
 #include <wolfssl/options.h>
 #include <wolfssl/ssl.h>
+#include "wolfssl/openssl/ssl.h"
 //#include <wolfssl/test.h>
 #include <errno.h>
 #define SERV_PORT 11111
@@ -19,7 +20,7 @@ int ssl_client(int *sockfd, struct sockaddr_in *servAddr)
     WOLFSSL* ssl;
     WOLFSSL_METHOD* method;
 //    struct  sockaddr_in servAddr;
-    const char message[] = "Hello, World!";
+    const char message[] = "Hello, World!--------------------------------";
 
 //    /* create and set up socket */
 //    sockfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -44,18 +45,21 @@ int ssl_client(int *sockfd, struct sockaddr_in *servAddr)
     }
 
     /* connect to socket */
-    connect(*sockfd, (struct sockaddr *) servAddr, sizeof(*servAddr));
+    lwip_connect(*sockfd, (struct sockaddr *) servAddr, sizeof(*servAddr));
+//    lwip_write(*sockfd, "C-------------------------------------\n\r", sizeof("C-------------------------------------\n\r"));
 
     /* Add cert to ctx */
-//    if (wolfSSL_CTX_load_verify_locations(ctx, "cacert.pem", 0) != SSL_SUCCESS) {
+//    if (wolfSSL_CTX_load_verify_locations(ctx, "./ca-cert.pem", 0) != SSL_SUCCESS) {
 //        printf("Failed to wolfSSL_CTX_load_verify_locations\n");
 //        goto exit;
 //    }
 
     /* Connect wolfssl to the socket, server, then send message */
     wolfSSL_set_fd(ssl, *sockfd);
-//    wolfSSL_connect(ssl);
-    wolfSSL_write(ssl, message, strlen(message));
+    wolfSSL_connect(ssl);
+//    lwip_write(*sockfd, "W-------------------------------------\n\r", sizeof("W-------------------------------------\n\r"));
+//    wolfSSL_write(ssl, message, strlen(message));
+//    lwip_write(*sockfd, "-------------------------------------\n\r", sizeof("-------------------------------------\n\r"));
 
     /* frees all data before client termination */
 exit:
