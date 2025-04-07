@@ -27,7 +27,7 @@
 
 /**
     MiddleWare name : wolfSSL.I-CUBE-wolfSSL.5.7.4
-    MiddleWare fileName : wolfSSL.I-CUBE-wolfSSL_conf.h
+    MiddleWare fileName : ./wolfSSL.I-CUBE-wolfSSL_conf.h
     MiddleWare version :
 */
 /*---------- WOLF_CONF_DEBUG -----------*/
@@ -97,13 +97,13 @@
 #define WOLF_CONF_SHA3      0
 
 /*---------- WOLF_CONF_PSK -----------*/
-#define WOLF_CONF_PSK      0
+#define WOLF_CONF_PSK      1
 
 /*---------- WOLF_CONF_PWDBASED -----------*/
 #define WOLF_CONF_PWDBASED      0
 
 /*---------- WOLF_CONF_KEEP_PEER_CERT -----------*/
-#define WOLF_CONF_KEEP_PEER_CERT      0
+#define WOLF_CONF_KEEP_PEER_CERT      1
 
 /*---------- WOLF_CONF_BASE64_ENCODE -----------*/
 #define WOLF_CONF_BASE64_ENCODE      0
@@ -124,7 +124,7 @@
 #define WOLF_CONF_IO      2
 
 /*---------- WOLF_CONF_RESUMPTION -----------*/
-#define WOLF_CONF_RESUMPTION      0
+#define WOLF_CONF_RESUMPTION      1
 
 /*---------- WOLF_CONF_TPM -----------*/
 #define WOLF_CONF_TPM      0

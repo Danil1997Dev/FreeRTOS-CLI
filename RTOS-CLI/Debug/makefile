@@ -17,6 +17,9 @@ RM := rm -rf
 -include Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfcrypt/benchmark/subdir.mk
 -include Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/subdir.mk
 -include Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/IDE/STM32Cube/subdir.mk
+-include Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/tests/subdir.mk
+-include Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/subdir.mk
+-include Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/ide/STM32CUBE/subdir.mk
 -include Middlewares/Third_Party/LwIP/system/OS/subdir.mk
 -include Middlewares/Third_Party/LwIP/src/netif/ppp/subdir.mk
 -include Middlewares/Third_Party/LwIP/src/netif/subdir.mk

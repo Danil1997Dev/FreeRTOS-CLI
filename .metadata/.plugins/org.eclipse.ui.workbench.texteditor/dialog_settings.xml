@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="load"/>
+		<item key="selection" value="%u"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="%d"/>
+			<item value="cli_msg"/>
+			<item value="\r\n\0"/>
+			<item value="printf("/>
+			<item value="\r\n"/>
+			<item value="UART_Printf("/>
+			<item value="text"/>
 			<item value="load"/>
 			<item value="version"/>
 			<item value="Hello"/>
@@ -16,12 +23,14 @@
 			<item value="ssl"/>
 			<item value="load_verify_locations"/>
 			<item value="wolfSSL_CTX_load_verify_locations"/>
-			<item value="DTLS"/>
-			<item value="cOutputBuffer"/>
-			<item value="Susp"/>
-			<item value="wolfTLSv1_3_client_method"/>
 		</list>
 		<list key="replacehistory">
+			<item value="%u"/>
+			<item value="(char *)cli_msg"/>
+			<item value="\r\n"/>
+			<item value="sprintf(cli_msg,"/>
+			<item value="\r\n\0"/>
+			<item value="data"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

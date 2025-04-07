@@ -44,6 +44,9 @@ Middlewares/Third_Party/LwIP/src/core/ipv6 \
 Middlewares/Third_Party/LwIP/src/netif \
 Middlewares/Third_Party/LwIP/src/netif/ppp \
 Middlewares/Third_Party/LwIP/system/OS \
+Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/ide/STM32CUBE \
+Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src \
+Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/tests \
 Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/IDE/STM32Cube \
 Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src \
 Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfcrypt/benchmark \

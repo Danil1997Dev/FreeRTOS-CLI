@@ -1,0 +1,12 @@
+/*
+ * cert.c
+ *
+ *  Created on: Apr 5, 2025
+ *      Author: user
+ */
+
+
+const char* root_cert_pem =
+"-----BEGIN CERTIFICATE-----\n"
+"MIID...твоя цепочка...\n"
+"-----END CERTIFICATE-----\n";

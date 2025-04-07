@@ -24,7 +24,7 @@ FATFS SDFatFS;    /* File system object for SD logical drive */
 FIL SDFile;       /* File object for SD */
 
 /* USER CODE BEGIN Variables */
-
+FATFS fs;
 /* USER CODE END Variables */
 
 void MX_FATFS_Init(void)
@@ -50,5 +50,119 @@ DWORD get_fattime(void)
 }
 
 /* USER CODE BEGIN Application */
+FRESULT mount_fs(FATFS *fs, uint8_t opt)
+{
+	FRESULT res;
+	DWORD sizeClaster;
+	FATFS* pfs = fs;
+	char *cli_msg;
 
+	switch (opt) {
+		case 1:
+		    portTICK_TYPE_ENTER_CRITICAL();
+		    {
+			res = f_mount(fs, (TCHAR const*)SDPath, 1);
+		    }
+			portTICK_TYPE_EXIT_CRITICAL();
+			if (res != FR_OK)
+			{
+				sprintf(cli_msg,"Fail of mount\r\n");
+				return res;
+			}
+			sprintf(cli_msg,"Mount success\r\n");
+			DWORD sizeClaster;
+
+			res = f_getfree((TCHAR const*)SDPath, &sizeClaster, &pfs);
+			if (res == FR_OK)
+			{
+				sprintf(cli_msg,"free size = %u\r\n", sizeClaster);
+				return res;
+			}
+			break;
+		case 2:
+		    portTICK_TYPE_ENTER_CRITICAL();
+		    {
+			res = f_mount(NULL, (TCHAR const*)SDPath, 1);
+			}
+			portTICK_TYPE_EXIT_CRITICAL();
+			if (res != FR_OK)
+			{
+				sprintf(cli_msg,"Fail of unmount\r\n\a");
+				return res;
+			}
+
+			sprintf(cli_msg,"Unmount was success\r\n");
+			break;
+		default:
+			break;
+	}
+
+	return res;
+}
+
+FRESULT write_fs(uint8_t *name_file, uint8_t *data)
+{
+	FRESULT res;
+	char *cli_msg;
+    FIL logFile;
+
+    res = f_open(&logFile, (char *)name_file, FA_OPEN_APPEND | FA_WRITE);
+    if(res != FR_OK) {
+    	sprintf(cli_msg,"f_open() failed, res = %u\r\n\0", res);
+        return res;
+    }
+
+    unsigned int bytesWritten;
+    res = f_write(&logFile, data, (UINT)strlen(data), &bytesWritten);
+    if(res != FR_OK) {
+    	sprintf(cli_msg,"f_write() failed, res = %u\r\n", res);
+        return res;
+    }
+
+    res = f_close(&logFile);
+    if(res != FR_OK) {
+    	sprintf(cli_msg,"f_close() failed, res = %u\r\n", res);
+        return res;
+    }
+
+    sprintf(cli_msg,"In file '%s' ",(char *)name_file);
+//    sprintf(cli_msg,"In file '");
+//    sprintf(cli_msg,(char *)name);
+    sprintf(cli_msg,"' was writhed %u letters\r\n", strlen(data));
+
+    return res;
+}
+
+FRESULT read_fs(uint8_t *name_file, uint8_t *data)
+{
+	FRESULT res;
+	char *cli_msg;
+    FIL logFile;
+
+    res = f_open(&logFile, (char *)name_file, FA_OPEN_APPEND | FA_READ);
+    if(res != FR_OK) {
+        sprintf(cli_msg,"f_open() failed, res = %u\r\n", res);
+        return res;
+    }
+
+    unsigned int bytesReading;
+    res = f_read(&logFile, data, (UINT)strlen(data), &bytesReading);
+    if(res != FR_OK) {
+    	sprintf(cli_msg,"f_read() failed, res = %u\r\n", res);
+        return res;
+    }
+
+    res = f_close(&logFile);
+    if(res != FR_OK) {
+    	sprintf(cli_msg,"f_close() failed, res = %u\r\n", res);
+        return res;
+    }
+
+    sprintf(cli_msg,"From file '%s' ",(char *)name_file);
+//    sprintf(cli_msg,"In file '");
+//    sprintf(cli_msg,(char *)name);
+    sprintf(cli_msg," was reading %u letters\r\n", strlen(data));
+
+    return res;
+}
 /* USER CODE END Application */

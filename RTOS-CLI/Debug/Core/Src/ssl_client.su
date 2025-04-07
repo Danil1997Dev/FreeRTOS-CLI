@@ -1,1 +1,2 @@
-../Core/Src/ssl_client.c:16:5:ssl_client	88	static
+../Core/Src/ssl_client.c:13:5:ssl_client	88	static
+../Core/Src/ssl_client.c:78:5:load_cert	16	static

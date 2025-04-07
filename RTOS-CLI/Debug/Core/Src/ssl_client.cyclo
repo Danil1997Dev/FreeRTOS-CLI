@@ -1,1 +1,2 @@
-../Core/Src/ssl_client.c:16:5:ssl_client	3
+../Core/Src/ssl_client.c:13:5:ssl_client	4
+../Core/Src/ssl_client.c:78:5:load_cert	1

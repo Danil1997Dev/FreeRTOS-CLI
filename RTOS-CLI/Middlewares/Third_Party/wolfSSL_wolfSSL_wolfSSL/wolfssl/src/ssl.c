@@ -9329,8 +9329,6 @@ int wolfSSL_DTLS_SetCookieSecret(WOLFSSL* ssl,
         if (ssl == NULL)
             return BAD_FUNC_ARG;
 
-//        ssl->version.major = (byte)0x03;
-//        ssl->version.minor = (byte)0x01;
     #if defined(OPENSSL_EXTRA) || defined(WOLFSSL_EITHER_SIDE)
         if (ssl->options.side == WOLFSSL_NEITHER_END) {
             ssl->error = InitSSL_Side(ssl, WOLFSSL_CLIENT_END);

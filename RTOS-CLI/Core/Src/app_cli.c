@@ -49,18 +49,41 @@ BaseType_t cmd_clearScreen(char *pcWriteBuffer, size_t xWriteBufferLen,
     return pdFALSE;
 }
 //*****************************************************************************
-BaseType_t cmd_toggle_led(char *pcWriteBuffer, size_t xWriteBufferLen,
+BaseType_t cmd_fs(char *pcWriteBuffer, size_t xWriteBufferLen,
                                  const char *pcCommandString)
 {
-    (void)pcCommandString; // comntains the command string
-    (void)xWriteBufferLen; // contains the length of the write buffer
+    const char *pcParameter1;
+    BaseType_t xParameter1StringLength;
 
-    /* Toggle the LED */
-    //ToggleLED();
+    /* Obtain the name of the source file, and the length of its name, from
+    the command string. The name of the source file is the first parameter. */
+    pcParameter1 = FreeRTOS_CLIGetParameter
+                        (
+                          /* The command string itself. */
+                          pcCommandString,
+                          /* Return the first parameter. */
+                          1,
+                          /* Store the parameter string length. */
+						  &xParameter1StringLength
+                        );
 
+    if (pcParameter1 == (const char *)"-m")
+    {
+    	mount_fs(&fs, FS_MOUNT);
 
-    /* Write the response to the buffer */
-    uint8_t string[] = "LED toggled\r\n";
+    }
+    else if (pcParameter1 == (const char *)"-u")
+    {
+    	mount_fs(&fs, FS_UNMOUNT);
+
+    }
+    else
+    {
+
+    	strcpy(pcWriteBuffer, (char *)"incorrect parameter");
+    }
+    xSemaphoreGive(fsSemHandle);
+    uint8_t string[] = "\r\nfs comlited\r\n";
     strcpy(pcWriteBuffer, (char *)string);
 
     return pdFALSE;
@@ -99,9 +122,10 @@ BaseType_t cmd_connect(char *pcWriteBuffer, size_t xWriteBufferLen,
     addr_len = strstr(pcParameter1, " ");
     *addr_len = '\0';
     remout_ip = (char *)pcParameter1;
-    uint8_t string[] = "Connection...\r\n";
-    strcpy(pcWriteBuffer, (char *)string);
+    uint8_t string[] = "\r\nConnected!\r\n";
+    cliWrite((char *)"Connection...\r\n");
     xSemaphoreGive(connectSemHandle);
+    strcpy(pcWriteBuffer, (char *)string);
 
     return pdFALSE;
 }
@@ -114,14 +138,18 @@ const CLI_Command_Definition_t xCommandList[] = {
         .cExpectedNumberOfParameters = 0 /* No parameters are expected. */
     },
     {
-        .pcCommand = "toggleled", /* The command string to type. */
-        .pcHelpString = "toggleled n:\r\n toggles led n amount of times\r\n\r\n",
-        .pxCommandInterpreter = cmd_toggle_led, /* The function to run. */
-        .cExpectedNumberOfParameters = 0 /* No parameters are expected. */
+        .pcCommand = "fs", /* The command string to type. */
+        .pcHelpString = "fs:\r\n"
+        		"have one parameter with value:\r\n"
+        		" mount (-m) or unmount (-u) file system\r\n\r\n",
+        .pxCommandInterpreter = cmd_fs, /* The function to run. */
+        .cExpectedNumberOfParameters = 1 /* No parameters are expected. */
     },
     {
         .pcCommand = "connect", /* The command string to type. */
-        .pcHelpString = "connect:\r\n have two parameters\r\n -remout ip address\r\n -remout port\r\n\r\n",
+        .pcHelpString = "connect:\r\n"
+        		" have two parameters\r\n -remout ip address\r\n"
+        		" -remout port\r\n\r\n",
         .pxCommandInterpreter = cmd_connect, /* The function to run. */
         .cExpectedNumberOfParameters = 2 /* 2 parameters are expected. */
     },

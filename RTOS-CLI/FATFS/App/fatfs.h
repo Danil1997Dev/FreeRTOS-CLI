@@ -28,7 +28,8 @@
 #include "sd_diskio.h" /* defines SD_Driver as external */
 
 /* USER CODE BEGIN Includes */
-
+#include "printf_uart.h"
+#include "stdlib.h"
 /* USER CODE END Includes */
 
 extern uint8_t retSD; /* Return value for SD */
@@ -40,6 +41,26 @@ void MX_FATFS_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
+
+typedef enum{
+
+	FS_MOUNT = 1,
+	FS_UNMOUNT = 2
+} opt_mount_t;
+
+typedef struct{
+	uint8_t func;
+	uint8_t opt;
+	char *pRcv;
+	char *pTrsmt;
+}fatfs_struct_t;
+
+#define OPTTYP opt_mount_t
+FRESULT mount_fs(FATFS *fs, OPTTYP opt);
+FRESULT write_fs(uint8_t *name_file, uint8_t *data);
+FRESULT read_fs(uint8_t *name_file, uint8_t *data);
+
+extern FATFS fs;
 /* USER CODE END Prototypes */
 #ifdef __cplusplus
 }

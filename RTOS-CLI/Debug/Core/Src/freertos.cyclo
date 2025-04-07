@@ -1,6 +1,7 @@
-../Core/Src/freertos.c:126:13:configureTimerForRunTimeStats	1
-../Core/Src/freertos.c:131:22:getRunTimeCounterValue	1
-../Core/Src/freertos.c:142:6:MX_FREERTOS_Init	1
-../Core/Src/freertos.c:198:6:StartInitTask	2
-../Core/Src/freertos.c:233:6:vStartCmdTask	3
-../Core/Src/freertos.c:270:6:StartClientTask	1
+../Core/Src/freertos.c:162:13:configureTimerForRunTimeStats	1
+../Core/Src/freertos.c:167:22:getRunTimeCounterValue	1
+../Core/Src/freertos.c:178:6:MX_FREERTOS_Init	1
+../Core/Src/freertos.c:247:6:vStartInitTask	1
+../Core/Src/freertos.c:267:6:vStartCmdTask	3
+../Core/Src/freertos.c:304:6:vStartClientTask	1
+../Core/Src/freertos.c:322:6:vStartFatFSTask	2

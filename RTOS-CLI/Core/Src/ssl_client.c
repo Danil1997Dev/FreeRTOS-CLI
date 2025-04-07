@@ -6,12 +6,9 @@
  */
 
 
-#include <wolfssl/options.h>
-#include <wolfssl/ssl.h>
-#include "wolfssl/openssl/ssl.h"
-//#include <wolfssl/test.h>
-#include <errno.h>
-#define SERV_PORT 11111
+#include "ssl_client.h"
+
+char* root_cert_pem;
 
 int ssl_client(int *sockfd, struct sockaddr_in *servAddr)
 {
@@ -19,6 +16,7 @@ int ssl_client(int *sockfd, struct sockaddr_in *servAddr)
     WOLFSSL_CTX* ctx;
     WOLFSSL* ssl;
     WOLFSSL_METHOD* method;
+    char *cli_msg;
 //    struct  sockaddr_in servAddr;
     const char message[] = "Hello, World!--------------------------------";
 
@@ -34,25 +32,30 @@ int ssl_client(int *sockfd, struct sockaddr_in *servAddr)
 
     /* make new ssl context */
     if ((ctx = wolfSSL_CTX_new(method)) == NULL) {
-        printf("Failed to wolfSSL_CTX_new\n");
+        sprintf(cli_msg,"Failed to wolfSSL_CTX_new\n");
         goto cleanup;
     }
 
     /* make new wolfSSL struct */
     if ((ssl = wolfSSL_new(ctx)) == NULL) {
-        printf("Failed to wolfSSL_new\n");
+        sprintf(cli_msg,"Failed to wolfSSL_new\n");
         goto free_ctx;
     }
+
+
+    /* Add cert to ctx */
+    if (load_cert(ctx, root_cert_pem) != SSL_SUCCESS) {
+        sprintf(cli_msg,"Failed to wolfSSL_CTX_load_verify_locations\n");
+        goto exit;
+    }
+    cliWrite(root_cert_pem);
+
 
     /* connect to socket */
     lwip_connect(*sockfd, (struct sockaddr *) servAddr, sizeof(*servAddr));
 //    lwip_write(*sockfd, "C-------------------------------------\n\r", sizeof("C-------------------------------------\n\r"));
 
-    /* Add cert to ctx */
-//    if (wolfSSL_CTX_load_verify_locations(ctx, "./ca-cert.pem", 0) != SSL_SUCCESS) {
-//        printf("Failed to wolfSSL_CTX_load_verify_locations\n");
-//        goto exit;
-//    }
+
 
     /* Connect wolfssl to the socket, server, then send message */
     wolfSSL_set_fd(ssl, *sockfd);
@@ -70,4 +73,24 @@ free_ctx:
 cleanup:
     wolfSSL_Cleanup();
     return 0;
+}
+
+int load_cert(WOLFSSL_CTX *ctx, char *root_cert_pem)
+{
+	char *cli_msg;
+
+	mount_fs(&fs, FS_MOUNT);
+
+	read_fs((uint8_t *)"cacert.pem", (uint8_t *)root_cert_pem);
+
+//	xSemaphoreGive(fsSemHandle);
+
+//	xQueueReceive(structFSQueueHandle, pvBuffer, portMAX_DELAY);
+
+
+
+    return wolfSSL_CTX_load_verify_buffer(ctx,
+            (const unsigned char*)root_cert_pem,
+            strlen(root_cert_pem),
+            SSL_FILETYPE_PEM) ;
 }

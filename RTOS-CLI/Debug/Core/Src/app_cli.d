@@ -46,9 +46,15 @@ Core/Src/app_cli.o: ../Core/Src/app_cli.c ../Core/Inc/app_cli.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- ../LWIP/App/lwip.h \
+ ../FATFS/App/fatfs.h ../Middlewares/Third_Party/FatFs/src/ff.h \
+ ../Middlewares/Third_Party/FatFs/src/integer.h ../FATFS/Target/ffconf.h \
+ ../Core/Inc/main.h ../FATFS/Target/bsp_driver_sd.h \
+ ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
+ ../Middlewares/Third_Party/FatFs/src/diskio.h \
+ ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
+ ../Core/Inc/printf_uart.h ../LWIP/App/lwip.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h \
- ../LWIP/Target/lwipopts.h ../Core/Inc/main.h \
+ ../LWIP/Target/lwipopts.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h \
  ../Middlewares/Third_Party/LwIP/system/arch/cc.h \
@@ -140,10 +146,20 @@ Core/Src/app_cli.o: ../Core/Src/app_cli.c ../Core/Inc/app_cli.h \
 ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
+../FATFS/App/fatfs.h:
+../Middlewares/Third_Party/FatFs/src/ff.h:
+../Middlewares/Third_Party/FatFs/src/integer.h:
+../FATFS/Target/ffconf.h:
+../Core/Inc/main.h:
+../FATFS/Target/bsp_driver_sd.h:
+../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h:
+../Middlewares/Third_Party/FatFs/src/diskio.h:
+../Middlewares/Third_Party/FatFs/src/ff.h:
+../FATFS/Target/sd_diskio.h:
+../Core/Inc/printf_uart.h:
 ../LWIP/App/lwip.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h:
 ../LWIP/Target/lwipopts.h:
-../Core/Inc/main.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h:
 ../Middlewares/Third_Party/LwIP/system/arch/cc.h:

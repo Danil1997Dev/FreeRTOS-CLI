@@ -1,4 +1,4 @@
-Core/Src/ssl_client.o: ../Core/Src/ssl_client.c \
+Core/Src/ssl_client.o: ../Core/Src/ssl_client.c ../Core/Inc/ssl_client.h \
  ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/options.h \
  ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/ssl.h \
  ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfcrypt/settings.h \
@@ -124,7 +124,17 @@ Core/Src/ssl_client.o: ../Core/Src/ssl_client.c \
  ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/openssl/ecdsa.h \
  ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/openssl/pkcs7.h \
  ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfcrypt/pkcs7.h \
- ../Middlewares/Third_Party/LwIP/src/include/lwip/errno.h
+ ../Middlewares/Third_Party/LwIP/src/include/lwip/errno.h \
+ ../FATFS/App/fatfs.h ../Middlewares/Third_Party/FatFs/src/ff.h \
+ ../Middlewares/Third_Party/FatFs/src/integer.h ../FATFS/Target/ffconf.h \
+ ../FATFS/Target/bsp_driver_sd.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+ ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
+ ../Middlewares/Third_Party/FatFs/src/diskio.h \
+ ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
+ ../Core/Inc/printf_uart.h ../Core/Inc/main.h
+../Core/Inc/ssl_client.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/options.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/ssl.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfcrypt/settings.h:
@@ -252,3 +262,16 @@ Core/Src/ssl_client.o: ../Core/Src/ssl_client.c \
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/openssl/pkcs7.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfcrypt/pkcs7.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/errno.h:
+../FATFS/App/fatfs.h:
+../Middlewares/Third_Party/FatFs/src/ff.h:
+../Middlewares/Third_Party/FatFs/src/integer.h:
+../FATFS/Target/ffconf.h:
+../FATFS/Target/bsp_driver_sd.h:
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h:
+../Middlewares/Third_Party/FatFs/src/diskio.h:
+../Middlewares/Third_Party/FatFs/src/ff.h:
+../FATFS/Target/sd_diskio.h:
+../Core/Inc/printf_uart.h:
+../Core/Inc/main.h:

@@ -48,7 +48,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
- ../LWIP/App/lwip.h \
+ ../Core/Inc/printf_uart.h ../Core/Inc/main.h ../LWIP/App/lwip.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h \
  ../LWIP/Target/lwipopts.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h \
@@ -88,8 +88,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/LwIP/system/arch/sys_arch.h \
  ../LWIP/Target/ethernetif.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/tcpip.h \
- ../Core/Inc/rng.h ../Core/Inc/main.h ../Core/Inc/sdio.h \
- ../Core/Inc/tim.h ../Core/Inc/usart.h \
+ ../Core/Inc/rng.h ../Core/Inc/sdio.h ../Core/Inc/tim.h \
+ ../Core/Inc/usart.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
@@ -151,6 +151,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Middlewares/Third_Party/FatFs/src/diskio.h:
 ../Middlewares/Third_Party/FatFs/src/ff.h:
 ../FATFS/Target/sd_diskio.h:
+../Core/Inc/printf_uart.h:
+../Core/Inc/main.h:
 ../LWIP/App/lwip.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h:
 ../LWIP/Target/lwipopts.h:
@@ -192,7 +194,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../LWIP/Target/ethernetif.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/tcpip.h:
 ../Core/Inc/rng.h:
-../Core/Inc/main.h:
 ../Core/Inc/sdio.h:
 ../Core/Inc/tim.h:
 ../Core/Inc/usart.h:

@@ -20,6 +20,7 @@
 #include "usart.h"
 #include "cmsis_os.h"
 #include "semphr.h"
+#include "fatfs.h"
 
 #define MAX_INPUT_LENGTH 50
 #define USING_VS_CODE_TERMINAL 0
@@ -30,6 +31,7 @@ extern char *remout_ip;
 extern uint16_t remout_port;
 extern osSemaphoreId_t connectSemHandle;
 extern const char * cli_prompt;
+extern osSemaphoreId_t fsSemHandle;
 void processRxedChar(uint8_t rxChar);
 void handleNewline(const char *const pcInputString, char *cOutputBuffer, uint8_t *cInputIndex);
 void handleCharacterInput(uint8_t *cInputIndex, char *pcInputString);

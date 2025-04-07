@@ -1,9 +1,9 @@
 ../Core/Src/app_cli.c:25:5:_write	2
 ../Core/Src/app_cli.c:39:12:cmd_clearScreen	1
-../Core/Src/app_cli.c:52:12:cmd_toggle_led	1
-../Core/Src/app_cli.c:69:12:cmd_connect	1
-../Core/Src/app_cli.c:133:6:vRegisterCLICommands	2
-../Core/Src/app_cli.c:141:6:cliWrite	1
-../Core/Src/app_cli.c:148:6:handleNewline	2
-../Core/Src/app_cli.c:164:6:handleBackspace	2
-../Core/Src/app_cli.c:186:6:handleCharacterInput	5
+../Core/Src/app_cli.c:52:12:cmd_fs	3
+../Core/Src/app_cli.c:92:12:cmd_connect	1
+../Core/Src/app_cli.c:161:6:vRegisterCLICommands	2
+../Core/Src/app_cli.c:169:6:cliWrite	1
+../Core/Src/app_cli.c:176:6:handleNewline	2
+../Core/Src/app_cli.c:192:6:handleBackspace	2
+../Core/Src/app_cli.c:214:6:handleCharacterInput	5

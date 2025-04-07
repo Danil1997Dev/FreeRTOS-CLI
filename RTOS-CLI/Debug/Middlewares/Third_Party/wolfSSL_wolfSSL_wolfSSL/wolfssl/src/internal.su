@@ -104,6 +104,9 @@
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:12720:5:CheckForAltNames	48	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:12781:5:CheckHostName	40	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:12812:5:CheckIPAddr	16	static
+../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:12839:16:CopyAltNames	40	static
+../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:12877:6:CopyDecodedName	24	static
+../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:13022:5:CopyDecodedToX509	24	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:13730:6:DoCertFatalAlert	24	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:13777:5:SetupStoreCtxCallback	40	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:13907:6:CleanupStoreCtxCallback	24	static
@@ -192,9 +195,9 @@
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:30990:16:CheckCurveId	24	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:31089:13:FreeDskeArgs	24	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:31104:12:GetDhPublicKey	40	static
-../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:31358:12:DoServerKeyExchange	120	static
+../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:31358:12:DoServerKeyExchange	152	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:32424:13:FreeSckeArgs	24	static
-../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:32437:5:SendClientKeyExchange	96	static
+../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:32437:5:SendClientKeyExchange	120	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:34393:12:GetCurveByOID	16	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:34476:9:TranslateErrorToAlert	16	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:34503:9:FindSuite	24	static
@@ -202,7 +205,7 @@
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:34549:9:SendServerHello	80	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:34773:17:SetCurveId	16	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:34809:17:FreeSskeArgs	24	static
-../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:34827:9:SendServerKeyExchange	128	static
+../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:34827:9:SendServerKeyExchange	136	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:36456:16:VerifyServerSuite	48	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:36595:16:CompareSuites	40	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:36620:9:MatchSuite_ex	56	static
@@ -211,6 +214,6 @@
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:37090:9:DoClientHello	168	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:38209:9:SendServerHelloDone	64	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:40029:17:FreeDckeArgs	24	static
-../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:40038:16:DoClientKeyExchange	144	static
+../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:40038:16:DoClientKeyExchange	168	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:41296:9:SNI_Callback	32	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/src/internal.c:41446:5:wolfSSL_GetMaxFragSize	16	static
