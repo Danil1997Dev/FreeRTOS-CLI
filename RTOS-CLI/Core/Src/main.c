@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "dma.h"
 #include "fatfs.h"
 #include "lwip.h"
 #include "rng.h"
@@ -96,11 +97,12 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_TIM5_Init();
-  MX_SDIO_SD_Init();
-  MX_FATFS_Init();
   MX_RNG_Init();
   MX_USART3_UART_Init();
+  MX_SDIO_SD_Init();
+  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
 // HAL_UART_Transmit(&huart3, (uint8_t *)"Start\n\r", sizeof("Start\n\r"), 0xffff);
   HAL_UART_Receive_IT(&huart3, pcRxedChar, 1);

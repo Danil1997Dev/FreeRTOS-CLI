@@ -130,6 +130,10 @@ FRESULT write_fs(uint8_t *name_file, uint8_t *data)
 //    sprintf(cli_msg,(char *)name);
     sprintf(cli_msg,"' was writhed %u letters\r\n", strlen(data));
 
+    cliWrite("In file '%s' ");
+    cliWrite((char *)name_file);
+    cliWrite("' was writhed %u letters\r\n", strlen(data));
+
     return res;
 }
 

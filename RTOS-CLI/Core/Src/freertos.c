@@ -215,14 +215,14 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* creation of vInitTask */
-  vInitTaskHandle = osThreadNew(vStartInitTask, NULL, &vInitTask_attributes);
-
+//  vInitTaskHandle = osThreadNew(vStartInitTask, NULL, &vInitTask_attributes);
+//
   /* creation of vCmdTask */
   vCmdTaskHandle = osThreadNew(vStartCmdTask, NULL, &vCmdTask_attributes);
-
-  /* creation of vClientTask */
-  vClientTaskHandle = osThreadNew(vStartClientTask, NULL, &vClientTask_attributes);
-
+//
+//  /* creation of vClientTask */
+//  vClientTaskHandle = osThreadNew(vStartClientTask, NULL, &vClientTask_attributes);
+//
   /* creation of vFatFSTask */
   vFatFSTaskHandle = osThreadNew(vStartFatFSTask, NULL, &vFatFSTask_attributes);
 
@@ -333,6 +333,8 @@ void vStartFatFSTask(void *argument)
 				cliWrite("Failed mount\r\n");
 			}
 			cliWrite("Success mount\r\n");
+			write_fs("WolfFile", "Work om Wolf lib");
+			cliWrite("Failed mount\r\n");
 //			break;
 //		case 3:
 //			if (freq != freqRef)
@@ -344,7 +346,7 @@ void vStartFatFSTask(void *argument)
 //		default:
 //			break;
 //	}
-    osDelay(100);
+    osDelay(500);
   }
   /* USER CODE END vStartFatFSTask */
 }

@@ -57,8 +57,10 @@ void TIM1_UP_TIM10_IRQHandler(void);
 void USART3_IRQHandler(void);
 void SDIO_IRQHandler(void);
 void TIM5_IRQHandler(void);
+void DMA2_Stream3_IRQHandler(void);
 void ETH_IRQHandler(void);
 void ETH_WKUP_IRQHandler(void);
+void DMA2_Stream6_IRQHandler(void);
 void HASH_RNG_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
