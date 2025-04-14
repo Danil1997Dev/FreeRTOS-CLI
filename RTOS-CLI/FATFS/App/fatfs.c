@@ -25,6 +25,7 @@ FIL SDFile;       /* File object for SD */
 
 /* USER CODE BEGIN Variables */
 FATFS fs;
+//char buf_read[5000];
 /* USER CODE END Variables */
 
 void MX_FATFS_Init(void)
@@ -125,36 +126,38 @@ FRESULT write_fs(uint8_t *name_file, uint8_t *data)
         return res;
     }
 
-    sprintf(cli_msg,"In file '%s' ",(char *)name_file);
-//    sprintf(cli_msg,"In file '");
-//    sprintf(cli_msg,(char *)name);
-    sprintf(cli_msg,"' was writhed %u letters\r\n", strlen(data));
-
-    cliWrite("In file '%s' ");
-    cliWrite((char *)name_file);
-    cliWrite("' was writhed %u letters\r\n", strlen(data));
+//    sprintf(cli_msg,"In file '%s' ",(char *)name_file);
+////    sprintf(cli_msg,"In file '");
+////    sprintf(cli_msg,(char *)name);
+//    sprintf(cli_msg,"' was writhed %u letters\r\n", strlen(data));
+//
+//    cliWrite("In file '%s' ");
+//    cliWrite((char *)name_file);
+//    cliWrite("was writhed %u letters\r\n");
 
     return res;
 }
 
-FRESULT read_fs(uint8_t *name_file, uint8_t *data)
+FRESULT read_fs(uint8_t *name_file, uint8_t *buf, uint32_t len)
 {
 	FRESULT res;
 	char *cli_msg;
     FIL logFile;
 
-    res = f_open(&logFile, (char *)name_file, FA_OPEN_APPEND | FA_READ);
+    res = f_open(&logFile, (char *)name_file, FA_READ);
     if(res != FR_OK) {
         sprintf(cli_msg,"f_open() failed, res = %u\r\n", res);
         return res;
     }
 
-    unsigned int bytesReading;
-    res = f_read(&logFile, data, (UINT)strlen(data), &bytesReading);
+    unsigned int bytesReading = 0;
+    res = f_read(&logFile, (void *)buf, (UINT)len, &bytesReading);
     if(res != FR_OK) {
     	sprintf(cli_msg,"f_read() failed, res = %u\r\n", res);
         return res;
     }
+
+//    memcpy(buf_read, logFile.buf, len);
 
     res = f_close(&logFile);
     if(res != FR_OK) {
@@ -162,10 +165,10 @@ FRESULT read_fs(uint8_t *name_file, uint8_t *data)
         return res;
     }
 
-    sprintf(cli_msg,"From file '%s' ",(char *)name_file);
-//    sprintf(cli_msg,"In file '");
-//    sprintf(cli_msg,(char *)name);
-    sprintf(cli_msg," was reading %u letters\r\n", strlen(data));
+//    sprintf(cli_msg,"From file '%s' ",(char *)name_file);
+////    sprintf(cli_msg,"In file '");
+////    sprintf(cli_msg,(char *)name);
+//    sprintf(cli_msg," was reading %u letters\r\n", strlen(buf));
 
     return res;
 }

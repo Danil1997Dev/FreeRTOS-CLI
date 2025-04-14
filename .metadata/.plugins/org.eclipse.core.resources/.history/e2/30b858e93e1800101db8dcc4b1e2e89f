@@ -1,0 +1,24 @@
+/*
+ * ssl_client.h
+ *
+ *  Created on: Mar 30, 2025
+ *      Author: user
+ */
+
+#ifndef INC_SSL_CLIENT_H_
+#define INC_SSL_CLIENT_H_
+
+#include <wolfssl/options.h>
+#include <wolfssl/ssl.h>
+#include "wolfssl/openssl/ssl.h"
+//#include <wolfssl/test.h>
+#include <errno.h>
+#include <wolfssl/wolfcrypt/settings.h>
+#include "fatfs.h"
+
+#define LEN_CERT_FILE 250
+
+int ssl_client(int *sockfd, struct sockaddr_in *servAddr);
+int load_cert(WOLFSSL_CTX *ctx, char *root_cert_pem);
+
+#endif /* INC_SSL_CLIENT_H_ */

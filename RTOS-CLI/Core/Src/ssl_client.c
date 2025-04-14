@@ -81,7 +81,7 @@ int load_cert(WOLFSSL_CTX *ctx, char *root_cert_pem)
 
 	mount_fs(&fs, FS_MOUNT);
 
-	read_fs((uint8_t *)"cacert.pem", (uint8_t *)root_cert_pem);
+	read_fs((uint8_t *)"cacert.pem", (uint8_t *)root_cert_pem, (uint32_t)LEN_CERT_FILE);
 
 //	xSemaphoreGive(fsSemHandle);
 

@@ -56,8 +56,7 @@ typedef StaticQueue_t osStaticMessageQDef_t;
 extern struct netif gnetif;
 extern uint8_t cRxedChar;
 extern char cOutputBuffer[configCOMMAND_INT_MAX_OUTPUT_SIZE], pcInputString[MAX_INPUT_LENGTH];
-
-uint8_t buf[30];
+uint8_t buf[LEN_CERT_FILE];
 
 /* USER CODE END Variables */
 /* Definitions for vInitTask */
@@ -139,6 +138,11 @@ osSemaphoreId_t fsSemHandle;
 const osSemaphoreAttr_t fsSem_attributes = {
   .name = "fsSem"
 };
+/* Definitions for printSem */
+osSemaphoreId_t printSemHandle;
+const osSemaphoreAttr_t printSem_attributes = {
+  .name = "printSem"
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -197,6 +201,9 @@ void MX_FREERTOS_Init(void) {
   /* creation of fsSem */
   fsSemHandle = osSemaphoreNew(1, 0, &fsSem_attributes);
 
+  /* creation of printSem */
+  printSemHandle = osSemaphoreNew(1, 0, &printSem_attributes);
+
   /* USER CODE BEGIN RTOS_SEMAPHORES */
   /* add semaphores, ... */
   /* USER CODE END RTOS_SEMAPHORES */
@@ -215,14 +222,14 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* creation of vInitTask */
-//  vInitTaskHandle = osThreadNew(vStartInitTask, NULL, &vInitTask_attributes);
-//
+  vInitTaskHandle = osThreadNew(vStartInitTask, NULL, &vInitTask_attributes);
+
   /* creation of vCmdTask */
   vCmdTaskHandle = osThreadNew(vStartCmdTask, NULL, &vCmdTask_attributes);
-//
-//  /* creation of vClientTask */
-//  vClientTaskHandle = osThreadNew(vStartClientTask, NULL, &vClientTask_attributes);
-//
+
+  /* creation of vClientTask */
+  vClientTaskHandle = osThreadNew(vStartClientTask, NULL, &vClientTask_attributes);
+
   /* creation of vFatFSTask */
   vFatFSTaskHandle = osThreadNew(vStartFatFSTask, NULL, &vFatFSTask_attributes);
 
@@ -322,6 +329,7 @@ void vStartClientTask(void *argument)
 void vStartFatFSTask(void *argument)
 {
   /* USER CODE BEGIN vStartFatFSTask */
+
   /* Infinite loop */
   for(;;)
   {
@@ -333,8 +341,18 @@ void vStartFatFSTask(void *argument)
 				cliWrite("Failed mount\r\n");
 			}
 			cliWrite("Success mount\r\n");
-			write_fs("WolfFile", "Work om Wolf lib");
-			cliWrite("Failed mount\r\n");
+//			osDelay(3000);
+			for (int i = 0;i < 100;i++)
+			{
+				write_fs("WolfFile.txt", "Work on Wolf lib5\r\n");
+
+			}
+			cliWrite("Success writed\r\n");
+
+			read_fs("binance.pem", buf, LEN_CERT_FILE);
+
+			cliWrite((char *)buf);
+			cliWrite("\r\n");
 //			break;
 //		case 3:
 //			if (freq != freqRef)

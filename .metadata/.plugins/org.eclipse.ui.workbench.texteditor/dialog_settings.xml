@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="%u"/>
+		<item key="selection" value="cliWrite"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="cliWrite"/>
 			<item value="%d"/>
 			<item value="cli_msg"/>
 			<item value="\r\n\0"/>
@@ -22,7 +23,6 @@
 			<item value="wolfSSL_connect_TLSv12"/>
 			<item value="ssl"/>
 			<item value="load_verify_locations"/>
-			<item value="wolfSSL_CTX_load_verify_locations"/>
 		</list>
 		<list key="replacehistory">
 			<item value="%u"/>

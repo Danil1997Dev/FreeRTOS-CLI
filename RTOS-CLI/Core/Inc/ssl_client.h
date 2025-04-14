@@ -16,6 +16,8 @@
 #include <wolfssl/wolfcrypt/settings.h>
 #include "fatfs.h"
 
+#define LEN_CERT_FILE 5000
+
 int ssl_client(int *sockfd, struct sockaddr_in *servAddr);
 int load_cert(WOLFSSL_CTX *ctx, char *root_cert_pem);
 
