@@ -133,7 +133,8 @@ Core/Src/ssl_client.o: ../Core/Src/ssl_client.c ../Core/Inc/ssl_client.h \
  ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
- ../Core/Inc/printf_uart.h ../Core/Inc/main.h
+ ../Core/Inc/printf_uart.h ../Core/Inc/main.h ../Core/Inc/FreeRTOS_CLI.h \
+ ../Core/Inc/printf_uart.h
 ../Core/Inc/ssl_client.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/options.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/ssl.h:
@@ -275,3 +276,5 @@ Core/Src/ssl_client.o: ../Core/Src/ssl_client.c ../Core/Inc/ssl_client.h \
 ../FATFS/Target/sd_diskio.h:
 ../Core/Inc/printf_uart.h:
 ../Core/Inc/main.h:
+../Core/Inc/FreeRTOS_CLI.h:
+../Core/Inc/printf_uart.h:

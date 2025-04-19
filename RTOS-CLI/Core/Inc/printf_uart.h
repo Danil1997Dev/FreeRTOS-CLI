@@ -11,6 +11,8 @@
 #include "main.h"
 #include "string.h"
 #include "stdio.h"
+#include "FreeRTOS.h"
+#include "FreeRTOS_CLI.h"
 
 #ifdef H_UART
 

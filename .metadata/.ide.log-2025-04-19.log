@@ -1,0 +1,942 @@
+2025-04-20 00:03:22,166 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2025-04-20 00:03:24,950 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:24,950 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:24,951 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:24,951 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:24,952 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:30,714 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 128
+2025-04-20 00:03:30,714 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 32768
+2025-04-20 00:03:40,958 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:40,958 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:40,958 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:40,958 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:40,959 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:42,757 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 128
+2025-04-20 00:03:42,758 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 32768
+2025-04-20 00:03:46,505 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:46,505 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:46,506 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:46,506 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:46,506 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:51,062 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 128
+2025-04-20 00:03:51,062 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 32768
+2025-04-20 00:03:59,820 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:59,820 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:59,820 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:59,820 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:03:59,820 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:04:02,710 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 862134664 Bytes (1073741824)
+2025-04-20 00:04:03,920 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 896294904 Bytes (1073741824)
+2025-04-20 00:04:06,105 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 815548912 Bytes (1073741824)
+2025-04-20 00:04:07,085 [INFO] ProjectBuilder:2363 - IP not ready for code generation: FATFS
+2025-04-20 00:04:08,428 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RNG
+2025-04-20 00:04:08,428 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
+2025-04-20 00:04:08,428 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SDIO
+2025-04-20 00:04:08,428 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2025-04-20 00:04:08,428 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-04-20 00:04:08,428 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-04-20 00:04:08,429 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-04-20 00:04:08,429 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: LWIP
+2025-04-20 00:04:08,429 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2025-04-20 00:04:08,429 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: wolfSSL.I-CUBE-wolfSSL.5.7.4
+2025-04-20 00:04:08,429 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: DMA
+2025-04-20 00:04:08,430 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-04-20 00:04:08,430 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ETH
+2025-04-20 00:04:08,430 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: wolfSSL.I-CUBE-wolfSSH.1.4.17
+2025-04-20 00:04:08,430 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FATFS
+2025-04-20 00:04:08,436 [INFO] CodeGenerator:896 - code generatio: config db path: D:\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\
+2025-04-20 00:04:08,458 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-04-20 00:04:08,522 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-04-20 00:04:08,523 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:04:08,523 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream3
+2025-04-20 00:04:08,523 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream3
+2025-04-20 00:04:08,523 [INFO] Argument:325 - Argument : Initvalue: null
+2025-04-20 00:04:08,523 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:04:08,523 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:04:08,524 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:04:08,524 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-04-20 00:04:08,524 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-04-20 00:04:08,525 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:04:08,525 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:04:08,525 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:04:08,525 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:04:08,525 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2025-04-20 00:04:08,525 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2025-04-20 00:04:08,525 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2025-04-20 00:04:08,525 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2025-04-20 00:04:08,525 [INFO] Argument:325 - Argument : Modevalue: DMA_PFCTRL
+2025-04-20 00:04:08,525 [INFO] Argument:335 - Argument : Modevalue: DMA_PFCTRL
+2025-04-20 00:04:08,526 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2025-04-20 00:04:08,526 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2025-04-20 00:04:08,526 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2025-04-20 00:04:08,526 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2025-04-20 00:04:08,526 [INFO] Argument:325 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2025-04-20 00:04:08,526 [INFO] Argument:335 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2025-04-20 00:04:08,526 [INFO] Argument:325 - Argument : MemBurstvalue: DMA_MBURST_INC4
+2025-04-20 00:04:08,526 [INFO] Argument:335 - Argument : MemBurstvalue: DMA_MBURST_INC4
+2025-04-20 00:04:08,527 [INFO] Argument:325 - Argument : PeriphBurstvalue: DMA_PBURST_INC4
+2025-04-20 00:04:08,527 [INFO] Argument:335 - Argument : PeriphBurstvalue: DMA_PBURST_INC4
+2025-04-20 00:04:08,527 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-04-20 00:04:08,528 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-04-20 00:04:08,528 [INFO] Argument:325 - Argument : Statevalue: null
+2025-04-20 00:04:08,528 [INFO] Argument:335 - Argument : Statevalue: null
+2025-04-20 00:04:08,528 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-04-20 00:04:08,529 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-04-20 00:04:08,529 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:04:08,529 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:04:08,529 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:04:08,530 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:04:08,530 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:04:08,530 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:04:08,530 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:04:08,530 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:04:08,530 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-04-20 00:04:08,530 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-04-20 00:04:08,531 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-04-20 00:04:08,531 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:04:08,531 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream6
+2025-04-20 00:04:08,532 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream6
+2025-04-20 00:04:08,532 [INFO] Argument:325 - Argument : Initvalue: null
+2025-04-20 00:04:08,532 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:04:08,532 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:04:08,532 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:04:08,532 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-04-20 00:04:08,532 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-04-20 00:04:08,532 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:04:08,532 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:04:08,532 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:04:08,532 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:04:08,532 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2025-04-20 00:04:08,532 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2025-04-20 00:04:08,532 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2025-04-20 00:04:08,532 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2025-04-20 00:04:08,532 [INFO] Argument:325 - Argument : Modevalue: DMA_PFCTRL
+2025-04-20 00:04:08,533 [INFO] Argument:335 - Argument : Modevalue: DMA_PFCTRL
+2025-04-20 00:04:08,533 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:04:08,533 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:04:08,533 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2025-04-20 00:04:08,533 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2025-04-20 00:04:08,533 [INFO] Argument:325 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2025-04-20 00:04:08,533 [INFO] Argument:335 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2025-04-20 00:04:08,533 [INFO] Argument:325 - Argument : MemBurstvalue: DMA_MBURST_INC4
+2025-04-20 00:04:08,533 [INFO] Argument:335 - Argument : MemBurstvalue: DMA_MBURST_INC4
+2025-04-20 00:04:08,533 [INFO] Argument:325 - Argument : PeriphBurstvalue: DMA_PBURST_INC4
+2025-04-20 00:04:08,533 [INFO] Argument:335 - Argument : PeriphBurstvalue: DMA_PBURST_INC4
+2025-04-20 00:04:08,533 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-04-20 00:04:08,533 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-04-20 00:04:08,533 [INFO] Argument:325 - Argument : Statevalue: null
+2025-04-20 00:04:08,533 [INFO] Argument:335 - Argument : Statevalue: null
+2025-04-20 00:04:08,533 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-04-20 00:04:08,534 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-04-20 00:04:08,534 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:04:08,534 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:04:08,534 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:04:08,534 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:04:08,534 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:04:08,534 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:04:08,534 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:04:08,534 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:04:08,534 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-04-20 00:04:08,534 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-04-20 00:04:08,539 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-04-20 00:04:08,539 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:04:08,539 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream1
+2025-04-20 00:04:08,539 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream1
+2025-04-20 00:04:08,539 [INFO] Argument:325 - Argument : Initvalue: null
+2025-04-20 00:04:08,539 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:04:08,539 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:04:08,540 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:04:08,540 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-04-20 00:04:08,540 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-04-20 00:04:08,540 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:04:08,540 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:04:08,540 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:04:08,540 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:04:08,540 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-04-20 00:04:08,540 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-04-20 00:04:08,540 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-04-20 00:04:08,540 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-04-20 00:04:08,541 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-04-20 00:04:08,541 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-04-20 00:04:08,541 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:04:08,541 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:04:08,541 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-04-20 00:04:08,541 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-04-20 00:04:08,541 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2025-04-20 00:04:08,541 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2025-04-20 00:04:08,541 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2025-04-20 00:04:08,541 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2025-04-20 00:04:08,541 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2025-04-20 00:04:08,541 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2025-04-20 00:04:08,541 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:325 - Argument : Statevalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:335 - Argument : Statevalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-04-20 00:04:08,542 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-04-20 00:04:08,543 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-04-20 00:04:08,543 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:04:08,543 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream3
+2025-04-20 00:04:08,543 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream3
+2025-04-20 00:04:08,543 [INFO] Argument:325 - Argument : Initvalue: null
+2025-04-20 00:04:08,543 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:04:08,544 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:04:08,544 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:04:08,544 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-04-20 00:04:08,544 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-04-20 00:04:08,545 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:04:08,545 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:04:08,545 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:04:08,546 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:04:08,546 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-04-20 00:04:08,546 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-04-20 00:04:08,546 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-04-20 00:04:08,546 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-04-20 00:04:08,546 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-04-20 00:04:08,546 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-04-20 00:04:08,546 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:04:08,547 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:04:08,547 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-04-20 00:04:08,547 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-04-20 00:04:08,547 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2025-04-20 00:04:08,547 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2025-04-20 00:04:08,547 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2025-04-20 00:04:08,547 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2025-04-20 00:04:08,548 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2025-04-20 00:04:08,548 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2025-04-20 00:04:08,548 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-04-20 00:04:08,548 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-04-20 00:04:08,548 [INFO] Argument:325 - Argument : Statevalue: null
+2025-04-20 00:04:08,548 [INFO] Argument:335 - Argument : Statevalue: null
+2025-04-20 00:04:08,548 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-04-20 00:04:08,548 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-04-20 00:04:08,548 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:04:08,549 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:04:08,549 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:04:08,549 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:04:08,549 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:04:08,549 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:04:08,549 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:04:08,549 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:04:08,549 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-04-20 00:04:08,549 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-04-20 00:04:08,695 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-04-20 00:04:08,696 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-04-20 00:04:08,706 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp_save
+2025-04-20 00:04:09,010 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp
+2025-04-20 00:04:09,125 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\gpio.c_save
+2025-04-20 00:04:09,298 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\gpio.c
+2025-04-20 00:04:09,305 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\gpio.h_save
+2025-04-20 00:04:09,475 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\gpio.h
+2025-04-20 00:04:09,643 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-04-20 00:04:09,868 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-04-20 00:04:09,878 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-04-20 00:04:10,016 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-04-20 00:04:10,025 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-04-20 00:04:10,244 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-04-20 00:04:10,251 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-04-20 00:04:10,457 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-04-20 00:04:10,482 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-04-20 00:04:10,638 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-04-20 00:04:10,645 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-04-20 00:04:10,728 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-04-20 00:04:10,758 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-04-20 00:04:10,862 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-04-20 00:04:10,883 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-04-20 00:04:11,008 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-04-20 00:04:11,020 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-04-20 00:04:11,168 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-04-20 00:04:11,173 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-04-20 00:04:11,251 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-04-20 00:04:11,288 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-04-20 00:04:11,382 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-04-20 00:04:11,403 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-04-20 00:04:11,535 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-04-20 00:04:12,901 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:04:12,913 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-04-20 00:04:13,095 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-04-20 00:04:13,100 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-04-20 00:04:13,249 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-04-20 00:04:13,254 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-04-20 00:04:13,345 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-04-20 00:04:13,350 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-04-20 00:04:13,450 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-04-20 00:04:13,454 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-04-20 00:04:13,571 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-04-20 00:04:13,576 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-04-20 00:04:13,654 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-04-20 00:04:13,658 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-04-20 00:04:13,734 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-04-20 00:04:13,738 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-04-20 00:04:13,799 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-04-20 00:04:13,803 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-04-20 00:04:13,862 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-04-20 00:04:13,872 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:04:13,878 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-04-20 00:04:13,985 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-04-20 00:04:13,988 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-04-20 00:04:14,054 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-04-20 00:04:14,057 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-04-20 00:04:14,111 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-04-20 00:04:14,114 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-04-20 00:04:14,225 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-04-20 00:04:14,250 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:04:14,267 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:04:14,268 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:04:14,303 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:04:14,332 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-04-20 00:04:14,473 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-04-20 00:04:14,482 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-04-20 00:04:14,558 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-04-20 00:04:14,562 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-04-20 00:04:14,626 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-04-20 00:04:14,631 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-04-20 00:04:14,732 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-04-20 00:04:14,753 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-04-20 00:04:14,851 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-04-20 00:04:14,857 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-04-20 00:04:14,946 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-04-20 00:04:14,971 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-04-20 00:04:15,060 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-04-20 00:04:15,065 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-04-20 00:04:15,143 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-04-20 00:04:15,150 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-04-20 00:04:15,244 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-04-20 00:04:15,275 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h_save
+2025-04-20 00:04:15,435 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h
+2025-04-20 00:04:15,461 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c_save
+2025-04-20 00:04:15,612 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c
+2025-04-20 00:04:15,784 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\dma.c_save
+2025-04-20 00:04:15,872 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\dma.c
+2025-04-20 00:04:15,887 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\dma.h_save
+2025-04-20 00:04:15,956 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\dma.h
+2025-04-20 00:04:15,964 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:04:15,971 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-04-20 00:04:16,068 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-04-20 00:04:16,072 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-04-20 00:04:16,136 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-04-20 00:04:16,142 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-04-20 00:04:16,198 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-04-20 00:04:16,202 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-04-20 00:04:16,257 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-04-20 00:04:16,274 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h_save
+2025-04-20 00:04:16,384 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h
+2025-04-20 00:04:16,399 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c_save
+2025-04-20 00:04:16,502 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c
+2025-04-20 00:04:16,507 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h_save
+2025-04-20 00:04:16,570 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h
+2025-04-20 00:04:16,576 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h_save
+2025-04-20 00:04:16,642 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h
+2025-04-20 00:04:16,660 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c_save
+2025-04-20 00:04:16,763 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c
+2025-04-20 00:04:16,768 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c_save
+2025-04-20 00:04:16,839 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c
+2025-04-20 00:04:16,844 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h_save
+2025-04-20 00:04:16,907 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h
+2025-04-20 00:04:16,916 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:04:16,949 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c_save
+2025-04-20 00:04:17,045 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c
+2025-04-20 00:04:17,050 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h_save
+2025-04-20 00:04:17,117 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h
+2025-04-20 00:04:17,142 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h_save
+2025-04-20 00:04:17,397 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h
+2025-04-20 00:04:17,415 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c_save
+2025-04-20 00:04:17,553 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c
+2025-04-20 00:04:17,575 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h_save
+2025-04-20 00:04:17,668 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h
+2025-04-20 00:04:17,696 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\rng.c_save
+2025-04-20 00:04:17,821 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\rng.c
+2025-04-20 00:04:17,827 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\rng.h_save
+2025-04-20 00:04:17,908 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\rng.h
+2025-04-20 00:04:17,932 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\sdio.c_save
+2025-04-20 00:04:18,051 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\sdio.c
+2025-04-20 00:04:18,056 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\sdio.h_save
+2025-04-20 00:04:18,155 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\sdio.h
+2025-04-20 00:04:18,185 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\tim.c_save
+2025-04-20 00:04:18,323 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\tim.c
+2025-04-20 00:04:18,329 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\tim.h_save
+2025-04-20 00:04:18,401 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\tim.h
+2025-04-20 00:04:18,432 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\usart.c_save
+2025-04-20 00:04:18,577 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\usart.c
+2025-04-20 00:04:18,581 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\usart.h_save
+2025-04-20 00:04:18,653 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\usart.h
+2025-04-20 00:04:18,656 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:04:18,663 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSH\.\wolfSSL.I-CUBE-wolfSSH_conf.h_save
+2025-04-20 00:04:18,771 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSH\.\wolfSSL.I-CUBE-wolfSSH_conf.h
+2025-04-20 00:04:18,774 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:04:18,799 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSL\.\wolfSSL.I-CUBE-wolfSSL_conf.h_save
+2025-04-20 00:04:18,917 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSL\.\wolfSSL.I-CUBE-wolfSSL_conf.h
+2025-04-20 00:04:18,950 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c_save
+2025-04-20 00:04:19,291 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c
+2025-04-20 00:04:19,317 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h_save
+2025-04-20 00:04:19,432 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h
+2025-04-20 00:04:19,489 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c_save
+2025-04-20 00:04:19,666 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c
+2025-04-20 00:04:19,671 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp_save
+2025-04-20 00:04:19,784 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp
+2025-04-20 00:04:19,807 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2025-04-20 00:04:19,904 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c
+2025-04-20 00:04:19,934 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h_save
+2025-04-20 00:04:20,115 [INFO] CodeEngine:335 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h
+2025-04-20 00:04:20,206 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h_save
+2025-04-20 00:04:20,347 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h
+2025-04-20 00:04:20,364 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c_save
+2025-04-20 00:04:20,471 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c
+2025-04-20 00:04:21,547 [INFO] ProjectBuilder:3289 - Time for Copy HAL[1] : 783mS.
+2025-04-20 00:04:21,547 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,547 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,547 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,547 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,547 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,548 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,549 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,550 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:21,551 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:04:22,244 [INFO] ProjectBuilder:9095 - Time for Copy ThirdParty[1] : 687mS.
+2025-04-20 00:04:22,244 [ERROR] ProjectBuilder:9049 - bundle already exist, pelase verify if each PDSC component have a bundle, the couple cBundle and cClass must be unique
+2025-04-20 00:04:22,775 [INFO] ProjectBuilder:9095 - Time for Copy ThirdParty[1] : 531mS.
+2025-04-20 00:04:22,837 [INFO] ProjectBuilder:9095 - Time for Copy ThirdParty[1] : 62mS.
+2025-04-20 00:04:22,854 [INFO] ProjectBuilder:4876 - Project Generator version: 4.5.0-RC5
+2025-04-20 00:04:22,979 [INFO] ConfigFileManager:1579 - The Die is : DIE413
+2025-04-20 00:04:25,934 [INFO] ProjectBuilder:5154 - Time for Generating toolchain IDE Files: 3079mS.
+2025-04-20 00:04:25,935 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-04-20 00:04:25,980 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-04-20 00:10:37,369 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 128
+2025-04-20 00:10:37,369 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 32768
+2025-04-20 00:11:10,533 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:11:10,533 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:11:10,533 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:11:10,533 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:11:10,534 [INFO] TasksAndQueuesTab:757 - Static
+2025-04-20 00:11:14,695 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 128
+2025-04-20 00:11:14,695 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 32768
+2025-04-20 00:11:21,604 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 913269480 Bytes (1073741824)
+2025-04-20 00:11:22,907 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 949287552 Bytes (1073741824)
+2025-04-20 00:11:24,711 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 925142768 Bytes (1073741824)
+2025-04-20 00:11:24,994 [INFO] ProjectBuilder:2363 - IP not ready for code generation: FATFS
+2025-04-20 00:11:26,027 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RNG
+2025-04-20 00:11:26,027 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
+2025-04-20 00:11:26,027 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SDIO
+2025-04-20 00:11:26,027 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2025-04-20 00:11:26,027 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-04-20 00:11:26,027 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-04-20 00:11:26,027 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-04-20 00:11:26,027 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: LWIP
+2025-04-20 00:11:26,027 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2025-04-20 00:11:26,027 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: wolfSSL.I-CUBE-wolfSSL.5.7.4
+2025-04-20 00:11:26,027 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: DMA
+2025-04-20 00:11:26,028 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-04-20 00:11:26,028 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ETH
+2025-04-20 00:11:26,028 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: wolfSSL.I-CUBE-wolfSSH.1.4.17
+2025-04-20 00:11:26,028 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FATFS
+2025-04-20 00:11:26,032 [INFO] CodeGenerator:896 - code generatio: config db path: D:\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\
+2025-04-20 00:11:26,059 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-04-20 00:11:26,131 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-04-20 00:11:26,131 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:11:26,131 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream3
+2025-04-20 00:11:26,131 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream3
+2025-04-20 00:11:26,131 [INFO] Argument:325 - Argument : Initvalue: null
+2025-04-20 00:11:26,131 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:11:26,131 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:11:26,131 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:11:26,131 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-04-20 00:11:26,131 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-04-20 00:11:26,132 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:11:26,132 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:11:26,132 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:11:26,132 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:11:26,132 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2025-04-20 00:11:26,132 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2025-04-20 00:11:26,132 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2025-04-20 00:11:26,132 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2025-04-20 00:11:26,132 [INFO] Argument:325 - Argument : Modevalue: DMA_PFCTRL
+2025-04-20 00:11:26,132 [INFO] Argument:335 - Argument : Modevalue: DMA_PFCTRL
+2025-04-20 00:11:26,132 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2025-04-20 00:11:26,132 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2025-04-20 00:11:26,132 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2025-04-20 00:11:26,132 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2025-04-20 00:11:26,132 [INFO] Argument:325 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2025-04-20 00:11:26,133 [INFO] Argument:335 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2025-04-20 00:11:26,133 [INFO] Argument:325 - Argument : MemBurstvalue: DMA_MBURST_INC4
+2025-04-20 00:11:26,133 [INFO] Argument:335 - Argument : MemBurstvalue: DMA_MBURST_INC4
+2025-04-20 00:11:26,133 [INFO] Argument:325 - Argument : PeriphBurstvalue: DMA_PBURST_INC4
+2025-04-20 00:11:26,133 [INFO] Argument:335 - Argument : PeriphBurstvalue: DMA_PBURST_INC4
+2025-04-20 00:11:26,133 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:325 - Argument : Statevalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:335 - Argument : Statevalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-04-20 00:11:26,133 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-04-20 00:11:26,135 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-04-20 00:11:26,135 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:11:26,135 [INFO] Argument:325 - Argument : Instancevalue: DMA2_Stream6
+2025-04-20 00:11:26,135 [INFO] Argument:335 - Argument : Instancevalue: DMA2_Stream6
+2025-04-20 00:11:26,135 [INFO] Argument:325 - Argument : Initvalue: null
+2025-04-20 00:11:26,135 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:11:26,135 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:11:26,135 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:11:26,135 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-04-20 00:11:26,135 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-04-20 00:11:26,135 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:11:26,135 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:11:26,136 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:11:26,136 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:11:26,136 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2025-04-20 00:11:26,136 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_WORD
+2025-04-20 00:11:26,136 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2025-04-20 00:11:26,136 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_WORD
+2025-04-20 00:11:26,136 [INFO] Argument:325 - Argument : Modevalue: DMA_PFCTRL
+2025-04-20 00:11:26,136 [INFO] Argument:335 - Argument : Modevalue: DMA_PFCTRL
+2025-04-20 00:11:26,136 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:11:26,136 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:11:26,136 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2025-04-20 00:11:26,136 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_ENABLE
+2025-04-20 00:11:26,136 [INFO] Argument:325 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2025-04-20 00:11:26,137 [INFO] Argument:335 - Argument : FIFOThresholdvalue: DMA_FIFO_THRESHOLD_FULL
+2025-04-20 00:11:26,137 [INFO] Argument:325 - Argument : MemBurstvalue: DMA_MBURST_INC4
+2025-04-20 00:11:26,137 [INFO] Argument:335 - Argument : MemBurstvalue: DMA_MBURST_INC4
+2025-04-20 00:11:26,137 [INFO] Argument:325 - Argument : PeriphBurstvalue: DMA_PBURST_INC4
+2025-04-20 00:11:26,137 [INFO] Argument:335 - Argument : PeriphBurstvalue: DMA_PBURST_INC4
+2025-04-20 00:11:26,137 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-04-20 00:11:26,137 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-04-20 00:11:26,137 [INFO] Argument:325 - Argument : Statevalue: null
+2025-04-20 00:11:26,137 [INFO] Argument:335 - Argument : Statevalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-04-20 00:11:26,139 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-04-20 00:11:26,146 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-04-20 00:11:26,146 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:11:26,146 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream1
+2025-04-20 00:11:26,146 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream1
+2025-04-20 00:11:26,146 [INFO] Argument:325 - Argument : Initvalue: null
+2025-04-20 00:11:26,146 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:11:26,146 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:11:26,146 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:11:26,146 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-04-20 00:11:26,146 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2025-04-20 00:11:26,146 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:11:26,146 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : Statevalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : Statevalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:11:26,147 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:11:26,148 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:11:26,148 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:11:26,148 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:11:26,148 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:11:26,148 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-04-20 00:11:26,148 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-04-20 00:11:26,148 [INFO] Argument:325 - Argument : hdmavalue: null
+2025-04-20 00:11:26,149 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Stream3
+2025-04-20 00:11:26,149 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Stream3
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : Initvalue: null
+2025-04-20 00:11:26,149 [INFO] Argument:327 - 	 sub Args: 
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:11:26,149 [INFO] Argument:335 - Argument : Channelvalue: DMA_CHANNEL_4
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-04-20 00:11:26,149 [INFO] Argument:335 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:11:26,149 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:11:26,149 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-04-20 00:11:26,149 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-04-20 00:11:26,149 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2025-04-20 00:11:26,149 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:11:26,149 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-04-20 00:11:26,149 [INFO] Argument:335 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : FIFOThresholdvalue: null
+2025-04-20 00:11:26,149 [INFO] Argument:335 - Argument : FIFOThresholdvalue: null
+2025-04-20 00:11:26,149 [INFO] Argument:325 - Argument : MemBurstvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:335 - Argument : MemBurstvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:325 - Argument : PeriphBurstvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:335 - Argument : PeriphBurstvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:325 - Argument : Lockvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:335 - Argument : Lockvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:325 - Argument : Statevalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:335 - Argument : Statevalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:325 - Argument : Parentvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:335 - Argument : Parentvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:325 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:335 - Argument : XferM1CpltCallbackvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2025-04-20 00:11:26,150 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2025-04-20 00:11:26,270 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-04-20 00:11:26,270 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-04-20 00:11:26,277 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp_save
+2025-04-20 00:11:26,453 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp
+2025-04-20 00:11:26,489 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\gpio.c_save
+2025-04-20 00:11:26,623 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\gpio.c
+2025-04-20 00:11:26,628 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\gpio.h_save
+2025-04-20 00:11:26,721 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\gpio.h
+2025-04-20 00:11:26,781 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-04-20 00:11:26,945 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-04-20 00:11:26,950 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-04-20 00:11:27,044 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-04-20 00:11:27,051 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-04-20 00:11:27,207 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-04-20 00:11:27,211 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-04-20 00:11:27,352 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-04-20 00:11:27,364 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-04-20 00:11:27,507 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-04-20 00:11:27,511 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-04-20 00:11:27,607 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-04-20 00:11:27,649 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-04-20 00:11:27,769 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-04-20 00:11:27,791 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-04-20 00:11:27,880 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-04-20 00:11:27,889 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-04-20 00:11:27,992 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-04-20 00:11:27,996 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-04-20 00:11:28,058 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-04-20 00:11:28,081 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-04-20 00:11:28,159 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-04-20 00:11:28,176 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-04-20 00:11:28,247 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-04-20 00:11:29,084 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:11:29,090 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-04-20 00:11:29,228 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-04-20 00:11:29,231 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-04-20 00:11:29,313 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-04-20 00:11:29,316 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-04-20 00:11:29,386 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-04-20 00:11:29,389 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-04-20 00:11:29,493 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-04-20 00:11:29,497 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-04-20 00:11:29,613 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-04-20 00:11:29,616 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-04-20 00:11:29,697 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-04-20 00:11:29,700 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-04-20 00:11:29,793 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-04-20 00:11:29,796 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-04-20 00:11:29,854 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-04-20 00:11:29,858 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-04-20 00:11:29,912 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-04-20 00:11:29,923 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:11:29,928 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-04-20 00:11:30,028 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-04-20 00:11:30,031 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-04-20 00:11:30,100 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-04-20 00:11:30,103 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-04-20 00:11:30,171 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-04-20 00:11:30,174 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-04-20 00:11:30,250 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-04-20 00:11:30,263 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:11:30,271 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:11:30,271 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:11:30,283 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:11:30,290 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-04-20 00:11:30,380 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-04-20 00:11:30,385 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-04-20 00:11:30,444 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-04-20 00:11:30,449 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-04-20 00:11:30,517 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-04-20 00:11:30,521 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-04-20 00:11:30,581 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-04-20 00:11:30,595 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-04-20 00:11:30,662 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-04-20 00:11:30,666 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-04-20 00:11:30,739 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-04-20 00:11:30,754 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-04-20 00:11:30,820 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-04-20 00:11:30,825 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-04-20 00:11:30,897 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-04-20 00:11:30,902 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-04-20 00:11:30,974 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-04-20 00:11:30,991 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h_save
+2025-04-20 00:11:31,115 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h
+2025-04-20 00:11:31,138 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c_save
+2025-04-20 00:11:31,289 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c
+2025-04-20 00:11:31,587 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\dma.c_save
+2025-04-20 00:11:31,728 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\dma.c
+2025-04-20 00:11:31,733 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\dma.h_save
+2025-04-20 00:11:31,846 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\dma.h
+2025-04-20 00:11:31,860 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:11:31,870 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-04-20 00:11:32,027 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-04-20 00:11:32,033 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-04-20 00:11:32,124 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-04-20 00:11:32,130 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-04-20 00:11:32,206 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-04-20 00:11:32,210 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-04-20 00:11:32,319 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-04-20 00:11:32,343 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h_save
+2025-04-20 00:11:32,528 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h
+2025-04-20 00:11:32,553 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c_save
+2025-04-20 00:11:32,688 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c
+2025-04-20 00:11:32,692 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h_save
+2025-04-20 00:11:32,778 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h
+2025-04-20 00:11:32,788 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h_save
+2025-04-20 00:11:32,859 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h
+2025-04-20 00:11:32,873 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c_save
+2025-04-20 00:11:32,990 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c
+2025-04-20 00:11:32,995 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c_save
+2025-04-20 00:11:33,086 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c
+2025-04-20 00:11:33,091 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h_save
+2025-04-20 00:11:33,175 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h
+2025-04-20 00:11:33,186 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:11:33,220 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c_save
+2025-04-20 00:11:33,320 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c
+2025-04-20 00:11:33,324 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h_save
+2025-04-20 00:11:33,399 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h
+2025-04-20 00:11:33,415 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h_save
+2025-04-20 00:11:33,688 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h
+2025-04-20 00:11:33,710 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c_save
+2025-04-20 00:11:33,877 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c
+2025-04-20 00:11:33,884 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h_save
+2025-04-20 00:11:33,960 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h
+2025-04-20 00:11:33,981 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\rng.c_save
+2025-04-20 00:11:34,095 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\rng.c
+2025-04-20 00:11:34,101 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\rng.h_save
+2025-04-20 00:11:34,181 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\rng.h
+2025-04-20 00:11:34,207 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\sdio.c_save
+2025-04-20 00:11:34,313 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\sdio.c
+2025-04-20 00:11:34,319 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\sdio.h_save
+2025-04-20 00:11:34,402 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\sdio.h
+2025-04-20 00:11:34,429 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\tim.c_save
+2025-04-20 00:11:34,555 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\tim.c
+2025-04-20 00:11:34,560 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\tim.h_save
+2025-04-20 00:11:34,635 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\tim.h
+2025-04-20 00:11:34,664 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\usart.c_save
+2025-04-20 00:11:34,824 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\usart.c
+2025-04-20 00:11:34,830 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\usart.h_save
+2025-04-20 00:11:34,905 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\usart.h
+2025-04-20 00:11:34,908 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:11:34,916 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSH\.\wolfSSL.I-CUBE-wolfSSH_conf.h_save
+2025-04-20 00:11:35,054 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSH\.\wolfSSL.I-CUBE-wolfSSH_conf.h
+2025-04-20 00:11:35,056 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-20 00:11:35,080 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSL\.\wolfSSL.I-CUBE-wolfSSL_conf.h_save
+2025-04-20 00:11:35,224 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSL\.\wolfSSL.I-CUBE-wolfSSL_conf.h
+2025-04-20 00:11:35,259 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c_save
+2025-04-20 00:11:35,538 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c
+2025-04-20 00:11:35,543 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h_save
+2025-04-20 00:11:35,626 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h
+2025-04-20 00:11:35,676 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c_save
+2025-04-20 00:11:35,768 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c
+2025-04-20 00:11:35,772 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp_save
+2025-04-20 00:11:35,842 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp
+2025-04-20 00:11:35,856 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2025-04-20 00:11:35,922 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c
+2025-04-20 00:11:35,942 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h_save
+2025-04-20 00:11:36,062 [INFO] CodeEngine:335 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h
+2025-04-20 00:11:36,115 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h_save
+2025-04-20 00:11:36,242 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h
+2025-04-20 00:11:36,271 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c_save
+2025-04-20 00:11:36,436 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c
+2025-04-20 00:11:37,708 [INFO] ProjectBuilder:3289 - Time for Copy HAL[1] : 851mS.
+2025-04-20 00:11:37,708 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,708 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,708 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,708 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,709 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,710 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,711 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,712 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,712 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,712 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,712 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,712 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,712 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,712 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,712 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,712 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,712 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:37,712 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-20 00:11:38,116 [INFO] ProjectBuilder:9095 - Time for Copy ThirdParty[1] : 401mS.
+2025-04-20 00:11:38,117 [ERROR] ProjectBuilder:9049 - bundle already exist, pelase verify if each PDSC component have a bundle, the couple cBundle and cClass must be unique
+2025-04-20 00:11:38,619 [INFO] ProjectBuilder:9095 - Time for Copy ThirdParty[1] : 502mS.
+2025-04-20 00:11:38,687 [INFO] ProjectBuilder:9095 - Time for Copy ThirdParty[1] : 67mS.
+2025-04-20 00:11:38,712 [INFO] ProjectBuilder:4876 - Project Generator version: 4.5.0-RC5
+2025-04-20 00:11:38,905 [INFO] ConfigFileManager:1579 - The Die is : DIE413
+2025-04-20 00:11:40,859 [INFO] ProjectBuilder:5154 - Time for Generating toolchain IDE Files: 2147mS.
+2025-04-20 00:11:40,860 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
+2025-04-20 00:11:40,896 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.

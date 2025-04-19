@@ -48,7 +48,7 @@ FATFS/App/fatfs.o: ../FATFS/App/fatfs.c ../FATFS/App/fatfs.h \
  ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
- ../Core/Inc/printf_uart.h ../Core/Inc/main.h
+ ../Core/Inc/printf_uart.h ../Core/Inc/main.h ../Core/Inc/FreeRTOS_CLI.h
 ../FATFS/App/fatfs.h:
 ../Middlewares/Third_Party/FatFs/src/ff.h:
 ../Middlewares/Third_Party/FatFs/src/integer.h:
@@ -104,3 +104,4 @@ FATFS/App/fatfs.o: ../FATFS/App/fatfs.c ../FATFS/App/fatfs.h \
 ../FATFS/Target/sd_diskio.h:
 ../Core/Inc/printf_uart.h:
 ../Core/Inc/main.h:
+../Core/Inc/FreeRTOS_CLI.h:

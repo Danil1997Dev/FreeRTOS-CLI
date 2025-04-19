@@ -13,6 +13,7 @@
 #include "lwip.h"
 #include "socket.h"
 
+TaskHandle_t cliTaskHandle = NULL;
 char cOutputBuffer[configCOMMAND_INT_MAX_OUTPUT_SIZE],pcInputString[MAX_INPUT_LENGTH];
 uint8_t cRxedChar;
 const char * cli_prompt = "\r\ncli> ";
@@ -45,7 +46,8 @@ BaseType_t cmd_clearScreen(char *pcWriteBuffer, size_t xWriteBufferLen,
     (void)pcCommandString;
     (void)xWriteBufferLen;
     memset(pcWriteBuffer, 0x00, xWriteBufferLen);
-    printf("\033[2J\033[1;1H");
+    cliWrite("\033[2J\033[1;1H");
+//    printf("\033[2J\033[1;1H");
     return pdFALSE;
 }
 //*****************************************************************************
@@ -82,9 +84,14 @@ BaseType_t cmd_fs(char *pcWriteBuffer, size_t xWriteBufferLen,
 
     	strcpy(pcWriteBuffer, (char *)"incorrect parameter");
     }
-    xSemaphoreGive(fsSemHandle);
-    uint8_t string[] = "\r\nfs comlited\r\n";
-    strcpy(pcWriteBuffer, (char *)string);
+//    xSemaphoreGive(fsSemHandle);
+//    vTaskPrioritySet(vFatFSTaskHandle, osPriorityHigh);
+//    taskYIELD();
+    cliTaskHandle = xTaskGetCurrentTaskHandle();
+    xTaskNotifyGive(vFatFSTaskHandle);
+    ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+    cliWrite((char *)"\r\nfs comlited\r\n");
+    strcpy(pcWriteBuffer, (char *)"fs good");
 
     return pdFALSE;
 }
@@ -122,10 +129,11 @@ BaseType_t cmd_connect(char *pcWriteBuffer, size_t xWriteBufferLen,
     addr_len = strstr(pcParameter1, " ");
     *addr_len = '\0';
     remout_ip = (char *)pcParameter1;
-    uint8_t string[] = "\r\nConnected!\r\n";
+
+//    uint8_t string[] = cli_prompt;//\r\nConnected!\r\n
     cliWrite((char *)"Connection...\r\n");
     xSemaphoreGive(connectSemHandle);
-    strcpy(pcWriteBuffer, (char *)string);
+    strcpy(pcWriteBuffer, (char *)"\r\nConnected!\r\n");
 
     return pdFALSE;
 }

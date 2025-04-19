@@ -15,6 +15,7 @@
 #include <errno.h>
 #include <wolfssl/wolfcrypt/settings.h>
 #include "fatfs.h"
+#include "printf_uart.h"
 
 #define LEN_CERT_FILE 5000
 

@@ -5,4 +5,4 @@
 ../Core/Src/freertos.c:290:6:vStartCmdTask	3
 ../Core/Src/freertos.c:327:6:vStartClientTask	1
 ../Core/Src/freertos.c:345:6:vStartFatFSTask	3
-../Core/Src/freertos.c:395:6:StartPrintTask	1
+../Core/Src/freertos.c:399:6:StartPrintTask	1

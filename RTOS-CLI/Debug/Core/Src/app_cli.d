@@ -52,7 +52,7 @@ Core/Src/app_cli.o: ../Core/Src/app_cli.c ../Core/Inc/app_cli.h \
  ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
- ../Core/Inc/printf_uart.h ../LWIP/App/lwip.h \
+ ../Core/Inc/printf_uart.h ../Core/Inc/printf_uart.h ../LWIP/App/lwip.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h \
  ../LWIP/Target/lwipopts.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h \
@@ -156,6 +156,7 @@ Core/Src/app_cli.o: ../Core/Src/app_cli.c ../Core/Inc/app_cli.h \
 ../Middlewares/Third_Party/FatFs/src/diskio.h:
 ../Middlewares/Third_Party/FatFs/src/ff.h:
 ../FATFS/Target/sd_diskio.h:
+../Core/Inc/printf_uart.h:
 ../Core/Inc/printf_uart.h:
 ../LWIP/App/lwip.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h:

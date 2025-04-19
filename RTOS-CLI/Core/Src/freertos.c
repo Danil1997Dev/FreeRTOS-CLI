@@ -32,6 +32,7 @@
 #include "semphr.h"
 #include "ssl_client.h"
 #include "fatfs.h"
+#include "printf_uart.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,7 +58,6 @@ extern struct netif gnetif;
 extern uint8_t cRxedChar;
 extern char cOutputBuffer[configCOMMAND_INT_MAX_OUTPUT_SIZE], pcInputString[MAX_INPUT_LENGTH];
 uint8_t buf[LEN_CERT_FILE];
-
 /* USER CODE END Variables */
 /* Definitions for vInitTask */
 osThreadId_t vInitTaskHandle;
@@ -73,7 +73,7 @@ const osThreadAttr_t vInitTask_attributes = {
 };
 /* Definitions for vCmdTask */
 osThreadId_t vCmdTaskHandle;
-uint32_t vCmdTaskBuffer[ 512 ];
+uint32_t vCmdTaskBuffer[ 8192 ];
 osStaticThreadDef_t vCmdTaskControlBlock;
 const osThreadAttr_t vCmdTask_attributes = {
   .name = "vCmdTask",
@@ -81,11 +81,11 @@ const osThreadAttr_t vCmdTask_attributes = {
   .cb_size = sizeof(vCmdTaskControlBlock),
   .stack_mem = &vCmdTaskBuffer[0],
   .stack_size = sizeof(vCmdTaskBuffer),
-  .priority = (osPriority_t) osPriorityNormal,
+  .priority = (osPriority_t) osPriorityAboveNormal,
 };
 /* Definitions for vClientTask */
 osThreadId_t vClientTaskHandle;
-uint32_t vClientTaskBuffer[ 1024 ];
+uint32_t vClientTaskBuffer[ 512 ];
 osStaticThreadDef_t vClientTaskControlBlock;
 const osThreadAttr_t vClientTask_attributes = {
   .name = "vClientTask",
@@ -97,7 +97,7 @@ const osThreadAttr_t vClientTask_attributes = {
 };
 /* Definitions for vFatFSTask */
 osThreadId_t vFatFSTaskHandle;
-uint32_t vFatFSTaskBuffer[ 4096 ];
+uint32_t vFatFSTaskBuffer[ 512 ];
 osStaticThreadDef_t vFatFSTaskControlBlock;
 const osThreadAttr_t vFatFSTask_attributes = {
   .name = "vFatFSTask",
@@ -106,6 +106,18 @@ const osThreadAttr_t vFatFSTask_attributes = {
   .stack_mem = &vFatFSTaskBuffer[0],
   .stack_size = sizeof(vFatFSTaskBuffer),
   .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for vPrintTask */
+osThreadId_t vPrintTaskHandle;
+uint32_t vPrintTaskBuffer[ 512 ];
+osStaticThreadDef_t vPrintTaskControlBlock;
+const osThreadAttr_t vPrintTask_attributes = {
+  .name = "vPrintTask",
+  .cb_mem = &vPrintTaskControlBlock,
+  .cb_size = sizeof(vPrintTaskControlBlock),
+  .stack_mem = &vPrintTaskBuffer[0],
+  .stack_size = sizeof(vPrintTaskBuffer),
+  .priority = (osPriority_t) osPriorityLow,
 };
 /* Definitions for structFSQueue */
 osMessageQueueId_t structFSQueueHandle;
@@ -153,6 +165,7 @@ void vStartInitTask(void *argument);
 void vStartCmdTask(void *argument);
 void vStartClientTask(void *argument);
 void vStartFatFSTask(void *argument);
+void StartPrintTask(void *argument);
 
 extern void MX_LWIP_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
@@ -232,6 +245,9 @@ void MX_FREERTOS_Init(void) {
 
   /* creation of vFatFSTask */
   vFatFSTaskHandle = osThreadNew(vStartFatFSTask, NULL, &vFatFSTask_attributes);
+
+  /* creation of vPrintTask */
+  vPrintTaskHandle = osThreadNew(StartPrintTask, NULL, &vPrintTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
 //  vTaskSuspend((TaskHandle_t)vClientTaskHandle);
@@ -333,9 +349,10 @@ void vStartFatFSTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
-	  xSemaphoreTake(fsSemHandle, portMAX_DELAY);
+//	  xSemaphoreTake(fsSemHandle, portMAX_DELAY);
 //	  switch ( ) {
 //		case 1 ... 2:
+	  ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
 			if (mount_fs(&fs, 1) != 0)
 			{
 				cliWrite("Failed mount\r\n");
@@ -353,6 +370,9 @@ void vStartFatFSTask(void *argument)
 
 			cliWrite((char *)buf);
 			cliWrite("\r\n");
+//			vTaskPrioritySet(vFatFSTaskHandle, osPriorityNormal);
+			xTaskNotifyGive(cliTaskHandle);
+			taskYIELD();
 //			break;
 //		case 3:
 //			if (freq != freqRef)
@@ -367,6 +387,24 @@ void vStartFatFSTask(void *argument)
     osDelay(500);
   }
   /* USER CODE END vStartFatFSTask */
+}
+
+/* USER CODE BEGIN Header_StartPrintTask */
+/**
+* @brief Function implementing the vPrintTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartPrintTask */
+void StartPrintTask(void *argument)
+{
+  /* USER CODE BEGIN StartPrintTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StartPrintTask */
 }
 
 /* Private application code --------------------------------------------------*/

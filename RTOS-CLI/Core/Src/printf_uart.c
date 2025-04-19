@@ -13,11 +13,11 @@ extern UART_HandleTypeDef H_UART;
 
 
 void UART_Printf(const char* fmt, ...) {
-    char buff[256];
+    char buff[configCOMMAND_INT_MAX_OUTPUT_SIZE];
     __builtin_va_list args;
     __builtin_va_start(args, fmt);
     vsnprintf(buff, sizeof(buff), fmt, args);
-    HAL_UART_Transmit(&huart3, (uint8_t*)buff, strlen(buff), HAL_MAX_DELAY);
+    HAL_UART_Transmit_DMA(&huart3, (uint8_t*)buff, strlen(buff));//, HAL_MAX_DELAY);
     memset(buff, (uint32_t)'\0', sizeof(buff));
     __builtin_va_end(args);
 }

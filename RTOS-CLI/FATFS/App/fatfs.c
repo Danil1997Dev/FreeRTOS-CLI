@@ -56,7 +56,7 @@ FRESULT mount_fs(FATFS *fs, uint8_t opt)
 	FRESULT res;
 	DWORD sizeClaster;
 	FATFS* pfs = fs;
-	char *cli_msg;
+//	char *cli_msg;
 
 	switch (opt) {
 		case 1:
@@ -67,16 +67,16 @@ FRESULT mount_fs(FATFS *fs, uint8_t opt)
 			portTICK_TYPE_EXIT_CRITICAL();
 			if (res != FR_OK)
 			{
-				sprintf(cli_msg,"Fail of mount\r\n");
+//				sprintf(cli_msg,"Fail of mount\r\n");
 				return res;
 			}
-			sprintf(cli_msg,"Mount success\r\n");
+//			sprintf(cli_msg,"Mount success\r\n");
 			DWORD sizeClaster;
 
 			res = f_getfree((TCHAR const*)SDPath, &sizeClaster, &pfs);
 			if (res == FR_OK)
 			{
-				sprintf(cli_msg,"free size = %u\r\n", sizeClaster);
+//				sprintf(cli_msg,"free size = %u\r\n", sizeClaster);
 				return res;
 			}
 			break;
@@ -88,11 +88,11 @@ FRESULT mount_fs(FATFS *fs, uint8_t opt)
 			portTICK_TYPE_EXIT_CRITICAL();
 			if (res != FR_OK)
 			{
-				sprintf(cli_msg,"Fail of unmount\r\n\a");
+//				sprintf(cli_msg,"Fail of unmount\r\n\a");
 				return res;
 			}
 
-			sprintf(cli_msg,"Unmount was success\r\n");
+//			sprintf(cli_msg,"Unmount was success\r\n");
 			break;
 		default:
 			break;
@@ -104,25 +104,25 @@ FRESULT mount_fs(FATFS *fs, uint8_t opt)
 FRESULT write_fs(uint8_t *name_file, uint8_t *data)
 {
 	FRESULT res;
-	char *cli_msg;
+//	char *cli_msg;
     FIL logFile;
 
     res = f_open(&logFile, (char *)name_file, FA_OPEN_APPEND | FA_WRITE);
     if(res != FR_OK) {
-    	sprintf(cli_msg,"f_open() failed, res = %u\r\n\0", res);
+//    	sprintf(cli_msg,"f_open() failed, res = %u\r\n\0", res);
         return res;
     }
 
     unsigned int bytesWritten;
     res = f_write(&logFile, data, (UINT)strlen(data), &bytesWritten);
     if(res != FR_OK) {
-    	sprintf(cli_msg,"f_write() failed, res = %u\r\n", res);
+//    	sprintf(cli_msg,"f_write() failed, res = %u\r\n", res);
         return res;
     }
 
     res = f_close(&logFile);
     if(res != FR_OK) {
-    	sprintf(cli_msg,"f_close() failed, res = %u\r\n", res);
+//    	sprintf(cli_msg,"f_close() failed, res = %u\r\n", res);
         return res;
     }
 
@@ -141,19 +141,19 @@ FRESULT write_fs(uint8_t *name_file, uint8_t *data)
 FRESULT read_fs(uint8_t *name_file, uint8_t *buf, uint32_t len)
 {
 	FRESULT res;
-	char *cli_msg;
+//	char *cli_msg;
     FIL logFile;
 
     res = f_open(&logFile, (char *)name_file, FA_READ);
     if(res != FR_OK) {
-        sprintf(cli_msg,"f_open() failed, res = %u\r\n", res);
+//        sprintf(cli_msg,"f_open() failed, res = %u\r\n", res);
         return res;
     }
 
     unsigned int bytesReading = 0;
     res = f_read(&logFile, (void *)buf, (UINT)len, &bytesReading);
     if(res != FR_OK) {
-    	sprintf(cli_msg,"f_read() failed, res = %u\r\n", res);
+//    	sprintf(cli_msg,"f_read() failed, res = %u\r\n", res);
         return res;
     }
 
@@ -161,7 +161,7 @@ FRESULT read_fs(uint8_t *name_file, uint8_t *buf, uint32_t len)
 
     res = f_close(&logFile);
     if(res != FR_OK) {
-    	sprintf(cli_msg,"f_close() failed, res = %u\r\n", res);
+//    	sprintf(cli_msg,"f_close() failed, res = %u\r\n", res);
         return res;
     }
 

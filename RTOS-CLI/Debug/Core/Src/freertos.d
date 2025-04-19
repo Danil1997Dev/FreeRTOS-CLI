@@ -93,7 +93,8 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
  ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
- ../Core/Inc/printf_uart.h ../Core/Inc/FreeRTOS_CLI.h \
+ ../Core/Inc/printf_uart.h ../Core/Inc/printf_uart.h \
+ ../Core/Inc/FreeRTOS_CLI.h \
  ../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys/socket.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/inet.h \
@@ -258,6 +259,7 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
 ../Middlewares/Third_Party/FatFs/src/diskio.h:
 ../Middlewares/Third_Party/FatFs/src/ff.h:
 ../FATFS/Target/sd_diskio.h:
+../Core/Inc/printf_uart.h:
 ../Core/Inc/printf_uart.h:
 ../Core/Inc/FreeRTOS_CLI.h:
 ../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys/socket.h:
