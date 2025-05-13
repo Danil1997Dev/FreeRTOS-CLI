@@ -23,18 +23,27 @@
 #include "fatfs.h"
 #include "printf_uart.h"
 
+#define MAX_FILE_BUF_LENGTH 5500
 #define MAX_INPUT_LENGTH 50
 #define USING_VS_CODE_TERMINAL 0
 #define USING_OTHER_TERMINAL 1 // e.g. Putty, TerraTerm
 
+typedef struct{
+	uint8_t ret;
+	uint8_t val[30];
+	uint16_t num;
+} notify_struct_t;
+
 extern const CLI_Command_Definition_t xCommandList[];
-extern char *remout_ip;
+extern char remout_ip[15];
 extern uint16_t remout_port;
 extern const char * cli_prompt;
 extern osSemaphoreId_t connectSemHandle;
 extern osSemaphoreId_t fsSemHandle;
 extern osThreadId_t vFatFSTaskHandle;
-extern TaskHandle_t cliTaskHandle;
+extern osThreadId_t vClientTaskHandle;
+extern TaskHandle_t cliTaskHandle[5];
+extern uint8_t buf[MAX_FILE_BUF_LENGTH];
 void processRxedChar(uint8_t rxChar);
 void handleNewline(const char *const pcInputString, char *cOutputBuffer, uint8_t *cInputIndex);
 void handleCharacterInput(uint8_t *cInputIndex, char *pcInputString);

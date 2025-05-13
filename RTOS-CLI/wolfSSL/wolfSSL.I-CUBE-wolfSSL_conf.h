@@ -27,17 +27,17 @@
 
 /**
     MiddleWare name : wolfSSL.I-CUBE-wolfSSL.5.7.4
-    MiddleWare fileName : wolfSSL.I-CUBE-wolfSSL_conf.h
+    MiddleWare fileName : ./wolfSSL.I-CUBE-wolfSSL_conf.h
     MiddleWare version :
 */
 /*---------- WOLF_CONF_DEBUG -----------*/
-#define WOLF_CONF_DEBUG      0
+#define WOLF_CONF_DEBUG      1
 
 /*---------- WOLF_CONF_WOLFCRYPT_ONLY -----------*/
 #define WOLF_CONF_WOLFCRYPT_ONLY      0
 
 /*---------- WOLF_CONF_TLS13 -----------*/
-#define WOLF_CONF_TLS13      1
+#define WOLF_CONF_TLS13      0
 
 /*---------- WOLF_CONF_TLS12 -----------*/
 #define WOLF_CONF_TLS12      1
@@ -67,7 +67,7 @@
 #define WOLF_CONF_AESGCM      1
 
 /*---------- WOLF_CONF_AESCBC -----------*/
-#define WOLF_CONF_AESCBC      0
+#define WOLF_CONF_AESCBC      1
 
 /*---------- WOLF_CONF_CHAPOLY -----------*/
 #define WOLF_CONF_CHAPOLY      1
@@ -88,7 +88,7 @@
 #define WOLF_CONF_SHA2_256      1
 
 /*---------- WOLF_CONF_SHA2_384 -----------*/
-#define WOLF_CONF_SHA2_384      0
+#define WOLF_CONF_SHA2_384      1
 
 /*---------- WOLF_CONF_SHA2_512 -----------*/
 #define WOLF_CONF_SHA2_512      0
@@ -106,13 +106,13 @@
 #define WOLF_CONF_KEEP_PEER_CERT      1
 
 /*---------- WOLF_CONF_BASE64_ENCODE -----------*/
-#define WOLF_CONF_BASE64_ENCODE      0
+#define WOLF_CONF_BASE64_ENCODE      1
 
 /*---------- WOLF_CONF_OPENSSL_EXTRA -----------*/
 #define WOLF_CONF_OPENSSL_EXTRA      0
 
 /*---------- WOLF_CONF_TEST -----------*/
-#define WOLF_CONF_TEST      1
+#define WOLF_CONF_TEST      0
 
 /*---------- WOLF_CONF_KYBER -----------*/
 #define WOLF_CONF_KYBER      0

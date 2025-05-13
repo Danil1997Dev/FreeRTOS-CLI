@@ -1,2 +1,6 @@
-../Core/Src/ssl_client.c:13:5:ssl_client	4
-../Core/Src/ssl_client.c:78:5:load_cert	1
+../Core/Src/ssl_client.c:15:6:myWolfSSLLogCallback	1
+../Core/Src/ssl_client.c:22:5:ssl_client	8
+../Core/Src/ssl_client.c:153:5:load_cert	4
+../Core/Src/ssl_client.c:172:5:load_config	1
+../Core/Src/ssl_client.c:179:5:load_get_req	2
+../Core/Src/ssl_client.c:191:5:load_post_req	2

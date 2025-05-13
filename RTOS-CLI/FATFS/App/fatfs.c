@@ -138,20 +138,22 @@ FRESULT write_fs(uint8_t *name_file, uint8_t *data)
     return res;
 }
 
-FRESULT read_fs(uint8_t *name_file, uint8_t *buf, uint32_t len)
+FRESULT read_fs(uint8_t *name_file, uint8_t *buf, uint32_t len, uint32_t *pbytesReading)
 {
 	FRESULT res;
-//	char *cli_msg;
+	char *cli_msg = malloc(sizeof(char)*25);
     FIL logFile;
 
     res = f_open(&logFile, (char *)name_file, FA_READ);
+    sprintf(cli_msg,"name_file: %s\r\n", name_file);
+    cliWrite(cli_msg);
     if(res != FR_OK) {
 //        sprintf(cli_msg,"f_open() failed, res = %u\r\n", res);
         return res;
     }
 
-    unsigned int bytesReading = 0;
-    res = f_read(&logFile, (void *)buf, (UINT)len, &bytesReading);
+//    unsigned int bytesReading = 0;
+    res = f_read(&logFile, (void *)buf, (UINT)len, pbytesReading);
     if(res != FR_OK) {
 //    	sprintf(cli_msg,"f_read() failed, res = %u\r\n", res);
         return res;

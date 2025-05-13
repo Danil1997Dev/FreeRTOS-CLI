@@ -16,10 +16,13 @@
 #include <wolfssl/wolfcrypt/settings.h>
 #include "fatfs.h"
 #include "printf_uart.h"
+#include "app_cli.h"
+#include <wolfssl/wolfcrypt/logging.h>
 
-#define LEN_CERT_FILE 5000
-
-int ssl_client(int *sockfd, struct sockaddr_in *servAddr);
-int load_cert(WOLFSSL_CTX *ctx, char *root_cert_pem);
+int ssl_client(int *sockfd, struct sockaddr_in *servAddr, notify_struct_t *p_ntfy_strct);
+int load_cert(uint32_t len);
+int load_config(uint32_t len);
+int load_get_req(uint32_t len);
+int load_post_req(uint32_t len);
 
 #endif /* INC_SSL_CLIENT_H_ */

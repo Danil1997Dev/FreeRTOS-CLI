@@ -1,3 +1,5 @@
 buf
 vFatFSTaskBuffer
 buf_read
+gnetif
+cert_pem

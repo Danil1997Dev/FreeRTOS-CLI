@@ -1,0 +1,275 @@
+2025-04-26 19:50:32,676 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 937247608 Bytes (1073741824)
+2025-04-26 19:50:34,064 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 970802040 Bytes (1073741824)
+2025-04-26 19:50:39,539 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 911847840 Bytes (1073741824)
+2025-04-26 19:50:40,659 [INFO] ProjectBuilder:2363 - IP not ready for code generation: FATFS
+2025-04-26 19:50:41,782 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RNG
+2025-04-26 19:50:41,782 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
+2025-04-26 19:50:41,783 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SDIO
+2025-04-26 19:50:41,783 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2025-04-26 19:50:41,783 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-04-26 19:50:41,783 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-04-26 19:50:41,784 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-04-26 19:50:41,784 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: LWIP
+2025-04-26 19:50:41,784 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2025-04-26 19:50:41,784 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: wolfSSL.I-CUBE-wolfSSL.5.7.4
+2025-04-26 19:50:41,784 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: DMA
+2025-04-26 19:50:41,785 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-04-26 19:50:41,785 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ETH
+2025-04-26 19:50:41,785 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: wolfSSL.I-CUBE-wolfSSH.1.4.17
+2025-04-26 19:50:41,785 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FATFS
+2025-04-26 19:50:41,799 [INFO] CodeGenerator:896 - code generatio: config db path: D:\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\
+2025-04-26 19:50:41,842 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-04-26 19:50:42,205 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-04-26 19:50:42,205 [INFO] IP:3366 - RTE template : default_conf.ftl
+2025-04-26 19:50:42,338 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp_save
+2025-04-26 19:50:43,206 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\license.tmp
+2025-04-26 19:50:43,437 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\gpio.c_save
+2025-04-26 19:50:43,671 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\gpio.c
+2025-04-26 19:50:43,709 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\gpio.h_save
+2025-04-26 19:50:43,887 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\gpio.h
+2025-04-26 19:50:44,159 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-04-26 19:50:44,356 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-04-26 19:50:44,373 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-04-26 19:50:44,515 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-04-26 19:50:44,551 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-04-26 19:50:44,763 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-04-26 19:50:44,780 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-04-26 19:50:44,923 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-04-26 19:50:44,935 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-04-26 19:50:45,033 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-04-26 19:50:45,037 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-04-26 19:50:45,128 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-04-26 19:50:45,163 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-04-26 19:50:45,266 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-04-26 19:50:45,288 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-04-26 19:50:45,379 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-04-26 19:50:45,390 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp_save
+2025-04-26 19:50:45,510 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_vars.tmp
+2025-04-26 19:50:45,515 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp_save
+2025-04-26 19:50:45,578 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_inc.tmp
+2025-04-26 19:50:45,603 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp_save
+2025-04-26 19:50:45,682 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_HalInit.tmp
+2025-04-26 19:50:45,699 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp_save
+2025-04-26 19:50:45,779 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\eth_Msp.tmp
+2025-04-26 19:50:47,712 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-26 19:50:47,733 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-04-26 19:50:47,864 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-04-26 19:50:47,876 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-04-26 19:50:47,968 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-04-26 19:50:47,981 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-04-26 19:50:48,060 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-04-26 19:50:48,075 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-04-26 19:50:48,223 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-04-26 19:50:48,239 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-04-26 19:50:48,334 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-04-26 19:50:48,348 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-04-26 19:50:48,430 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-04-26 19:50:48,444 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-04-26 19:50:48,548 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-04-26 19:50:48,568 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-04-26 19:50:48,676 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-04-26 19:50:48,691 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-04-26 19:50:48,777 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-04-26 19:50:48,790 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-26 19:50:48,811 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-04-26 19:50:48,929 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-04-26 19:50:48,943 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-04-26 19:50:49,023 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-04-26 19:50:49,037 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-04-26 19:50:49,165 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-04-26 19:50:49,183 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-04-26 19:50:49,293 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-04-26 19:50:49,318 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-26 19:50:49,338 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-26 19:50:49,339 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-26 19:50:49,354 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-26 19:50:49,364 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp_save
+2025-04-26 19:50:49,473 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_inc.tmp
+2025-04-26 19:50:49,479 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp_save
+2025-04-26 19:50:49,549 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelInit.tmp
+2025-04-26 19:50:49,554 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp_save
+2025-04-26 19:50:49,615 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_kernelStart.tmp
+2025-04-26 19:50:49,619 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp_save
+2025-04-26 19:50:49,685 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_typedefs.tmp
+2025-04-26 19:50:49,703 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp_save
+2025-04-26 19:50:49,776 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_vars.tmp
+2025-04-26 19:50:49,781 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp_save
+2025-04-26 19:50:49,843 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_pfp.tmp
+2025-04-26 19:50:49,858 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp_save
+2025-04-26 19:50:49,922 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_obj_creat.tmp
+2025-04-26 19:50:49,927 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp_save
+2025-04-26 19:50:49,983 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_default_thread.tmp
+2025-04-26 19:50:49,988 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp_save
+2025-04-26 19:50:50,041 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\rtos_threads.tmp
+2025-04-26 19:50:50,070 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h_save
+2025-04-26 19:50:50,250 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\FreeRTOSConfig.h
+2025-04-26 19:50:50,291 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c_save
+2025-04-26 19:50:50,465 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\freertos.c
+2025-04-26 19:50:50,632 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\dma.c_save
+2025-04-26 19:50:50,733 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\dma.c
+2025-04-26 19:50:50,755 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\dma.h_save
+2025-04-26 19:50:50,850 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\dma.h
+2025-04-26 19:50:50,870 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-26 19:50:50,883 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp_save
+2025-04-26 19:50:51,004 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_HalInit.tmp
+2025-04-26 19:50:51,010 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp_save
+2025-04-26 19:50:51,110 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_vars.tmp
+2025-04-26 19:50:51,115 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp_save
+2025-04-26 19:50:51,211 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_ext_vars.tmp
+2025-04-26 19:50:51,217 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp_save
+2025-04-26 19:50:51,325 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\fatfs_inc.tmp
+2025-04-26 19:50:51,358 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h_save
+2025-04-26 19:50:51,505 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\ffconf.h
+2025-04-26 19:50:51,531 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c_save
+2025-04-26 19:50:51,695 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.c
+2025-04-26 19:50:51,726 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h_save
+2025-04-26 19:50:51,859 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\bsp_driver_sd.h
+2025-04-26 19:50:51,889 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h_save
+2025-04-26 19:50:51,996 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.h
+2025-04-26 19:50:52,022 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c_save
+2025-04-26 19:50:52,192 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\Target\sd_diskio.c
+2025-04-26 19:50:52,226 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c_save
+2025-04-26 19:50:52,341 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.c
+2025-04-26 19:50:52,365 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h_save
+2025-04-26 19:50:52,480 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\FATFS\App\fatfs.h
+2025-04-26 19:50:52,494 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-26 19:50:52,547 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c_save
+2025-04-26 19:50:52,671 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.c
+2025-04-26 19:50:52,697 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h_save
+2025-04-26 19:50:52,791 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\App\lwip.h
+2025-04-26 19:50:52,814 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h_save
+2025-04-26 19:50:53,058 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\lwipopts.h
+2025-04-26 19:50:53,082 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c_save
+2025-04-26 19:50:53,268 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.c
+2025-04-26 19:50:53,296 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h_save
+2025-04-26 19:50:53,386 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\LWIP\Target\ethernetif.h
+2025-04-26 19:50:53,422 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\rng.c_save
+2025-04-26 19:50:53,567 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\rng.c
+2025-04-26 19:50:53,591 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\rng.h_save
+2025-04-26 19:50:53,691 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\rng.h
+2025-04-26 19:50:53,712 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\sdio.c_save
+2025-04-26 19:50:53,855 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\sdio.c
+2025-04-26 19:50:53,858 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\sdio.h_save
+2025-04-26 19:50:53,953 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\sdio.h
+2025-04-26 19:50:53,980 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\tim.c_save
+2025-04-26 19:50:54,094 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\tim.c
+2025-04-26 19:50:54,100 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\tim.h_save
+2025-04-26 19:50:54,246 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\tim.h
+2025-04-26 19:50:54,269 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\usart.c_save
+2025-04-26 19:50:54,410 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\usart.c
+2025-04-26 19:50:54,415 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\usart.h_save
+2025-04-26 19:50:54,530 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\usart.h
+2025-04-26 19:50:54,533 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-26 19:50:54,562 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSH\.\wolfSSL.I-CUBE-wolfSSH_conf.h_save
+2025-04-26 19:50:54,668 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSH\.\wolfSSL.I-CUBE-wolfSSH_conf.h
+2025-04-26 19:50:54,670 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-26 19:50:54,699 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSL\.\wolfSSL.I-CUBE-wolfSSL_conf.h_save
+2025-04-26 19:50:54,818 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\wolfSSL\.\wolfSSL.I-CUBE-wolfSSL_conf.h
+2025-04-26 19:50:54,863 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c_save
+2025-04-26 19:50:55,013 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_it.c
+2025-04-26 19:50:55,037 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h_save
+2025-04-26 19:50:55,180 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_it.h
+2025-04-26 19:50:55,249 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c_save
+2025-04-26 19:50:55,390 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_msp.c
+2025-04-26 19:50:55,403 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp_save
+2025-04-26 19:50:55,481 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\MXTmpFiles\system.tmp
+2025-04-26 19:50:55,506 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2025-04-26 19:50:55,604 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\stm32f4xx_hal_timebase_tim.c
+2025-04-26 19:50:55,635 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h_save
+2025-04-26 19:50:55,749 [INFO] CodeEngine:335 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\stm32f4xx_hal_conf.h
+2025-04-26 19:50:55,804 [INFO] ApiDbMcu:508 - Load IP Config File for RNG
+2025-04-26 19:50:55,807 [INFO] ApiDbMcu:508 - Load IP Config File for SDIO
+2025-04-26 19:50:55,823 [INFO] ApiDbMcu:508 - Load IP Config File for TIM5
+2025-04-26 19:50:55,836 [INFO] ApiDbMcu:508 - Load IP Config File for USART3
+2025-04-26 19:50:55,841 [INFO] ApiDbMcu:508 - Load IP Config File for RCC
+2025-04-26 19:50:55,879 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h_save
+2025-04-26 19:50:56,025 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Inc\main.h
+2025-04-26 19:50:56,049 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c_save
+2025-04-26 19:50:56,258 [INFO] CodeEngine:279 - Generated code: D:\STM32\RTOS-CLI\RTOS-CLI\Core\Src\main.c
+2025-04-26 19:50:57,807 [INFO] ProjectBuilder:3289 - Time for Copy HAL[1] : 986mS.
+2025-04-26 19:50:57,808 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,808 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,808 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,808 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,808 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,808 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,808 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,809 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,810 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,810 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,810 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,810 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,810 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,810 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,810 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,811 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,812 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,813 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,814 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,814 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,814 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,814 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,814 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,814 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,814 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,814 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,814 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,814 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,814 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:50:57,815 [ERROR] Middleware:2969 - Invalid RefComponent list
+2025-04-26 19:51:02,232 [INFO] ProjectBuilder:9095 - Time for Copy ThirdParty[1] : 4411mS.
+2025-04-26 19:51:02,233 [ERROR] ProjectBuilder:9049 - bundle already exist, pelase verify if each PDSC component have a bundle, the couple cBundle and cClass must be unique
+2025-04-26 19:51:02,749 [INFO] ProjectBuilder:9095 - Time for Copy ThirdParty[1] : 516mS.
+2025-04-26 19:51:03,281 [INFO] ProjectBuilder:9095 - Time for Copy ThirdParty[1] : 531mS.
+2025-04-26 19:51:03,319 [INFO] ProjectBuilder:4876 - Project Generator version: 4.5.0-RC5
+2025-04-26 19:51:03,445 [INFO] ConfigFileManager:1579 - The Die is : DIE413
+2025-04-26 19:51:03,461 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2025-04-26 19:51:03,486 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2025-04-26 19:51:03,515 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2025-04-26 19:51:03,539 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST

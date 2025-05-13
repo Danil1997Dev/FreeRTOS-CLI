@@ -49,7 +49,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
- ../Core/Inc/printf_uart.h ../Core/Inc/FreeRTOS_CLI.h ../LWIP/App/lwip.h \
+ ../Core/Inc/printf_uart.h ../Core/Inc/FreeRTOS_CLI.h \
+ ../Core/Inc/app_cli.h ../Core/Inc/usart.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+ ../Core/Inc/printf_uart.h ../LWIP/App/lwip.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h \
  ../LWIP/Target/lwipopts.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h \
@@ -90,11 +95,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../LWIP/Target/ethernetif.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/tcpip.h \
  ../Core/Inc/rng.h ../Core/Inc/sdio.h ../Core/Inc/tim.h \
- ../Core/Inc/usart.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- ../Core/Inc/gpio.h \
+ ../Core/Inc/usart.h ../Core/Inc/gpio.h \
  ../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys/socket.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/inet.h \
@@ -156,6 +157,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../FATFS/Target/sd_diskio.h:
 ../Core/Inc/printf_uart.h:
 ../Core/Inc/FreeRTOS_CLI.h:
+../Core/Inc/app_cli.h:
+../Core/Inc/usart.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
+../Core/Inc/printf_uart.h:
 ../LWIP/App/lwip.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h:
 ../LWIP/Target/lwipopts.h:
@@ -200,9 +207,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/sdio.h:
 ../Core/Inc/tim.h:
 ../Core/Inc/usart.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
 ../Core/Inc/gpio.h:
 ../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys/socket.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h:

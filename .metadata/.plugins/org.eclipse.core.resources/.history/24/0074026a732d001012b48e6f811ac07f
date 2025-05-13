@@ -1,0 +1,158 @@
+/*
+ * ssl_client.c
+ *
+ *  Created on: Mar 30, 2025
+ *      Author: user
+ */
+
+
+#include "ssl_client.h"
+
+char cert_pem[4000];
+////		"-----BEGIN CERTIFICATE-----\n"
+////		"MIICCTCCAY6gAwIBAgINAgPlwGjvYxqccpBQUjAKBggqhkjOPQQDAzBHMQswCQYD\n"
+////		"VQQGEwJVUzEiMCAGA1UEChMZR29vZ2xlIFRydXN0IFNlcnZpY2VzIExMQzEUMBIG\n"
+////		"A1UEAxMLR1RTIFJvb3QgUjQwHhcNMTYwNjIyMDAwMDAwWhcNMzYwNjIyMDAwMDAw\n"
+////		"WjBHMQswCQYDVQQGEwJVUzEiMCAGA1UEChMZR29vZ2xlIFRydXN0IFNlcnZpY2Vz\n"
+////		"IExMQzEUMBIGA1UEAxMLR1RTIFJvb3QgUjQwdjAQBgcqhkjOPQIBBgUrgQQAIgNi\n"
+////		"AATzdHOnaItgrkO4NcWBMHtLSZ37wWHO5t5GvWvVYRg1rkDdc/eJkTBa6zzuhXyi\n"
+////		"QHY7qca4R9gq55KRanPpsXI5nymfopjTX15YhmUPoYRlBtHci8nHc8iMai/lxKvR\n"
+////		"HYqjQjBAMA4GA1UdDwEB/wQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQW\n"
+////		"BBSATNbrdP9JNqPV2Py1PsVq8JQdjDAKBggqhkjOPQQDAwNpADBmAjEA6ED/g94D\n"
+////		"9J+uHXqnLrmvT/aDHQ4thQEd0dlq7A/Cr8deVl5c1RxYIigL9zC2L7F8AjEA8GE8\n"
+////		"p/SgguMh1YQdc4acLa/KNJvxn7kjNuK8YAOdgLOaVsjh4rsUecrNIdSUtUlD\n"
+////		"-----END CERTIFICATE-----\n";
+
+
+
+int ssl_client(int *sockfd, struct sockaddr_in *servAddr, notify_struct_t *p_ntfy_strct)
+{
+//    int sockfd;
+    WOLFSSL_CTX* ctx;
+    WOLFSSL* ssl;
+    WOLFSSL_METHOD* method;
+    char cli_msg[1];
+    uint32_t res;
+//    struct  sockaddr_in servAddr;
+    const char message[] = "Hello, World!--------------------------------";
+
+//    /* create and set up socket */
+//    sockfd = socket(AF_INET, SOCK_STREAM, 0);
+//    memset(&servAddr, 0, sizeof(servAddr));
+//    servAddr.sin_family = AF_INET;
+//    servAddr.sin_port = htons(SERV_PORT);
+
+    /* initialize wolfssl library */
+    wolfSSL_Init();
+    wolfSSL_Debugging_ON();
+    method = wolfTLSv1_2_client_method(); /* use TLS v1.2 */
+
+    /* make new ssl context */
+    if ((ctx = wolfSSL_CTX_new(method)) == NULL) {
+        sprintf(cli_msg,"Failed to wolfSSL_CTX_new\n");
+        goto cleanup;
+    }
+
+    /* Add cert to ctx */
+//    res = wolfSSL_CTX_load_verify_buffer(ctx,
+//                root_cert_pem,
+//                strlen(root_cert_pem),
+//                SSL_FILETYPE_PEM);
+//    if (res != SSL_SUCCESS) {
+//        sprintf(cli_msg,"Failed to wolfSSL_CTX_load_verify_locations\n");
+//        goto exit;
+//    }
+    res = load_cert(ctx, "google.pem", p_ntfy_strct->num);
+//    wolfSSL_CTX_set_verify(ctx, SSL_VERIFY_PEER, NULL);
+//    wolfSSL_CTX_set_verify(ctx, SSL_VERIFY_NONE, NULL);
+    /* make new wolfSSL struct */
+    if ((ssl = wolfSSL_new(ctx)) == NULL) {
+        sprintf(cli_msg,"Failed to wolfSSL_new\n");
+        goto free_ctx;
+    }
+
+    /* Connect wolfssl to the socket, server, then send message */
+    wolfSSL_set_fd(ssl, *sockfd);
+
+//    if (load_cert(ctx, &root_cert_pem[0]) != SSL_SUCCESS) {
+//        sprintf(cli_msg,"Failed to wolfSSL_CTX_load_verify_locations\n");
+//        goto exit;
+//    }
+//    cliWrite(root_cert_pem);
+
+
+    /* connect to socket */
+    cliWrite((char *)"Connection...\r\n");
+    lwip_connect(*sockfd, (struct sockaddr *) servAddr, sizeof(*servAddr));
+//    lwip_write(*sockfd, "C-------------------------------------\n\r", sizeof("C-------------------------------------\n\r"));
+
+
+
+    res = wolfSSL_connect(ssl);
+    if (res != SSL_SUCCESS)
+    {
+    	cliWrite((char *)"Fail connection\r\n");
+    	return 1;
+    }
+
+    goto exit;
+    /* frees all data before client termination */
+exit:
+    wolfSSL_free(ssl);
+    close(*sockfd);
+    return 0;
+free_ctx:
+    wolfSSL_CTX_free(ctx);
+cleanup:
+    wolfSSL_Cleanup();
+    return 1;
+}
+
+int load_cert(WOLFSSL_CTX *ctx, char *name, uint32_t len)
+{
+//	char *cli_msg;
+//
+	char *root_cert_pem;
+	uint32_t bytesReading, n = 0;
+	int ret;
+//	mount_fs(&fs, FS_MOUNT);
+//
+//	read_fs((uint8_t *)"binance.pem", (uint8_t *)root_cert_pem, (uint32_t)LEN_CERT_FILE, &bytesReading);
+
+//    cliTaskHandle[1] = xTaskGetCurrentTaskHandle();
+//    xTaskNotify(vFatFSTaskHandle, (uint32_t)name, eSetValueWithOverwrite);
+//    xTaskNotifyWait(0, 0, bytesReading, portMAX_DELAY);
+//	cliWrite("\r\n");
+//	cliWrite((char *)buf);
+//	cliWrite("\r\n");
+
+	root_cert_pem = malloc(sizeof(char)*len);
+
+	for (int i = 0; i <= len; ++i) {
+
+//		uint32_t n = 0;
+		root_cert_pem[n] = buf[i];
+		++n;
+		if (buf[i] == '\r')
+			--n;
+
+	}
+
+//	memcpy(cert_pem, root_cert_pem, n);
+
+//	cliWrite("\r\n");
+//	cliWrite((char *)root_cert_pem);
+//	cliWrite("\r\n");
+
+
+	ret = wolfSSL_CTX_load_verify_buffer(ctx,
+	            (const unsigned char*)root_cert_pem,
+	            strlen(root_cert_pem),
+	            SSL_FILETYPE_PEM) ;
+
+	return ret;
+//    return wolfSSL_CTX_load_verify_buffer(ctx,
+//            (const unsigned char*)root_cert_pem,
+//            strlen(root_cert_pem),
+//            SSL_FILETYPE_PEM) ;
+}

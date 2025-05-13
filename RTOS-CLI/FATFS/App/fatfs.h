@@ -30,6 +30,7 @@
 /* USER CODE BEGIN Includes */
 #include "printf_uart.h"
 #include "stdlib.h"
+#include "app_cli.h"
 /* USER CODE END Includes */
 
 extern uint8_t retSD; /* Return value for SD */
@@ -58,7 +59,7 @@ typedef struct{
 #define OPTTYP opt_mount_t
 FRESULT mount_fs(FATFS *fs, OPTTYP opt);
 FRESULT write_fs(uint8_t *name_file, uint8_t *data);
-FRESULT read_fs(uint8_t *name_file, uint8_t *buf, uint32_t len);
+FRESULT read_fs(uint8_t *name_file, uint8_t *buf, uint32_t len, uint32_t *pbytesReading);
 
 extern FATFS fs;
 /* USER CODE END Prototypes */

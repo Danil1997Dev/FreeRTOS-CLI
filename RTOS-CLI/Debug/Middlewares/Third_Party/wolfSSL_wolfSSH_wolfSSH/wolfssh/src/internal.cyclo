@@ -58,9 +58,9 @@
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:3183:12:GetNameListRaw	11
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:3236:12:GetNameList	13
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:3315:13:MatchIdLists	9
-../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:3349:20:BlockSzForId	2
+../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:3349:20:BlockSzForId	4
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:3376:20:MacSzForId	2
-../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:3397:20:KeySzForId	5
+../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:3397:20:KeySzForId	8
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:3442:32:HashForId	5
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:3529:19:wcPrimeForId	3
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:3569:27:PrimeNameForId	2
@@ -73,7 +73,7 @@
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:4240:12:ParseECCPubKey	10
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:4505:12:ParsePubKey	4
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:4549:12:DoKexDhReply	102
-../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:5127:12:DoNewKeys	13
+../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:5127:12:DoNewKeys	16
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:5209:12:DoKexDhGexRequest	11
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:5245:12:DoKexDhGexGroup	16
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:5304:12:DoIgnore	1
@@ -108,8 +108,8 @@
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:8015:12:PutBuffer	3
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:8035:12:DoChannelExtendedData	11
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:8082:12:DoPacket	80
-../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:8372:19:Encrypt	7
-../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:8420:19:Decrypt	8
+../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:8372:19:Encrypt	11
+../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:8420:19:Decrypt	12
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:8471:19:CreateMac	9
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:8559:19:VerifyMac	20
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:8623:20:AeadIncrementExpIv	3
@@ -130,7 +130,7 @@
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:9836:20:SigTypeForId	1
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:9879:5:wolfSSH_RsaVerify	6
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:9917:5:SendKexDhReply	98
-../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:10754:5:SendNewKeys	15
+../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:10754:5:SendNewKeys	18
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:10842:5:SendKexDhGexRequest	9
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:10888:5:SendKexDhGexGroup	11
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:10958:5:SendKexDhInit	23

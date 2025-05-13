@@ -33,6 +33,7 @@
 #include "ssl_client.h"
 #include "fatfs.h"
 #include "printf_uart.h"
+#include "string.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,7 +58,7 @@ typedef StaticQueue_t osStaticMessageQDef_t;
 extern struct netif gnetif;
 extern uint8_t cRxedChar;
 extern char cOutputBuffer[configCOMMAND_INT_MAX_OUTPUT_SIZE], pcInputString[MAX_INPUT_LENGTH];
-uint8_t buf[LEN_CERT_FILE];
+
 /* USER CODE END Variables */
 /* Definitions for vInitTask */
 osThreadId_t vInitTaskHandle;
@@ -73,7 +74,7 @@ const osThreadAttr_t vInitTask_attributes = {
 };
 /* Definitions for vCmdTask */
 osThreadId_t vCmdTaskHandle;
-uint32_t vCmdTaskBuffer[ 8192 ];
+uint32_t vCmdTaskBuffer[ 1024 ];
 osStaticThreadDef_t vCmdTaskControlBlock;
 const osThreadAttr_t vCmdTask_attributes = {
   .name = "vCmdTask",
@@ -85,7 +86,7 @@ const osThreadAttr_t vCmdTask_attributes = {
 };
 /* Definitions for vClientTask */
 osThreadId_t vClientTaskHandle;
-uint32_t vClientTaskBuffer[ 512 ];
+uint32_t vClientTaskBuffer[ 2048 ];
 osStaticThreadDef_t vClientTaskControlBlock;
 const osThreadAttr_t vClientTask_attributes = {
   .name = "vClientTask",
@@ -97,7 +98,7 @@ const osThreadAttr_t vClientTask_attributes = {
 };
 /* Definitions for vFatFSTask */
 osThreadId_t vFatFSTaskHandle;
-uint32_t vFatFSTaskBuffer[ 512 ];
+uint32_t vFatFSTaskBuffer[ 1024 ];
 osStaticThreadDef_t vFatFSTaskControlBlock;
 const osThreadAttr_t vFatFSTask_attributes = {
   .name = "vFatFSTask",
@@ -106,18 +107,6 @@ const osThreadAttr_t vFatFSTask_attributes = {
   .stack_mem = &vFatFSTaskBuffer[0],
   .stack_size = sizeof(vFatFSTaskBuffer),
   .priority = (osPriority_t) osPriorityNormal,
-};
-/* Definitions for vPrintTask */
-osThreadId_t vPrintTaskHandle;
-uint32_t vPrintTaskBuffer[ 512 ];
-osStaticThreadDef_t vPrintTaskControlBlock;
-const osThreadAttr_t vPrintTask_attributes = {
-  .name = "vPrintTask",
-  .cb_mem = &vPrintTaskControlBlock,
-  .cb_size = sizeof(vPrintTaskControlBlock),
-  .stack_mem = &vPrintTaskBuffer[0],
-  .stack_size = sizeof(vPrintTaskBuffer),
-  .priority = (osPriority_t) osPriorityLow,
 };
 /* Definitions for structFSQueue */
 osMessageQueueId_t structFSQueueHandle;
@@ -165,7 +154,6 @@ void vStartInitTask(void *argument);
 void vStartCmdTask(void *argument);
 void vStartClientTask(void *argument);
 void vStartFatFSTask(void *argument);
-void StartPrintTask(void *argument);
 
 extern void MX_LWIP_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
@@ -246,9 +234,6 @@ void MX_FREERTOS_Init(void) {
   /* creation of vFatFSTask */
   vFatFSTaskHandle = osThreadNew(vStartFatFSTask, NULL, &vFatFSTask_attributes);
 
-  /* creation of vPrintTask */
-  vPrintTaskHandle = osThreadNew(StartPrintTask, NULL, &vPrintTask_attributes);
-
   /* USER CODE BEGIN RTOS_THREADS */
 //  vTaskSuspend((TaskHandle_t)vClientTaskHandle);
 //  vTaskSuspend((TaskHandle_t)vCmdTaskHandle);
@@ -272,10 +257,20 @@ void vStartInitTask(void *argument)
   /* init code for LWIP */
   MX_LWIP_Init();
   /* USER CODE BEGIN vStartInitTask */
+//  portTICK_TYPE_ENTER_CRITICAL();
+  HAL_Delay(15000);
+
   /* Infinite loop */
   for(;;)
   {
-    osDelay(10000);
+	  while (gnetif.ip_addr.addr == 0)
+	  {
+		  HAL_UART_Transmit(&huart3, "IP address assigned\r\n", sizeof"IP address assined\r\n", 0xffff);
+		  vTaskSuspend(NULL);
+
+	  }
+//	  portTICK_TYPE_EXIT_CRITICAL();
+    osDelay(1);
   }
   /* USER CODE END vStartInitTask */
 }
@@ -292,7 +287,7 @@ void vStartCmdTask(void *argument)
   /* USER CODE BEGIN vStartCmdTask */
     uint8_t cInputIndex = 0; // simply used to keep track of the index of the input string
     vRegisterCLICommands();
-    HAL_UART_Transmit(&huart3, (uint8_t*)"Start cli\r\n", sizeof("Start cli\r\n"), 0xffff);
+    cliWrite("Start cli\r\n");
     cliWrite(cli_prompt);
 
     for (;;)
@@ -327,10 +322,23 @@ void vStartCmdTask(void *argument)
 void vStartClientTask(void *argument)
 {
   /* USER CODE BEGIN vStartClientTask */
+	  struct sockaddr_in remout_host;
+	  int s;
+	  uint32_t ret_con;
+		notify_struct_t ntfy_strct;
+		notify_struct_t *p_ntfy_strct = &ntfy_strct;
   /* Infinite loop */
   for(;;)
   {
-    osDelay(100000);
+	  xTaskNotifyWait(0, 0, (uint32_t)&p_ntfy_strct, portMAX_DELAY);
+ 	  s = lwip_socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+ 	  remout_host.sin_family = AF_INET;
+ 	  remout_host.sin_port = htons(remout_port);//remout_port
+ 	  ip4addr_aton((char*)remout_ip,(ip4_addr_t*)&remout_host.sin_addr); //"192.168.0.10" 13.215.82.137
+ 	  p_ntfy_strct->ret = ssl_client(&s, &remout_host, p_ntfy_strct);
+ 	  xTaskNotify(cliTaskHandle[0], (uint32_t)p_ntfy_strct, eSetValueWithOverwrite);
+ 		taskYIELD();
+    osDelay(10);
   }
   /* USER CODE END vStartClientTask */
 }
@@ -345,34 +353,76 @@ void vStartClientTask(void *argument)
 void vStartFatFSTask(void *argument)
 {
   /* USER CODE BEGIN vStartFatFSTask */
-
+	uint32_t ret_fs;
+	char name[25];
+	uint32_t read_byte;//, name;
+	notify_struct_t ntfy_strct;
+	notify_struct_t *p_ntfy_strct = &ntfy_strct;
   /* Infinite loop */
   for(;;)
   {
 //	  xSemaphoreTake(fsSemHandle, portMAX_DELAY);
 //	  switch ( ) {
 //		case 1 ... 2:
-	  ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
-			if (mount_fs(&fs, 1) != 0)
+	  xTaskNotifyWait(0, 0, (uint32_t)&p_ntfy_strct, portMAX_DELAY);
+	  ret_fs = mount_fs(&fs, 1);
+			if (ret_fs != 0)
 			{
 				cliWrite("Failed mount\r\n");
 			}
-			cliWrite("Success mount\r\n");
-//			osDelay(3000);
-			for (int i = 0;i < 100;i++)
+			else
 			{
-				write_fs("WolfFile.txt", "Work on Wolf lib5\r\n");
-
+				cliWrite("Success mount\r\n");
 			}
-			cliWrite("Success writed\r\n");
+//			osDelay(3000);
+//			for (int i = 0;i < 100;i++)
+//			{
+//				ret_fs = write_fs("WolfFile.txt", "Work on Wolf lib5\r\n");
+//
+//			}
+//
+//			if (ret_fs != 0)
+//			{
+//				cliWrite("Failed writed\r\n");
+//			}
+//			else
+//			{
+//				cliWrite("Success writed\r\n");
+//			}
 
-			read_fs("binance.pem", buf, LEN_CERT_FILE);
 
-			cliWrite((char *)buf);
-			cliWrite("\r\n");
+			ret_fs = read_fs(p_ntfy_strct->val, buf, MAX_FILE_BUF_LENGTH, &read_byte);
+			if (ret_fs != 0)
+			{
+				cliWrite("Failed read file\r\n");
+			}
+			else
+			{
+				cliWrite("Success read file\r\n");
+			}
+//
+//			cliWrite("\r\n");
+//			cliWrite((char *)buf);
+//			cliWrite("\r\n");
 //			vTaskPrioritySet(vFatFSTaskHandle, osPriorityNormal);
-			xTaskNotifyGive(cliTaskHandle);
+//			for (int i = 5; i >= 0; --i) {
+//				if (cliTaskHandle[i] != NULL)
+//				{
+//
+//					xTaskNotify(cliTaskHandle[0], read_byte, eSetValueWithOverwrite);
+//					cliTaskHandle[i] = NULL;
+//					taskYIELD();
+//					break;
+//				}
+//
+//			}
+			p_ntfy_strct->num = read_byte;
+			p_ntfy_strct->ret = 0;
+
+			xTaskNotify(cliTaskHandle[0], (uint32_t)p_ntfy_strct, eSetValueWithOverwrite);
 			taskYIELD();
+//			xTaskNotifyGive(cliTaskHandle[0]);
+//			taskYIELD();
 //			break;
 //		case 3:
 //			if (freq != freqRef)
@@ -387,24 +437,6 @@ void vStartFatFSTask(void *argument)
     osDelay(500);
   }
   /* USER CODE END vStartFatFSTask */
-}
-
-/* USER CODE BEGIN Header_StartPrintTask */
-/**
-* @brief Function implementing the vPrintTask thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_StartPrintTask */
-void StartPrintTask(void *argument)
-{
-  /* USER CODE BEGIN StartPrintTask */
-  /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
-  }
-  /* USER CODE END StartPrintTask */
 }
 
 /* Private application code --------------------------------------------------*/

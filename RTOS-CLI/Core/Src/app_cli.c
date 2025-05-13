@@ -13,11 +13,13 @@
 #include "lwip.h"
 #include "socket.h"
 
-TaskHandle_t cliTaskHandle = NULL;
+TaskHandle_t cliTaskHandle[5];
+uint8_t buf[MAX_FILE_BUF_LENGTH];
 char cOutputBuffer[configCOMMAND_INT_MAX_OUTPUT_SIZE],pcInputString[MAX_INPUT_LENGTH];
 uint8_t cRxedChar;
+
 const char * cli_prompt = "\r\ncli> ";
-char *remout_ip = "\0";
+char remout_ip[15];
 uint16_t remout_port = 0;
 /* CLI escape sequences*/
 uint8_t backspace[] = "\b \b";
@@ -56,7 +58,11 @@ BaseType_t cmd_fs(char *pcWriteBuffer, size_t xWriteBufferLen,
 {
     const char *pcParameter1;
     BaseType_t xParameter1StringLength;
+    notify_struct_t ret_strct;
+    notify_struct_t *p_ret_strct = &ret_strct;
 
+
+    uint8_t *string = malloc(sizeof(uint8_t) * configCOMMAND_INT_MAX_OUTPUT_SIZE);
     /* Obtain the name of the source file, and the length of its name, from
     the command string. The name of the source file is the first parameter. */
     pcParameter1 = FreeRTOS_CLIGetParameter
@@ -87,21 +93,36 @@ BaseType_t cmd_fs(char *pcWriteBuffer, size_t xWriteBufferLen,
 //    xSemaphoreGive(fsSemHandle);
 //    vTaskPrioritySet(vFatFSTaskHandle, osPriorityHigh);
 //    taskYIELD();
-    cliTaskHandle = xTaskGetCurrentTaskHandle();
-    xTaskNotifyGive(vFatFSTaskHandle);
-    ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
-    cliWrite((char *)"\r\nfs comlited\r\n");
-    strcpy(pcWriteBuffer, (char *)"fs good");
+    cliTaskHandle[0] = xTaskGetCurrentTaskHandle();
+	xTaskNotify(vFatFSTaskHandle, (uint32_t)p_ret_strct, eSetValueWithOverwrite);
+	xTaskNotifyWait(0, 0, (uint32_t)&p_ret_strct, portMAX_DELAY);
+    if (p_ret_strct->ret == 0)
+    {
+    	string = "\r\n---FS comleted!---\r\n";
+    }
+    else
+    {
+    	string = "\r\n---FS no comleted!---\r\n";
+    }
+
+    strcpy(pcWriteBuffer, (char *)string);
+
+    free(string);
 
     return pdFALSE;
 }
 //*****************************************************************************
-BaseType_t cmd_connect(char *pcWriteBuffer, size_t xWriteBufferLen,
+BaseType_t cmd_connect_ip(char *pcWriteBuffer, size_t xWriteBufferLen,
                                  const char *pcCommandString)
 {
     const char *pcParameter1, *pcParameter2;
     BaseType_t xParameter1StringLength, xParameter2StringLength;
     char *addr_len;
+    uint32_t ret_con;
+    uint8_t *string = malloc(sizeof(uint8_t) * configCOMMAND_INT_MAX_OUTPUT_SIZE);
+    uint32_t bytesReading;
+    notify_struct_t ret_strct;
+    notify_struct_t *p_ret_strct = &ret_strct;
 
     /* Obtain the name of the source file, and the length of its name, from
     the command string. The name of the source file is the first parameter. */
@@ -128,12 +149,131 @@ BaseType_t cmd_connect(char *pcWriteBuffer, size_t xWriteBufferLen,
     remout_port = atoi(pcParameter2);
     addr_len = strstr(pcParameter1, " ");
     *addr_len = '\0';
-    remout_ip = (char *)pcParameter1;
+    strcpy(remout_ip, pcParameter1);
+//    remout_ip = (char *)pcParameter1;
 
-//    uint8_t string[] = cli_prompt;//\r\nConnected!\r\n
-    cliWrite((char *)"Connection...\r\n");
-    xSemaphoreGive(connectSemHandle);
-    strcpy(pcWriteBuffer, (char *)"\r\nConnected!\r\n");
+    strcpy(p_ret_strct->val, "google.pem");
+    cliTaskHandle[0] = xTaskGetCurrentTaskHandle();
+	xTaskNotify(vFatFSTaskHandle, (uint32_t)p_ret_strct, eSetValueWithOverwrite);
+
+    xTaskNotifyWait(0, 0, (uint32_t)&p_ret_strct, portMAX_DELAY);
+//    cliTaskHandle[0] = xTaskGetCurrentTaskHandle();
+//    xTaskNotifyGive(vFatFSTaskHandle);
+//    xTaskNotifyWait(0, 0, &ret_con, portMAX_DELAY);
+//
+
+    cliTaskHandle[0] = xTaskGetCurrentTaskHandle();
+    xTaskNotify(vClientTaskHandle, (uint32_t)p_ret_strct, eSetValueWithOverwrite);
+    xTaskNotifyWait(0, 0, &p_ret_strct, portMAX_DELAY);
+    if (p_ret_strct->ret == 0)
+    {
+    	string = "\r\n---Connected!---\r\n";
+    }
+    else
+    {
+    	string = "\r\n---No connected!---\r\n";
+    }
+
+    strcpy(pcWriteBuffer, (char *)string);
+
+    free(string);
+
+    return pdFALSE;
+}
+
+BaseType_t cmd_connect_name(char *pcWriteBuffer, size_t xWriteBufferLen,
+                                 const char *pcCommandString)
+{
+    const char *pcParameter1;
+    BaseType_t xParameter1StringLength, xParameter2StringLength;
+    char *addr_len;
+
+    uint32_t ret_con;
+    uint8_t *string = malloc(sizeof(uint8_t) * configCOMMAND_INT_MAX_OUTPUT_SIZE);
+    uint32_t bytesReading;
+    notify_struct_t ret_strct;
+    notify_struct_t *p_ret_strct = &ret_strct;
+
+    /* Obtain the name of the source file, and the length of its name, from
+    the command string. The name of the source file is the first parameter. */
+    pcParameter1 = FreeRTOS_CLIGetParameter
+                        (
+                          /* The command string itself. */
+                          pcCommandString,
+                          /* Return the first parameter. */
+                          1,
+                          /* Store the parameter string length. */
+						  &xParameter1StringLength
+                        );
+    char *remout_host = malloc(sizeof(uint8_t) * xParameter1StringLength);
+    remout_host = (char *)pcParameter1;
+/*--------------------------LOAD CERT--------------------------------*/
+    char *file_name = malloc(sizeof(uint8_t) * strlen(remout_host) + 4);
+
+    strcpy(file_name, remout_host);
+	strcat(file_name, ".pem");
+    strcpy(p_ret_strct->val, file_name);
+    cliTaskHandle[0] = xTaskGetCurrentTaskHandle();
+	xTaskNotify(vFatFSTaskHandle, (uint32_t)p_ret_strct, eSetValueWithOverwrite);
+
+    xTaskNotifyWait(0, 0, (uint32_t)&p_ret_strct, portMAX_DELAY);
+
+    load_cert(p_ret_strct->num);
+    free(file_name);
+    memset(p_ret_strct->val, '\0', 30);
+
+/*--------------------------LOAD CONFIG------------------------------*/
+
+    file_name = malloc(sizeof(uint8_t) * strlen(remout_host) + 4);
+
+    strcpy(file_name, remout_host);
+	strcat(file_name, ".txt");
+    strcpy(p_ret_strct->val, file_name);
+    cliTaskHandle[0] = xTaskGetCurrentTaskHandle();
+	xTaskNotify(vFatFSTaskHandle, (uint32_t)p_ret_strct, eSetValueWithOverwrite);
+
+    xTaskNotifyWait(0, 0, (uint32_t)&p_ret_strct, portMAX_DELAY);
+
+    load_config(p_ret_strct->num);
+    free(file_name);
+    memset(p_ret_strct->val, '\0', 30);
+
+/*--------------------LOAD HTTP GET REQUSRET-------------------------*/
+
+    file_name = malloc(sizeof(uint8_t) * strlen(remout_host) + 8);
+
+    sprintf(file_name,"get_%s.txt", remout_host);
+//    strcpy(file_name, remout_host);
+//	strcat(file_name, ".txt");
+    strcpy(p_ret_strct->val, file_name);
+    cliTaskHandle[0] = xTaskGetCurrentTaskHandle();
+	xTaskNotify(vFatFSTaskHandle, (uint32_t)p_ret_strct, eSetValueWithOverwrite);
+
+    xTaskNotifyWait(0, 0, (uint32_t)&p_ret_strct, portMAX_DELAY);
+
+    load_get_req(p_ret_strct->num);
+    free(file_name);
+    memset(p_ret_strct->val, '\0', 30);
+//    cliTaskHandle[0] = xTaskGetCurrentTaskHandle();
+//    xTaskNotifyGive(vFatFSTaskHandle);
+//    xTaskNotifyWait(0, 0, &ret_con, portMAX_DELAY);
+//
+
+    cliTaskHandle[0] = xTaskGetCurrentTaskHandle();
+    xTaskNotify(vClientTaskHandle, (uint32_t)p_ret_strct, eSetValueWithOverwrite);
+    xTaskNotifyWait(0, 0, &p_ret_strct, portMAX_DELAY);
+    if (p_ret_strct->ret == 0)
+    {
+    	string = "\r\n---Connected!---\r\n";
+    }
+    else
+    {
+    	string = "\r\n---No connected!---\r\n";
+    }
+
+    strcpy(pcWriteBuffer, (char *)string);
+
+    free(string);
 
     return pdFALSE;
 }
@@ -154,12 +294,19 @@ const CLI_Command_Definition_t xCommandList[] = {
         .cExpectedNumberOfParameters = 1 /* No parameters are expected. */
     },
     {
-        .pcCommand = "connect", /* The command string to type. */
-        .pcHelpString = "connect:\r\n"
+        .pcCommand = "connect_ip", /* The command string to type. */
+        .pcHelpString = "connect_ip:\r\n"
         		" have two parameters\r\n -remout ip address\r\n"
         		" -remout port\r\n\r\n",
-        .pxCommandInterpreter = cmd_connect, /* The function to run. */
+        .pxCommandInterpreter = cmd_connect_ip, /* The function to run. */
         .cExpectedNumberOfParameters = 2 /* 2 parameters are expected. */
+    },
+    {
+        .pcCommand = "connect_name", /* The command string to type. */
+        .pcHelpString = "connect_ip:\r\n"
+        		" have one parameter\r\n -remout host name\r\n",
+        .pxCommandInterpreter = cmd_connect_name, /* The function to run. */
+        .cExpectedNumberOfParameters = 1 /* 1 parameters are expected. */
     },
     {
         .pcCommand = NULL /* simply used as delimeter for end of array*/

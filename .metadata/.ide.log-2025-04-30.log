@@ -1,0 +1,2 @@
+2025-04-30 17:24:52,041 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection reset
+2025-04-30 17:59:24,881 [ERROR] ConfigurationRetriever:142 - IOException on connection: Software caused connection abort: getsockopt

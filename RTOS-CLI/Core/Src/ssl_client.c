@@ -8,15 +8,25 @@
 
 #include "ssl_client.h"
 
-char* root_cert_pem;
+char *root_cert_pem;
+char *get_http_buf;
+char *post_http_buf;
 
-int ssl_client(int *sockfd, struct sockaddr_in *servAddr)
+void myWolfSSLLogCallback(const int logLevel, const char *const logMessage)
+{
+	char *cli_msg = malloc(sizeof(char)*100);
+    sprintf(cli_msg, "[wolfSSL][%d] %s\r\n", logLevel, logMessage);
+    write_fs("log.txt", cli_msg);
+}
+
+int ssl_client(int *sockfd, struct sockaddr_in *servAddr, notify_struct_t *p_ntfy_strct)
 {
 //    int sockfd;
     WOLFSSL_CTX* ctx;
     WOLFSSL* ssl;
     WOLFSSL_METHOD* method;
-    char *cli_msg;
+    char *cli_msg = malloc(sizeof(char)*50);
+    uint32_t res;
 //    struct  sockaddr_in servAddr;
     const char message[] = "Hello, World!--------------------------------";
 
@@ -28,6 +38,8 @@ int ssl_client(int *sockfd, struct sockaddr_in *servAddr)
 
     /* initialize wolfssl library */
     wolfSSL_Init();
+    wolfSSL_Debugging_ON();
+    wolfSSL_SetLoggingCb(myWolfSSLLogCallback);
     method = wolfTLSv1_2_client_method(); /* use TLS v1.2 */
 
     /* make new ssl context */
@@ -36,61 +48,166 @@ int ssl_client(int *sockfd, struct sockaddr_in *servAddr)
         goto cleanup;
     }
 
-    /* make new wolfSSL struct */
-    if ((ssl = wolfSSL_new(ctx)) == NULL) {
-        sprintf(cli_msg,"Failed to wolfSSL_new\n");
-        goto free_ctx;
-    }
-
-
     /* Add cert to ctx */
-    if (load_cert(ctx, root_cert_pem) != SSL_SUCCESS) {
+    res = wolfSSL_CTX_load_verify_buffer(ctx,
+                root_cert_pem,
+                strlen(root_cert_pem),
+                SSL_FILETYPE_PEM);
+    if (res != SSL_SUCCESS) {
         sprintf(cli_msg,"Failed to wolfSSL_CTX_load_verify_locations\n");
         goto exit;
     }
-    cliWrite(root_cert_pem);
+//    res = wolfSSL_CTX_load_verify_buffer(ctx,
+//            (const unsigned char*)root_cert_pem,
+//            strlen(root_cert_pem),
+//            SSL_FILETYPE_PEM) ;
+//
+//    if (res != 1) {
+//        sprintf(cli_msg,"Failed to load certificate, error: %s\r\n", res);
+//        cliWrite(cli_msg);
+//        goto free_ctx;
+//    }
+//    wolfSSL_CTX_set_verify(ctx, SSL_VERIFY_PEER, NULL);
+    wolfSSL_CTX_set_verify(ctx, SSL_VERIFY_NONE, NULL);
+    /* make new wolfSSL struct */
+    if ((ssl = wolfSSL_new(ctx)) == NULL) {
+        sprintf(cli_msg,"Failed to wolfSSL_new\r\n");
+        cliWrite(cli_msg);
+        goto free_ctx;
+    }
+
+    /* Connect wolfssl to the socket, server, then send message */
+    wolfSSL_set_fd(ssl, *sockfd);
+
+//    if (load_cert(ctx, &root_cert_pem[0]) != SSL_SUCCESS) {
+//        sprintf(cli_msg,"Failed to wolfSSL_CTX_load_verify_locations\n");
+//        goto exit;
+//    }
+//    cliWrite(root_cert_pem);
 
 
     /* connect to socket */
+    cliWrite((char *)"Connection...\r\n");
     lwip_connect(*sockfd, (struct sockaddr *) servAddr, sizeof(*servAddr));
 //    lwip_write(*sockfd, "C-------------------------------------\n\r", sizeof("C-------------------------------------\n\r"));
 
 
 
-    /* Connect wolfssl to the socket, server, then send message */
-    wolfSSL_set_fd(ssl, *sockfd);
-    wolfSSL_connect(ssl);
-//    lwip_write(*sockfd, "W-------------------------------------\n\r", sizeof("W-------------------------------------\n\r"));
-//    wolfSSL_write(ssl, message, strlen(message));
-//    lwip_write(*sockfd, "-------------------------------------\n\r", sizeof("-------------------------------------\n\r"));
+//    res = wolfSSL_connect(ssl);
+//    HAL_Delay(1000);
+//    for (int i = 0; i < 5; ++i) {
+//    	res = wolfSSL_write(ssl, get_http_buf, strlen(get_http_buf));
+//    	HAL_Delay(1000);
+//	}
+    wolfSSL_UseSNI(ssl, WOLFSSL_SNI_HOST_NAME, "google.com", strlen("google.com"));
 
+    while ((res = wolfSSL_connect(ssl)) != WOLFSSL_SUCCESS) {
+        int err = wolfSSL_get_error(ssl, res);
+        if (err == WOLFSSL_ERROR_WANT_READ || err == WOLFSSL_ERROR_WANT_WRITE) {
+
+            vTaskDelay(1);
+            continue;
+        } else {
+			sprintf(cli_msg,"Fail connection with error %d\r\n", err);
+			cliWrite(cli_msg);
+			return 1;
+        }
+    }
+//    res = wolfSSL_connect(ssl);
+//    while (res = wolfSSL_connect(ssl) != WOLFSSL_SUCCESS) {
+////        int err = wolfSSL_get_error(ssl, res);
+////        if (err != WOLFSSL_ERROR_WANT_READ && err != WOLFSSL_ERROR_WANT_WRITE) {
+////			sprintf(cli_msg,"Fail connection with error %d\r\n", err);
+////			cliWrite(cli_msg);
+////			return 1;
+////        }
+//    }
+//    res = wolfSSL_write(ssl, get_http_buf, strlen(get_http_buf));//wolfSSL_connect(ssl);
+//    if (res != SSL_SUCCESS)
+//    {
+//    	int err = wolfSSL_get_error(ssl, res);
+//    	sprintf(cli_msg,"Fail connection with error %u\r\n", err);
+//    	cliWrite(cli_msg);
+//    	return 1;
+//    }
+
+    while ((res = wolfSSL_read(ssl, buf, sizeof(buf)-1)) > 0) {
+        buf[res] = '\0';
+        cliWrite(buf);
+    }
+
+    goto exit;
     /* frees all data before client termination */
 exit:
     wolfSSL_free(ssl);
+    free(root_cert_pem);
     close(*sockfd);
+    return 0;
 free_ctx:
     wolfSSL_CTX_free(ctx);
 cleanup:
     wolfSSL_Cleanup();
-    return 0;
+    return 1;
 }
 
-int load_cert(WOLFSSL_CTX *ctx, char *root_cert_pem)
+int load_cert(uint32_t len)
 {
-	char *cli_msg;
+	uint32_t n = 0;
+	root_cert_pem = malloc(sizeof(char)*len);
 
-	mount_fs(&fs, FS_MOUNT);
+	if (root_cert_pem == NULL)
+		return 1;
 
-	read_fs((uint8_t *)"cacert.pem", (uint8_t *)root_cert_pem, (uint32_t)LEN_CERT_FILE);
+	for (int i = 0; i <= len; ++i) {
+		root_cert_pem[n] = buf[i];
+		++n;
+		if (buf[i] == '\r')
+			--n;
+	}
 
-//	xSemaphoreGive(fsSemHandle);
-
-//	xQueueReceive(structFSQueueHandle, pvBuffer, portMAX_DELAY);
-
-
-
-    return wolfSSL_CTX_load_verify_buffer(ctx,
-            (const unsigned char*)root_cert_pem,
-            strlen(root_cert_pem),
-            SSL_FILETYPE_PEM) ;
+	memset(buf, '\0', MAX_FILE_BUF_LENGTH);
+	return 0;
 }
+
+int load_config(uint32_t len)
+{
+	sscanf(buf, "%15[^:]:%u", remout_ip, &remout_port);
+	memset(buf, '\0', MAX_FILE_BUF_LENGTH);
+	return 0;
+}
+
+int load_get_req(uint32_t len)
+{
+	get_http_buf = malloc(sizeof(char)*len);
+
+	if (get_http_buf == NULL)
+		return 1;
+
+	memcpy(get_http_buf, buf, len);
+	memset(buf, '\0', MAX_FILE_BUF_LENGTH);
+	return 0;
+}
+
+int load_post_req(uint32_t len)
+{
+	post_http_buf = malloc(sizeof(char)*len);
+
+	if (post_http_buf == NULL)
+		return 1;
+
+	memcpy(post_http_buf, buf, len);
+	memset(buf, '\0', MAX_FILE_BUF_LENGTH);
+	return 0;
+}
+
+//int tls_connect(WOLFSSL* ssl, uint32_t *res)
+//{
+//    while (res = wolfSSL_connect(ssl) != WOLFSSL_SUCCESS)) {
+//        int err = wolfSSL_get_error(ssl, res);
+//        if (err != WOLFSSL_ERROR_WANT_READ && err != WOLFSSL_ERROR_WANT_WRITE) {
+//			sprintf(cli_msg,"Fail connection with error %d\r\n", err);
+//			cliWrite(cli_msg);
+//			return 1;
+//        }
+//    }
+//}

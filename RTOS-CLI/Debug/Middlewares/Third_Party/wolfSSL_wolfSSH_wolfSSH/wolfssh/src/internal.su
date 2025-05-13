@@ -73,7 +73,7 @@
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:4240:12:ParseECCPubKey	56	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:4505:12:ParsePubKey	32	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:4549:12:DoKexDhReply	768	static
-../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:5127:12:DoNewKeys	32	static
+../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:5127:12:DoNewKeys	48	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:5209:12:DoKexDhGexRequest	40	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:5245:12:DoKexDhGexGroup	64	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:5304:12:DoIgnore	32	static
@@ -130,7 +130,7 @@
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:9836:20:SigTypeForId	16	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:9879:5:wolfSSH_RsaVerify	48	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:9917:5:SendKexDhReply	3744	static
-../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:10754:5:SendNewKeys	32	static
+../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:10754:5:SendNewKeys	48	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:10842:5:SendKexDhGexRequest	40	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:10888:5:SendKexDhGexGroup	56	static
 ../Middlewares/Third_Party/wolfSSL_wolfSSH_wolfSSH/wolfssh/src/internal.c:10958:5:SendKexDhInit	1120	static

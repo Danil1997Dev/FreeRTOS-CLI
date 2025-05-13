@@ -27,7 +27,7 @@
 
 /**
 	MiddleWare name : wolfSSL.I-CUBE-wolfSSH.1.4.17
-	MiddleWare fileName : wolfSSL.I-CUBE-wolfSSH_conf.h
+	MiddleWare fileName : ./wolfSSL.I-CUBE-wolfSSH_conf.h
 	MiddleWare version :
 */
 /*---------- WOLFSSH_CONF_SFTP -----------*/

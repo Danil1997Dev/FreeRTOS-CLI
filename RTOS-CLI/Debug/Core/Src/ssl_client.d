@@ -63,6 +63,7 @@ Core/Src/ssl_client.o: ../Core/Src/ssl_client.c ../Core/Inc/ssl_client.h \
  ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/openssl/compat_types.h \
  ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfcrypt/hmac.h \
  ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfcrypt/hash.h \
+ ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfcrypt/sha512.h \
  ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/callbacks.h \
  ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfio.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h \
@@ -134,7 +135,8 @@ Core/Src/ssl_client.o: ../Core/Src/ssl_client.c ../Core/Inc/ssl_client.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
  ../Core/Inc/printf_uart.h ../Core/Inc/main.h ../Core/Inc/FreeRTOS_CLI.h \
- ../Core/Inc/printf_uart.h
+ ../Core/Inc/app_cli.h ../Core/Inc/usart.h ../Core/Inc/printf_uart.h \
+ ../Core/Inc/app_cli.h
 ../Core/Inc/ssl_client.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/options.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/ssl.h:
@@ -200,6 +202,7 @@ Core/Src/ssl_client.o: ../Core/Src/ssl_client.c ../Core/Inc/ssl_client.h \
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/openssl/compat_types.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfcrypt/hmac.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfcrypt/hash.h:
+../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfcrypt/sha512.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/callbacks.h:
 ../Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl/wolfssl/wolfio.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h:
@@ -277,4 +280,7 @@ Core/Src/ssl_client.o: ../Core/Src/ssl_client.c ../Core/Inc/ssl_client.h \
 ../Core/Inc/printf_uart.h:
 ../Core/Inc/main.h:
 ../Core/Inc/FreeRTOS_CLI.h:
+../Core/Inc/app_cli.h:
+../Core/Inc/usart.h:
 ../Core/Inc/printf_uart.h:
+../Core/Inc/app_cli.h:
